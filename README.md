@@ -1,3 +1,44 @@
+# National Parks
+
+
+### See it Live!
+
+### Set-Up Front-End:
+Clone this repo
+Run npm install in your terminal
+
+### Background / About:
+
+### Primary Technologies Used:
+ - HTML
+ - CSS
+ - Javascript
+ - React
+ - Leaflet
+
+### Test Driven Development:
+
+### Enhancements:
+
+### Screenshots:
+
+
+### Original Assignment:
+
+
+### DTR Memo:
+https://gist.github.com/trbachmann/ceb360e8cf0d946281cdba7091e4e484
+
+
+### Contributors:
+Karin Ohman: https://github.com/kaohman
+Adam Niedzwiecki:
+Tiffany Bachmann:
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
