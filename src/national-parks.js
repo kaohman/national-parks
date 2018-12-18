@@ -25,7 +25,7 @@ const nationalParks = [
    "image": "assets/great-smoky-mtns.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Blinutne\" title=\"User:Blinutne\">Blinutne</a>, <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=2518140\">Link</a>",
    "sizeAcres": 52242688,
-   "description": "The Great Smoky Mountains, part of the Appalachian Mountains, span a wide range of elevations, making them home to over 400 vertebrate species, 100 tree species, and 5000 plant species. Hiking is the park\\'s main attraction, with over 800 miles (1,300 km) of trails, including 70 miles (110 km) of the Appalachian Trail. Other activities include fishing, horseback riding, and touring nearly 80 historic structures."
+   "description": "The Great Smoky Mountains, part of the Appalachian Mountains, span a wide range of elevations, making them home to over 400 vertebrate species, 100 tree species, and 5000 plant species. Hiking is the park\'s main attraction, with over 800 miles (1,300 km) of trails, including 70 miles (110 km) of the Appalachian Trail. Other activities include fishing, horseback riding, and touring nearly 80 historic structures."
  },
  {
    "parkName": "Yellowstone",
@@ -67,7 +67,7 @@ const nationalParks = [
    "image": "assets/gates-of-arctic.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/File:USFWS_alt_graphic_A.svg\" class=\"image\"></a>This image originates from the <a rel=\"nofollow\" class=\"external text\" href=\"http://digitalmedia.fws.gov/cdm/\">National Digital Library</a> of the <a href=\"https://en.wikipedia.org/wiki/United_States_Fish_and_Wildlife_Service\" class=\"extiw\" title=\"w:United States Fish and Wildlife Service\">United States Fish and Wildlife Service</a>at <a rel=\"nofollow\" class=\"external text\" href=\"http://digitalmedia.fws.gov/cdm/singleitem/collection/natdiglib/id/3957/rec/1\">this page</a>This tag does not indicate the copyright status of the attached work. A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required. See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a> for more information.See <a href=\"//commons.wikimedia.org/wiki/Category:Images_from_the_United_States_Fish_and_Wildlife_Service\" title=\"Category:Images from the United States Fish and Wildlife Service\">Category:Images from the United States Fish and Wildlife Service</a>.Transferred from <span class=\"plainlinks\"><a class=\"external text\" href=\"//en.wikipedia.org\">en.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Aconcagua\" title=\"User:Aconcagua\">Aconcagua</a> using <a href=\"https://tools.wmflabs.org/commonshelper/\" class=\"extiw\" title=\"toollabs:commonshelper/\">CommonsHelper</a>.Source: SL-02192URL: <a rel=\"nofollow\" class=\"external free\" href=\"https://digitalmedia.fws.gov/digital/collection/natdiglib/id/3957/rec/1\">https://digitalmedia.fws.gov/digital/collection/natdiglib/id/3957/rec/1</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=4495169\">Link</a>",
    "sizeAcres": 752389745,
-   "description": "The country\\'s northernmost park protects an expanse of pure wilderness in Alaska\\'s Brooks Range and has no park facilities. The land is home to Alaska Natives who have relied on the land and caribou for 11,000 years."
+   "description": "The country\'s northernmost park protects an expanse of pure wilderness in Alaska\'s Brooks Range and has no park facilities. The land is home to Alaska Natives who have relied on the land and caribou for 11,000 years."
  },
  {
    "parkName": "Glacier Bay",
@@ -151,7 +151,7 @@ const nationalParks = [
    "image": "assets/wrangell.jpg",
    "imageRef": "<a rel=\"nofollow\" class=\"external free\" href=\"http://pubs.usgs.gov/dds/dds-39/\">http://pubs.usgs.gov/dds/dds-39/</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=1982495\">Link</a>",
    "sizeAcres": 832314648,
-   "description": "An over 8 million acres (32,375 km2) plot of mountainous country—the largest national park in the system—protects the convergence of the Alaska, Chugach, and Wrangell-Saint Elias Ranges, which include many of the continent\\'s tallest mountains and volcanoes, including the 18,008-foot Mount Saint Elias. More than a quarter of the park is covered with glaciers, including the tidewater Hubbard Glacier, piedmont Malaspina Glacier, and valley Nabesna Glacier."
+   "description": "An over 8 million acres (32,375 km2) plot of mountainous country—the largest national park in the system—protects the convergence of the Alaska, Chugach, and Wrangell-Saint Elias Ranges, which include many of the continent\'s tallest mountains and volcanoes, including the 18,008-foot Mount Saint Elias. More than a quarter of the park is covered with glaciers, including the tidewater Hubbard Glacier, piedmont Malaspina Glacier, and valley Nabesna Glacier."
  },
  {
    "parkName": "American Samoa",
@@ -235,7 +235,7 @@ const nationalParks = [
    "image": "assets/channel-islands.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Rmhermen\" class=\"extiw\" title=\"wikipedia:User:Rmhermen\">Rmhermen</a> at <a href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia</a>. - Transferred from <span class=\"plainlinks\"><a class=\"external text\" href=\"//en.wikipedia.org\">en.wikipedia</a></span> to Commons., Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=3451089\">Link</a>",
    "sizeAcres": 24956100,
-   "description": "Five of the eight Channel Islands are protected, and half of the park\\'s area is underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, and 145 are unique to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
+   "description": "Five of the eight Channel Islands are protected, and half of the park\'s area is underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, and 145 are unique to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
  },
  {
    "parkName": "Joshua Tree",
@@ -263,7 +263,7 @@ const nationalParks = [
    "image": "assets/kings-canyon.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Crd637&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Crd637 (page does not exist)\">Crd637</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=20032656\">Link</a>",
    "sizeAcres": 46190120,
-   "description": "Home to several giant sequoia groves and the General Grant Tree, the world\\'s second largest measured tree, this park also features part of the Kings River, sculptor of the dramatic granite canyon that is its namesake, and the San Joaquin River, as well as Boyden Cave. Although Kings Canyon National Park was designated as such in 1940, it subsumed General Grant National Park, which had been established on October 1, 1890 as the United States\\' fourth national park."
+   "description": "Home to several giant sequoia groves and the General Grant Tree, the world\'s second largest measured tree, this park also features part of the Kings River, sculptor of the dramatic granite canyon that is its namesake, and the San Joaquin River, as well as Boyden Cave. Although Kings Canyon National Park was designated as such in 1940, it subsumed General Grant National Park, which had been established on October 1, 1890 as the United States\' fourth national park."
  },
  {
    "parkName": "Lassen Volcanic",
@@ -291,7 +291,7 @@ const nationalParks = [
    "image": "assets/pinnacles.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Samartur&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Samartur (page does not exist)\">Samartur</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=32162401\">Link</a>",
    "sizeAcres": 2668573,
-   "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park\\'s massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is home to the endangered California condor (Gymnogyps californianus) and one of the few locations in the world where these extremely rare birds can be seen in the wild. Pinnacles also supports a dense population of prairie falcons, and more than 13 species of bat which populate its talus caves."
+   "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park\'s massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is home to the endangered California condor (Gymnogyps californianus) and one of the few locations in the world where these extremely rare birds can be seen in the wild. Pinnacles also supports a dense population of prairie falcons, and more than 13 species of bat which populate its talus caves."
  },
  {
    "parkName": "Redwood",
@@ -319,7 +319,7 @@ const nationalParks = [
    "image": "assets/sequoia.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Davigoli\" class=\"extiw\" title=\"en:User:Davigoli\">Davigoli</a> at <a class=\"external text\" href=\"http://en.wikipedia.org\">en.wikipedia</a> - <a class=\"external text\" href=\"http://en.wikipedia.org\">en.wikipedia</a> (photo by Carey Goldstein); transferred to Commons by <a href=\"//commons.wikimedia.org/wiki/User:ThomasPusch\" title=\"User:ThomasPusch\">User:ThomasPusch</a> using <a rel=\"nofollow\" class=\"external text\" href=\"http://tools.wikimedia.de/~magnus/commonshelper.php\">CommonsHelper</a>., Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=5754700\">Link</a>",
    "sizeAcres": 40406263,
-   "description": "This park protects the Giant Forest, which boasts some of the world\\'s largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
+   "description": "This park protects the Giant Forest, which boasts some of the world\'s largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
  },
  {
    "parkName": "Yosemite",
@@ -333,7 +333,7 @@ const nationalParks = [
    "image": "assets/yosemite.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:AngMoKio\" title=\"User:AngMoKio\">user:AngMoKio</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span> (<span lang=\"en\">Original text: selfmade photo</span>), <a href=\"https://creativecommons.org/licenses/by-sa/2.5\" title=\"Creative Commons Attribution-Share Alike 2.5\">CC BY-SA 2.5</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=2827221\">Link</a>",
    "sizeAcres": 76174750,
-   "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park\\'s centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America\\'s tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
+   "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park\'s centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America\'s tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
  },
  {
    "parkName": "Black Canyon of the Gunnison",
@@ -445,7 +445,7 @@ const nationalParks = [
    "image": "assets/haleakala.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Matttrain&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Matttrain (page does not exist)\">Matttrain</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=7101246\">Link</a>",
    "sizeAcres": 3326462,
-   "description": "The Haleakalā volcano on Maui features a very large crater with numerous cinder cones, Hosmer\\'s Grove of alien trees, the Kipahulusection\\'s scenic pools of freshwater fish, and the native Hawaiian goose. The park protects the greatest number of endangered species within a U.S. National Park."
+   "description": "The Haleakalā volcano on Maui features a very large crater with numerous cinder cones, Hosmer\'s Grove of alien trees, the Kipahulusection\'s scenic pools of freshwater fish, and the native Hawaiian goose. The park protects the greatest number of endangered species within a U.S. National Park."
  },
  {
    "parkName": "Hawaii Volcanoes",
@@ -459,7 +459,7 @@ const nationalParks = [
    "image": "assets/hawaii-volcanoes.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Hike395\" class=\"extiw\" title=\"en:User:Hike395\">Hike395</a> (<a href=\"https://en.wikipedia.org/wiki/User_talk:Hike395\" class=\"extiw\" title=\"en:User talk:Hike395\">talk</a><span style=\"white-space:nowrap\">&nbsp;·</span> <a href=\"https://en.wikipedia.org/wiki/Special:Contributions/Hike395\" class=\"extiw\" title=\"en:Special:Contributions/Hike395\">contribs</a>) - <a rel=\"nofollow\" class=\"external text\" href=\"http://pubs.usgs.gov/dds/dds-80/images/JPG/large_screen/RIFT_007.jpg\">USGS</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=4412830\">Link</a>",
    "sizeAcres": 32343138,
-   "description": "This park on the Big Island protects the Kīlauea and Mauna Loavolcanoes, two of the world\\'s most active geological features. Diverse ecosystems range from tropical forests at sea level to barren lava beds at more than 13,000 feet (4,000 m)."
+   "description": "This park on the Big Island protects the Kīlauea and Mauna Loavolcanoes, two of the world\'s most active geological features. Diverse ecosystems range from tropical forests at sea level to barren lava beds at more than 13,000 feet (4,000 m)."
  },
  {
    "parkName": "Mammoth Cave",
@@ -473,7 +473,7 @@ const nationalParks = [
    "image": "assets/mammoth-cave.jpg",
    "imageRef": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/navin75/162067155/\">https://www.flickr.com/photos/navin75/162067155/</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0\" title=\"Creative Commons Attribution-Share Alike 2.0\">CC BY-SA 2.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=3676754\">Link</a>",
    "sizeAcres": 5401191,
-   "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world\\'s longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
+   "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world\'s longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
  },
  {
    "parkName": "Acadia",
@@ -529,7 +529,7 @@ const nationalParks = [
    "image": "assets/gateway-arch.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Dschwen\" title=\"User:Dschwen\">Daniel Schwen</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" title=\"Creative Commons Attribution-Share Alike 4.0\">CC BY-SA 4.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=3468880\">Link</a>",
    "sizeAcres": 19283,
-   "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the first site of the Dred Scottcase about slavery. A museum, located in the underground visitor center below the arch, describes the arch\\'s construction and the country\\'s westward expansion."
+   "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the first site of the Dred Scottcase about slavery. A museum, located in the underground visitor center below the arch, describes the arch\'s construction and the country\'s westward expansion."
  },
  {
    "parkName": "Glacier",
@@ -557,7 +557,7 @@ const nationalParks = [
    "image": "assets/great-basin.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Jrbouldin\" class=\"extiw\" title=\"en:User:Jrbouldin\">James R Bouldin</a> (<a href=\"https://en.wikipedia.org/wiki/User_talk:Jrbouldin\" class=\"extiw\" title=\"en:User talk:Jrbouldin\">talk</a><span style=\"white-space:nowrap\">&nbsp;·</span> <a href=\"https://en.wikipedia.org/wiki/Special:Contributions/Jrbouldin\" class=\"extiw\" title=\"en:Special:Contributions/Jrbouldin\">contribs</a>) - Transferred from <span class=\"plainlinks\"><a class=\"external text\" href=\"//en.wikipedia.org\">en.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Grook_Da_Oger\" title=\"User:Grook Da Oger\">Grook Da Oger</a>., Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=2615269\">Link</a>",
    "sizeAcres": 7718000,
-   "description": "Based around Nevada\\'s second tallest mountain, Wheeler Peak, Great Basin National Park contains 5,000-year-old bristlecone pines, a rock glacier, and the limestone Lehman Caves. Due to its remote location, the park has some of the country\\'s darkest night skies. Wildlife includes the Townsend\\'s big-eared bat, pronghorn, and Bonneville cutthroat trout."
+   "description": "Based around Nevada\'s second tallest mountain, Wheeler Peak, Great Basin National Park contains 5,000-year-old bristlecone pines, a rock glacier, and the limestone Lehman Caves. Due to its remote location, the park has some of the country\'s darkest night skies. Wildlife includes the Townsend\'s big-eared bat, pronghorn, and Bonneville cutthroat trout."
  },
  {
    "parkName": "Carlsbad Caverns",
@@ -585,7 +585,7 @@ const nationalParks = [
    "image": "assets/theodore-roosevelt.jpg",
    "imageRef": "<a href=\"https://commons.wikimedia.org/w/index.php?curid=114313\">Link</a>",
    "sizeAcres": 7044689,
-   "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt\\'s historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
+   "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt\'s historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
  },
  {
    "parkName": "Cuyahoga Valley",
@@ -655,7 +655,7 @@ const nationalParks = [
    "image": "assets/wind-cave.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Dave_Bunnell\" title=\"User:Dave Bunnell\">Dave Bunnell / Under Earth Images</a> - original work of uploader, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=7782810\">Link</a>",
    "sizeAcres": 3397084,
-   "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. The cave is one of the longest and most complex caves in the world. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs, and ponderosa pine forests that are home to cougars and elk. The cave is culturally significant to the Lakota people as the site \\\"from which Wakan Tanka, the Great Mystery, sent the buffalo out into their hunting grounds.\\\""
+   "description": "Wind Cave is distinctive for its calcite fin formations called boxwork, a unique formation rarely found elsewhere, and needle-like growths called frostwork. The cave is one of the longest and most complex caves in the world. Above ground is a mixed-grass prairie with animals such as bison, black-footed ferrets, and prairie dogs, and ponderosa pine forests that are home to cougars and elk. The cave is culturally significant to the Lakota people as the site \"from which Wakan Tanka, the Great Mystery, sent the buffalo out into their hunting grounds.\""
  },
  {
    "parkName": "Big Bend",
@@ -697,7 +697,7 @@ const nationalParks = [
    "image": "assets/virgin-islands.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Fred_Hsu\" class=\"extiw\" title=\"wikipedia:User:Fred Hsu\">Wikipedia:User:Fred Hsu</a> on <a class=\"external text\" href=\"http://en.wikipedia.org\">en.wikipedia</a>) - Photo taken and uploaded by user, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=6882523\">Link</a>",
    "sizeAcres": 1494000,
-   "description": "This island park on Saint John preserves Taíno archaeological sites and the ruins of sugar plantations from Columbus\\'s time, as well as all the natural environs. Surrounding the pristine beaches are mangrove forests, seagrass beds, and coral reefs."
+   "description": "This island park on Saint John preserves Taíno archaeological sites and the ruins of sugar plantations from Columbus\'s time, as well as all the natural environs. Surrounding the pristine beaches are mangrove forests, seagrass beds, and coral reefs."
  },
  {
    "parkName": "Arches",
@@ -753,7 +753,7 @@ const nationalParks = [
    "image": "assets/capitol-reef.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Bigtimepeace\" title=\"User:Bigtimepeace\">Bigtimepeace</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=7342151\">Link</a>",
    "sizeAcres": 24190450,
-   "description": "The park\\'s Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth\\'s diverse geologic layers. Other natural features include monoliths, cliffs, and sandstone domes shaped like the United States Capitol."
+   "description": "The park\'s Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth\'s diverse geologic layers. Other natural features include monoliths, cliffs, and sandstone domes shaped like the United States Capitol."
  },
  {
    "parkName": "Zion",
@@ -781,7 +781,7 @@ const nationalParks = [
    "image": "assets/shenandoah.jpg",
    "imageRef": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/67015038@N06\">Shenandoah National Park</a> from Virginia - <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/snpphotos/22028259442/\">Early Fall at Dark Hollow Falls</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=45094938\">Link</a>",
    "sizeAcres": 19921777,
-   "description": "Shenandoah\\'s Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
+   "description": "Shenandoah\'s Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
  },
  {
    "parkName": "Mount Rainier",
@@ -837,571 +837,739 @@ const nationalParks = [
    "image": "assets/grand-teton.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Maveric149\" class=\"mw-redirect\" title=\"User:Maveric149\">Daniel Mayer</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=1848111\">Link</a>",
    "sizeAcres": 31004422,
-   "description": "Grand Teton is the tallest mountain in the Teton Range. The park\\'s historic Jackson Hole and reflective piedmont lakes teem with endemic wildlife, with a backdrop of craggy mountains that rise abruptly from the sage-covered valley."
+   "description": "Grand Teton is the tallest mountain in the Teton Range. The park\'s historic Jackson Hole and reflective piedmont lakes teem with endemic wildlife, with a backdrop of craggy mountains that rise abruptly from the sage-covered valley."
  }
 ];
 
 const states = {
-   "Alabama": {
-      "abbreviation": "AL",
-      "capitalCity": "Montgomery",
-      "dateEstablished": "Dec 14, 1819",
-      "Population": 4874747,
-      "totalAreaMi2": 52420,
-      "totalLandAreaMi2": 50645,
-      "totalWaterAreaMi2": 1775,
-      "nationalParks": []
-   },
-   "Alaska": {
-      "abbreviation": "AK",
-      "capitalCity": "Juneau",
-      "dateEstablished": "Jan 3, 1959",
-      "Population": 739795,
-      "totalAreaMi2": 665384,
-      "totalLandAreaMi2": 570641,
-      "totalWaterAreaMi2": 94743,
-      "nationalParks": ["Denali", "Gates of the Arctic", "Glacier Bay", "Katmai", "Kenai Fjords", "Kobuk Valley", "Lake Clark", "Wrangell - St. Elias"]
-   },
-   "Arizona": {
-      "abbreviation": "AZ",
-      "capitalCity": "Phoenix",
-      "dateEstablished": "Feb 14, 1912",
-      "Population": 7016270,
-      "totalAreaMi2": 113990,
-      "totalLandAreaMi2": 113594,
-      "totalWaterAreaMi2": 396,
-      "nationalParks": ["Grand Canyon", "Petrified Forest", "Saguaro"]
-   },
-   "Arkansas": {
-      "abbreviation": "AR",
-      "capitalCity": "Little Rock",
-      "dateEstablished": "Jun 15, 1836",
-      "Population": 3004279,
-      "totalAreaMi2": 53179,
-      "totalLandAreaMi2": 52035,
-      "totalWaterAreaMi2": 1143,
-      "nationalParks": ["Hot Springs"]
-   },
-   "California": {
-      "abbreviation": "CA",
-      "capitalCity": "Sacramento",
-      "dateEstablished": "Sep 9, 1850",
-      "Population": 39536653,
-      "totalAreaMi2": 163695,
-      "totalLandAreaMi2": 155779,
-      "totalWaterAreaMi2": 7916,
-      "nationalParks": ["Channel Islands", "Death Valley", "Joshua Tree", "Kings Canyon", "Lassen Volcanic", "Pinnacles", "Redwood", "Sequoia", "Yosemite"]
-   },
-   "Colorado": {
-      "abbreviation": "CO",
-      "capitalCity": "Denver",
-      "dateEstablished": "Aug 1, 1876",
-      "Population": 5607154,
-      "totalAreaMi2": 104094,
-      "totalLandAreaMi2": 103642,
-      "totalWaterAreaMi2": 452,
-      "nationalParks": ["Black Canyon of the Gunnison", "Great Sand Dunes", "Mesa Verde" ,"Rocky Mountain"]
-   },
-   "Connecticut": {
-      "abbreviation": "CT",
-      "capitalCity": "Hartford",
-      "dateEstablished": "Jan 9, 1788",
-      "Population": 3588184,
-      "totalAreaMi2": 5543,
-      "totalLandAreaMi2": 4842,
-      "totalWaterAreaMi2": 701,
-      "nationalParks": []
-   },
-   "Delaware": {
-      "abbreviation": "DE",
-      "capitalCity": "Dover",
-      "dateEstablished": "Dec 7, 1787",
-      "Population": 961939,
-      "totalAreaMi2": 2489,
-      "totalLandAreaMi2": 1949,
-      "totalWaterAreaMi2": 540,
-      "nationalParks": []
-   },
-   "Florida": {
-      "abbreviation": "FL",
-      "capitalCity": "Tallahassee",
-      "dateEstablished": "Mar 3, 1845",
-      "Population": 20984400,
-      "totalAreaMi2": 65758,
-      "totalLandAreaMi2": 53625,
-      "totalWaterAreaMi2": 12133,
-      "nationalParks": ["Biscayne", "Dry Tortugas", "Everglades"]
-   },
-   "Georgia": {
-      "abbreviation": "GA",
-      "capitalCity": "Atlanta",
-      "dateEstablished": "Jan 2, 1788",
-      "Population": 10429379,
-      "totalAreaMi2": 59425,
-      "totalLandAreaMi2": 57513,
-      "totalWaterAreaMi2": 1912,
-      "nationalParks": []
-   },
-   "Hawaii": {
-      "abbreviation": "HI",
-      "capitalCity": "Honolulu",
-      "dateEstablished": "Aug 21, 1959",
-      "Population": 1427538,
-      "totalAreaMi2": 10932,
-      "totalLandAreaMi2": 6423,
-      "totalWaterAreaMi2": 4509,
-      "nationalParks": ["Haleakala", "Hawaii Volcanoes"]
-   },
-   "Idaho": {
-      "abbreviation": "ID",
-      "capitalCity": "Boise",
-      "dateEstablished": "Jul 3, 1890",
-      "Population": 1716943,
-      "totalAreaMi2": 83569,
-      "totalLandAreaMi2": 82643,
-      "totalWaterAreaMi2": 926,
-      "nationalParks": ["Yellowstone"]
-   },
-   "Illinois": {
-      "abbreviation": "IL",
-      "capitalCity": "Springfield",
-      "dateEstablished": "Dec 3, 1818",
-      "Population": 12802023,
-      "totalAreaMi2": 57914,
-      "totalLandAreaMi2": 55519,
-      "totalWaterAreaMi2": 2395,
-      "nationalParks": []
-   },
-   "Indiana": {
-      "abbreviation": "IN",
-      "capitalCity": "Indianapolis",
-      "dateEstablished": "Dec 11, 1816",
-      "Population": 6666818,
-      "totalAreaMi2": 36420,
-      "totalLandAreaMi2": 35826,
-      "totalWaterAreaMi2": 593,
-      "nationalParks": []
-   },
-   "Iowa": {
-      "abbreviation": "IA",
-      "capitalCity": "Des Moines",
-      "dateEstablished": "Dec 28, 1846",
-      "Population": 3145711,
-      "totalAreaMi2": 56273,
-      "totalLandAreaMi2": 55857,
-      "totalWaterAreaMi2": 416,
-      "nationalParks": []
-   },
-   "Kansas": {
-      "abbreviation": "KS",
-      "capitalCity": "Topeka",
-      "dateEstablished": "Jan 29, 1861",
-      "Population": 2913123,
-      "totalAreaMi2": 82278,
-      "totalLandAreaMi2": 81759,
-      "totalWaterAreaMi2": 520,
-      "nationalParks": []
-   },
-   "Kentucky": {
-      "abbreviation": "KY",
-      "capitalCity": "Frankfort",
-      "dateEstablished": "Jun 1, 1792",
-      "Population": 4454189,
-      "totalAreaMi2": 40408,
-      "totalLandAreaMi2": 39486,
-      "totalWaterAreaMi2": 921,
-      "nationalParks": ["Mammoth Cave"]
-   },
-   "Louisiana": {
-      "abbreviation": "LA",
-      "capitalCity": "Baton Rouge",
-      "dateEstablished": "Apr 30, 1812",
-      "Population": 4684333,
-      "totalAreaMi2": 52378,
-      "totalLandAreaMi2": 43204,
-      "totalWaterAreaMi2": 9174,
-      "nationalParks": []
-   },
-   "Maine": {
-      "abbreviation": "ME",
-      "capitalCity": "Augusta",
-      "dateEstablished": "Mar 15, 1820",
-      "Population": 1335907,
-      "totalAreaMi2": 35380,
-      "totalLandAreaMi2": 30843,
-      "totalWaterAreaMi2": 4537,
-      "nationalParks": ["Acadia"]
-   },
-   "Maryland": {
-      "abbreviation": "MD",
-      "capitalCity": "Annapolis",
-      "dateEstablished": "Apr 28, 1788",
-      "Population": 6052177,
-      "totalAreaMi2": 12406,
-      "totalLandAreaMi2": 9707,
-      "totalWaterAreaMi2": 2699,
-      "nationalParks": []
-   },
-   "Massachusetts": {
-      "abbreviation": "MA",
-      "capitalCity": "Boston",
-      "dateEstablished": "Feb 6, 1788",
-      "Population": 6859819,
-      "totalAreaMi2": 10554,
-      "totalLandAreaMi2": 7800,
-      "totalWaterAreaMi2": 2754,
-      "nationalParks": []
-   },
-   "Michigan": {
-      "abbreviation": "MI",
-      "capitalCity": "Lansing",
-      "dateEstablished": "Jan 26, 1837",
-      "Population": 9962311,
-      "totalAreaMi2": 96714,
-      "totalLandAreaMi2": 56539,
-      "totalWaterAreaMi2": 40175,
-      "nationalParks": ["Isle Royale"]
-   },
-   "Minnesota": {
-      "abbreviation": "MN",
-      "capitalCity": "St. Paul",
-      "dateEstablished": "May 11, 1858",
-      "Population": 5576606,
-      "totalAreaMi2": 86936,
-      "totalLandAreaMi2": 79627,
-      "totalWaterAreaMi2": 7309,
-      "nationalParks": ["Voyageurs"]
-   },
-   "Mississippi": {
-      "abbreviation": "MS",
-      "capitalCity": "Jackson",
-      "dateEstablished": "Dec 10, 1817",
-      "Population": 2984100,
-      "totalAreaMi2": 48432,
-      "totalLandAreaMi2": 46923,
-      "totalWaterAreaMi2": 1508,
-      "nationalParks": []
-   },
-   "Missouri": {
-      "abbreviation": "MO",
-      "capitalCity": "Jefferson City",
-      "dateEstablished": "Aug 10, 1821",
-      "Population": 6113532,
-      "totalAreaMi2": 69707,
-      "totalLandAreaMi2": 68742,
-      "totalWaterAreaMi2": 965,
-      "nationalParks": ["Gateway Arch"]
-   },
-   "Montana": {
-      "abbreviation": "MT",
-      "capitalCity": "Helena",
-      "dateEstablished": "Nov 8, 1889",
-      "Population": 1050493,
-      "totalAreaMi2": 147040,
-      "totalLandAreaMi2": 145546,
-      "totalWaterAreaMi2": 1494,
-      "nationalParks": ["Glacier", "Yellowstone"]
-   },
-   "Nebraska": {
-      "abbreviation": "NE",
-      "capitalCity": "Lincoln",
-      "dateEstablished": "Mar 1, 1867",
-      "Population": 1920076,
-      "totalAreaMi2": 77348,
-      "totalLandAreaMi2": 76824,
-      "totalWaterAreaMi2": 524,
-      "nationalParks": []
-   },
-   "Nevada": {
-      "abbreviation": "NV",
-      "capitalCity": "Carson City",
-      "dateEstablished": "Oct 31, 1864",
-      "Population": 2998039,
-      "totalAreaMi2": 110572,
-      "totalLandAreaMi2": 109781,
-      "totalWaterAreaMi2": 791,
-      "nationalParks": ["Death Valley", "Great Basin"]
-   },
-   "New Hampshire": {
-      "abbreviation": "NH",
-      "capitalCity": "Concord",
-      "dateEstablished": "Jun 21, 1788",
-      "Population": 1342795,
-      "totalAreaMi2": 9349,
-      "totalLandAreaMi2": 8953,
-      "totalWaterAreaMi2": 397,
-      "nationalParks": []
-   },
-   "New Jersey": {
-      "abbreviation": "NJ",
-      "capitalCity": "Trenton",
-      "dateEstablished": "Dec 18, 1787",
-      "Population": 9005644,
-      "totalAreaMi2": 8723,
-      "totalLandAreaMi2": 7354,
-      "totalWaterAreaMi2": 1368,
-      "nationalParks": []
-   },
-   "New Mexico": {
-      "abbreviation": "NM",
-      "capitalCity": "Santa Fe",
-      "dateEstablished": "Jan 6, 1912",
-      "Population": 2088070,
-      "totalAreaMi2": 121590,
-      "totalLandAreaMi2": 121298,
-      "totalWaterAreaMi2": 292,
-      "nationalParks": ["Carlsbad Caverns"]
-   },
-   "New York": {
-      "abbreviation": "NY",
-      "capitalCity": "Albany",
-      "dateEstablished": "Jul 26, 1788",
-      "Population": 19849399,
-      "totalAreaMi2": 54555,
-      "totalLandAreaMi2": 47126,
-      "totalWaterAreaMi2": 7429,
-      "nationalParks": []
-   },
-   "North Carolina": {
-      "abbreviation": "NC",
-      "capitalCity": "Raleigh",
-      "dateEstablished": "Nov 21, 1789",
-      "Population": 10273419,
-      "totalAreaMi2": 53819,
-      "totalLandAreaMi2": 48618,
-      "totalWaterAreaMi2": 5201,
-      "nationalParks": ["Great Smoky Mountains"]
-   },
-   "North Dakota": {
-      "abbreviation": "ND",
-      "capitalCity": "Bismarck",
-      "dateEstablished": "Nov 2, 1889",
-      "Population": 755393,
-      "totalAreaMi2": 70698,
-      "totalLandAreaMi2": 69001,
-      "totalWaterAreaMi2": 1698,
-      "nationalParks": ["Theodore Roosevelt"]
-   },
-   "Ohio": {
-      "abbreviation": "OH",
-      "capitalCity": "Columbus",
-      "dateEstablished": "Mar 1, 1803",
-      "Population": 11658609,
-      "totalAreaMi2": 44826,
-      "totalLandAreaMi2": 40861,
-      "totalWaterAreaMi2": 3965,
-      "nationalParks": ["Cuyahoga Valley"]
-   },
-   "Oklahoma": {
-      "abbreviation": "OK",
-      "capitalCity": "Oklahoma City",
-      "dateEstablished": "Nov 16, 1907",
-      "Population": 3930864,
-      "totalAreaMi2": 69899,
-      "totalLandAreaMi2": 68595,
-      "totalWaterAreaMi2": 1304,
-      "nationalParks": []
-   },
-   "Oregon": {
-      "abbreviation": "OR",
-      "capitalCity": "Salem",
-      "dateEstablished": "Feb 14, 1859",
-      "Population": 4142776,
-      "totalAreaMi2": 98379,
-      "totalLandAreaMi2": 95988,
-      "totalWaterAreaMi2": 2391,
-      "nationalParks": ["Crater Lake"]
-   },
-   "Pennsylvania": {
-      "abbreviation": "PA",
-      "capitalCity": "Harrisburg",
-      "dateEstablished": "Dec 12, 1787",
-      "Population": 12805537,
-      "totalAreaMi2": 46054,
-      "totalLandAreaMi2": 44743,
-      "totalWaterAreaMi2": 1312,
-      "nationalParks": []
-   },
-   "Rhode Island": {
-      "abbreviation": "RI",
-      "capitalCity": "Providence",
-      "dateEstablished": "May 29, 1790",
-      "Population": 1059639,
-      "totalAreaMi2": 1545,
-      "totalLandAreaMi2": 1034,
-      "totalWaterAreaMi2": 511,
-      "nationalParks": []
-   },
-   "South Carolina": {
-      "abbreviation": "SC",
-      "capitalCity": "Columbia",
-      "dateEstablished": "May 23, 1788",
-      "Population": 5024369,
-      "totalAreaMi2": 32020,
-      "totalLandAreaMi2": 30061,
-      "totalWaterAreaMi2": 1960,
-      "nationalParks": ["Conagree"]
-   },
-   "South Dakota": {
-      "abbreviation": "SD",
-      "capitalCity": "Pierre",
-      "dateEstablished": "Nov 2, 1889",
-      "Population": 869666,
-      "totalAreaMi2": 77116,
-      "totalLandAreaMi2": 75811,
-      "totalWaterAreaMi2": 1305,
-      "nationalParks": ["Badlands", "Wind Cave"]
-   },
-   "Tennessee": {
-      "abbreviation": "TN",
-      "capitalCity": "Nashville",
-      "dateEstablished": "Jun 1, 1796",
-      "Population": 6715984,
-      "totalAreaMi2": 42144,
-      "totalLandAreaMi2": 41235,
-      "totalWaterAreaMi2": 909,
-      "nationalParks": ["Great Smoky Mountains"]
-   },
-   "Texas": {
-      "abbreviation": "TX",
-      "capitalCity": "Austin",
-      "dateEstablished": "Dec 29, 1845",
-      "Population": 28304596,
-      "totalAreaMi2": 268596,
-      "totalLandAreaMi2": 261232,
-      "totalWaterAreaMi2": 7365,
-      "nationalParks": ["Big Bend", "Guadalupe Mountains"]
-   },
-   "Utah": {
-      "abbreviation": "UT",
-      "capitalCity": "Salt Lake City",
-      "dateEstablished": "Jan 4, 1896",
-      "Population": 3101833,
-      "totalAreaMi2": 84897,
-      "totalLandAreaMi2": 82170,
-      "totalWaterAreaMi2": 2727,
-      "nationalParks": ["Arches", "Bryce Canyon", "Canyonlands", "Capitol Reef", "Zion"]
-   },
-   "Vermont": {
-      "abbreviation": "VT",
-      "capitalCity": "Montpelier",
-      "dateEstablished": "Mar 4, 1791",
-      "Population": 623657,
-      "totalAreaMi2": 9616,
-      "totalLandAreaMi2": 9217,
-      "totalWaterAreaMi2": 400,
-      "nationalParks": []
-   },
-   "Virginia": {
-      "abbreviation": "VA",
-      "capitalCity": "Richmond",
-      "dateEstablished": "Jun 25, 1788",
-      "Population": 8470020,
-      "totalAreaMi2": 42775,
-      "totalLandAreaMi2": 39490,
-      "totalWaterAreaMi2": 3285,
-      "nationalParks": ["Shenandoah"]
-   },
-   "Washington": {
-      "abbreviation": "WA",
-      "capitalCity": "Olympia",
-      "dateEstablished": "Nov 11, 1889",
-      "Population": 7405743,
-      "totalAreaMi2": 71298,
-      "totalLandAreaMi2": 66456,
-      "totalWaterAreaMi2": 4842,
-      "nationalParks": ["Mount Rainier", "North Cascades", "Olympic"]
-   },
-   "West Virginia": {
-      "abbreviation": "WV",
-      "capitalCity": "Charleston",
-      "dateEstablished": "Jun 20, 1863",
-      "Population": 1815857,
-      "totalAreaMi2": 24230,
-      "totalLandAreaMi2": 24038,
-      "totalWaterAreaMi2": 192,
-      "nationalParks": []
-   },
-   "Wisconsin": {
-      "abbreviation": "WI",
-      "capitalCity": "Madison",
-      "dateEstablished": "May 29, 1848",
-      "Population": 5795483,
-      "totalAreaMi2": 65496,
-      "totalLandAreaMi2": 54158,
-      "totalWaterAreaMi2": 11339,
-      "nationalParks": []
-   },
-   "Wyoming": {
-      "abbreviation": "WY",
-      "capitalCity": "Cheyenne",
-      "dateEstablished": "Jul 10, 1890",
-      "Population": 579315,
-      "totalAreaMi2": 97813,
-      "totalLandAreaMi2": 97093,
-      "totalWaterAreaMi2": 720,
-      "nationalParks": ["Grand Teton", "Yellowstone"]
-   },
-   "American Samoa": {
-      "abbreviation": "AS",
-      "capitalCity": "Pago Pago",
-      "dateEstablished": 1900,
-      "Population": 57400,
-      "totalAreaMi2": 581,
-      "totalLandAreaMi2": 76,
-      "totalWaterAreaMi2": 505,
-      "nationalParks": ["American Samoa"]
-   },
-   "U.S. Virgin Islands": {
-      "abbreviation": "VI",
-      "capitalCity": "Charlotte Amalie",
-      "dateEstablished": 1917,
-      "Population": 103700,
-      "totalAreaMi2": 733,
-      "totalLandAreaMi2": 134,
-      "totalWaterAreaMi2": 599,
-      "nationalParks": ["Virgin Islands"]
-   },
-   "District of Columbia": {
-      "abbreviation": "DC",
-      "capitalCity": null,
-      "dateEstablished": "Jul 16, 1790",
-      "Population": 693972,
-      "totalAreaMi2": 68,
-      "totalLandAreaMi2": 61,
-      "totalWaterAreaMi2": 7,
-      "nationalParks": []
-   },
-   "Guam": {
-      "abbreviation": "GU",
-      "capitalCity": "Hagatna",
-      "dateEstablished": 1899,
-      "Population": 161700,
-      "totalAreaMi2": 571,
-      "totalLandAreaMi2": 210,
-      "totalWaterAreaMi2": 361,
-      "nationalParks": []
-   },
-   "Northern Mariana Islands": {
-      "abbreviation": "MP",
-      "capitalCity": "Saipan",
-      "dateEstablished": 1986,
-      "Population": 52300,
-      "totalAreaMi2": 1976,
-      "totalLandAreaMi2": 182,
-      "totalWaterAreaMi2": 1793,
-      "nationalParks": []
-   },
-   "Puerto Rico": {
-      "abbreviation": "PR",
-      "capitalCity": "San Juan",
-      "dateEstablished": 1899,
-      "Population": 3337177,
-      "totalAreaMi2": 5325,
-      "totalLandAreaMi2": 3424,
-      "totalWaterAreaMi2": 1901,
-      "nationalParks": []
-   }
+  "Alabama": {
+     "abbreviation": "AL",
+     "latitude": 32.806671,
+     "longitude": -86.79113,
+     "capitalCity": "Montgomery",
+     "dateEstablished": "Dec 14, 1819",
+     "Population": 4874747,
+     "stateFlower": "Camellia",
+     "totalAreaMi2": 52420,
+     "totalLandAreaMi2": 50645,
+     "totalWaterAreaMi2": 1775,
+     "nationalParks": []
+  },
+  "Alaska": {
+     "abbreviation": "AK",
+     "latitude": 61.370716,
+     "longitude": -152.404419,
+     "capitalCity": "Juneau",
+     "dateEstablished": "Jan 3, 1959",
+     "Population": 739795,
+     "stateFlower": "Forget Me Not",
+     "totalAreaMi2": 665384,
+     "totalLandAreaMi2": 570641,
+     "totalWaterAreaMi2": 94743,
+     "nationalParks": ["Denali", "Gates of the Arctic", "Glacier Bay", "Katmai", "Kenai Fjords", "Kobuk Valley", "Lake Clark", "Wrangell - St. Elias"]
+  },
+  "Arizona": {
+     "abbreviation": "AZ",
+     "latitude": 33.729759,
+     "longitude": -111.431221,
+     "capitalCity": "Phoenix",
+     "dateEstablished": "Feb 14, 1912",
+     "Population": 7016270,
+     "stateFlower": "Saguaro Cactus Blossom",
+     "totalAreaMi2": 113990,
+     "totalLandAreaMi2": 113594,
+     "totalWaterAreaMi2": 396,
+     "nationalParks": ["Grand Canyon", "Petrified Forest", "Saguaro"]
+  },
+  "Arkansas": {
+     "abbreviation": "AR",
+     "latitude": 34.969704,
+     "longitude": -92.373123,
+     "capitalCity": "Little Rock",
+     "dateEstablished": "Jun 15, 1836",
+     "Population": 3004279,
+     "stateFlower": "Apple Blossom",
+     "totalAreaMi2": 53179,
+     "totalLandAreaMi2": 52035,
+     "totalWaterAreaMi2": 1143,
+     "nationalParks": ["Hot Springs"]
+  },
+  "California": {
+     "abbreviation": "CA",
+     "latitude": 36.116203,
+     "longitude": -119.681564,
+     "capitalCity": "Sacramento",
+     "dateEstablished": "Sep 9, 1850",
+     "Population": 39536653,
+     "stateFlower": "California Poppy",
+     "totalAreaMi2": 163695,
+     "totalLandAreaMi2": 155779,
+     "totalWaterAreaMi2": 7916,
+     "nationalParks": ["Channel Islands", "Death Valley", "Joshua Tree", "Kings Canyon", "Lassen Volcanic", "Pinnacles", "Redwood", "Sequoia", "Yosemite"]
+  },
+  "Colorado": {
+     "abbreviation": "CO",
+     "latitude": 39.059811,
+     "longitude": -105.311104,
+     "capitalCity": "Denver",
+     "dateEstablished": "Aug 1, 1876",
+     "Population": 5607154,
+     "stateFlower": "Rocky Mountain Columbine",
+     "totalAreaMi2": 104094,
+     "totalLandAreaMi2": 103642,
+     "totalWaterAreaMi2": 452,
+     "nationalParks": ["Black Canyon of the Gunnison", "Great Sand Dunes", "Mesa Verde" ,"Rocky Mountain"]
+  },
+  "Connecticut": {
+     "abbreviation": "CT",
+     "latitude": 41.597782,
+     "longitude": -72.755371,
+     "capitalCity": "Hartford",
+     "dateEstablished": "Jan 9, 1788",
+     "Population": 3588184,
+     "stateFlower": "Mountain laurel",
+     "totalAreaMi2": 5543,
+     "totalLandAreaMi2": 4842,
+     "totalWaterAreaMi2": 701,
+     "nationalParks": []
+  },
+  "Delaware": {
+     "abbreviation": "DE",
+     "latitude": 39.318523,
+     "longitude": -75.507141,
+     "capitalCity": "Dover",
+     "dateEstablished": "Dec 7, 1787",
+     "Population": 961939,
+     "stateFlower": "Peach Blossom",
+     "totalAreaMi2": 2489,
+     "totalLandAreaMi2": 1949,
+     "totalWaterAreaMi2": 540,
+     "nationalParks": []
+  },
+  "Florida": {
+     "abbreviation": "FL",
+     "latitude": 27.766279,
+     "longitude": -81.686783,
+     "capitalCity": "Tallahassee",
+     "dateEstablished": "Mar 3, 1845",
+     "Population": 20984400,
+     "stateFlower": "Orange Blossom",
+     "totalAreaMi2": 65758,
+     "totalLandAreaMi2": 53625,
+     "totalWaterAreaMi2": 12133,
+     "nationalParks": ["Biscayne", "Dry Tortugas", "Everglades"]
+  },
+  "Georgia": {
+     "abbreviation": "GA",
+     "latitude": 33.040619,
+     "longitude": -83.643074,
+     "capitalCity": "Atlanta",
+     "dateEstablished": "Jan 2, 1788",
+     "Population": 10429379,
+     "stateFlower": "Cherokee Rose",
+     "totalAreaMi2": 59425,
+     "totalLandAreaMi2": 57513,
+     "totalWaterAreaMi2": 1912,
+     "nationalParks": []
+  },
+  "Hawaii": {
+     "abbreviation": "HI",
+     "latitude": 21.094318,
+     "longitude": -157.498337,
+     "capitalCity": "Honolulu",
+     "dateEstablished": "Aug 21, 1959",
+     "Population": 1427538,
+     "stateFlower": "Pua Aloalo",
+     "totalAreaMi2": 10932,
+     "totalLandAreaMi2": 6423,
+     "totalWaterAreaMi2": 4509,
+     "nationalParks": ["Haleakala", "Hawaii Volcanoes"]
+  },
+  "Idaho": {
+     "abbreviation": "ID",
+     "latitude": 44.240459,
+     "longitude": -114.478828,
+     "capitalCity": "Boise",
+     "dateEstablished": "Jul 3, 1890",
+     "Population": 1716943,
+     "stateFlower": "Syringa - Mock Orange",
+     "totalAreaMi2": 83569,
+     "totalLandAreaMi2": 82643,
+     "totalWaterAreaMi2": 926,
+     "nationalParks": ["Yellowstone"]
+  },
+  "Illinois": {
+     "abbreviation": "IL",
+     "latitude": 40.349457,
+     "longitude": -88.986137,
+     "capitalCity": "Springfield",
+     "dateEstablished": "Dec 3, 1818",
+     "Population": 12802023,
+     "stateFlower": "Purple Violet",
+     "totalAreaMi2": 57914,
+     "totalLandAreaMi2": 55519,
+     "totalWaterAreaMi2": 2395,
+     "nationalParks": []
+  },
+  "Indiana": {
+     "abbreviation": "IN",
+     "latitude": 39.849426,
+     "longitude": -86.258278,
+     "capitalCity": "Indianapolis",
+     "dateEstablished": "Dec 11, 1816",
+     "Population": 6666818,
+     "stateFlower": "Peony",
+     "totalAreaMi2": 36420,
+     "totalLandAreaMi2": 35826,
+     "totalWaterAreaMi2": 593,
+     "nationalParks": []
+  },
+  "Iowa": {
+     "abbreviation": "IA",
+     "latitude": 42.011539,
+     "longitude": -93.210526,
+     "capitalCity": "Des Moines",
+     "dateEstablished": "Dec 28, 1846",
+     "Population": 3145711,
+     "stateFlower": "Wild Prairie Rose",
+     "totalAreaMi2": 56273,
+     "totalLandAreaMi2": 55857,
+     "totalWaterAreaMi2": 416,
+     "nationalParks": []
+  },
+  "Kansas": {
+     "abbreviation": "KS",
+     "latitude": 38.5266,
+     "longitude": -96.726486,
+     "capitalCity": "Topeka",
+     "dateEstablished": "Jan 29, 1861",
+     "Population": 2913123,
+     "stateFlower": "Sunflower",
+     "totalAreaMi2": 82278,
+     "totalLandAreaMi2": 81759,
+     "totalWaterAreaMi2": 520,
+     "nationalParks": []
+  },
+  "Kentucky": {
+     "abbreviation": "KY",
+     "latitude": 37.66814,
+     "longitude": -84.670067,
+     "capitalCity": "Frankfort",
+     "dateEstablished": "Jun 1, 1792",
+     "Population": 4454189,
+     "stateFlower": "Goldenrod",
+     "totalAreaMi2": 40408,
+     "totalLandAreaMi2": 39486,
+     "totalWaterAreaMi2": 921,
+     "nationalParks": ["Mammoth Cave"]
+  },
+  "Louisiana": {
+     "abbreviation": "LA",
+     "latitude": 31.169546,
+     "longitude": -91.867805,
+     "capitalCity": "Baton Rouge",
+     "dateEstablished": "Apr 30, 1812",
+     "Population": 4684333,
+     "stateFlower": "Magnolia",
+     "totalAreaMi2": 52378,
+     "totalLandAreaMi2": 43204,
+     "totalWaterAreaMi2": 9174,
+     "nationalParks": []
+  },
+  "Maine": {
+     "abbreviation": "ME",
+     "latitude": 44.693947,
+     "longitude": -69.381927,
+     "capitalCity": "Augusta",
+     "dateEstablished": "Mar 15, 1820",
+     "Population": 1335907,
+     "stateFlower": "White pine cone and tassel",
+     "totalAreaMi2": 35380,
+     "totalLandAreaMi2": 30843,
+     "totalWaterAreaMi2": 4537,
+     "nationalParks": ["Acadia"]
+  },
+  "Maryland": {
+     "abbreviation": "MD",
+     "latitude": 39.063946,
+     "longitude": -76.802101,
+     "capitalCity": "Annapolis",
+     "dateEstablished": "Apr 28, 1788",
+     "Population": 6052177,
+     "stateFlower": "Black-eyed susan",
+     "totalAreaMi2": 12406,
+     "totalLandAreaMi2": 9707,
+     "totalWaterAreaMi2": 2699,
+     "nationalParks": []
+  },
+  "Massachusetts": {
+     "abbreviation": "MA",
+     "latitude": 42.230171,
+     "longitude": -71.530106,
+     "capitalCity": "Boston",
+     "dateEstablished": "Feb 6, 1788",
+     "Population": 6859819,
+     "stateFlower": "Trailing-Arbutus",
+     "totalAreaMi2": 10554,
+     "totalLandAreaMi2": 7800,
+     "totalWaterAreaMi2": 2754,
+     "nationalParks": []
+  },
+  "Michigan": {
+     "abbreviation": "MI",
+     "latitude": 43.326618,
+     "longitude": -84.536095,
+     "capitalCity": "Lansing",
+     "dateEstablished": "Jan 26, 1837",
+     "Population": 9962311,
+     "stateFlower": "Apple Blossom",
+     "totalAreaMi2": 96714,
+     "totalLandAreaMi2": 56539,
+     "totalWaterAreaMi2": 40175,
+     "nationalParks": ["Isle Royale"]
+  },
+  "Minnesota": {
+     "abbreviation": "MN",
+     "latitude": 45.694454,
+     "longitude": -93.900192,
+     "capitalCity": "St. Paul",
+     "dateEstablished": "May 11, 1858",
+     "Population": 5576606,
+     "stateFlower": "Pink and white lady's-slipper",
+     "totalAreaMi2": 86936,
+     "totalLandAreaMi2": 79627,
+     "totalWaterAreaMi2": 7309,
+     "nationalParks": ["Voyageurs"]
+  },
+  "Mississippi": {
+     "abbreviation": "MS",
+     "latitude": 32.741646,
+     "longitude": -89.678696,
+     "capitalCity": "Jackson",
+     "dateEstablished": "Dec 10, 1817",
+     "Population": 2984100,
+     "stateFlower": "Magnolia",
+     "totalAreaMi2": 48432,
+     "totalLandAreaMi2": 46923,
+     "totalWaterAreaMi2": 1508,
+     "nationalParks": []
+  },
+  "Missouri": {
+     "abbreviation": "MO",
+     "latitude": 38.456085,
+     "longitude": -92.288368,
+     "capitalCity": "Jefferson City",
+     "dateEstablished": "Aug 10, 1821",
+     "Population": 6113532,
+     "stateFlower": "Hawthorn",
+     "totalAreaMi2": 69707,
+     "totalLandAreaMi2": 68742,
+     "totalWaterAreaMi2": 965,
+     "nationalParks": ["Gateway Arch"]
+  },
+  "Montana": {
+     "abbreviation": "MT",
+     "latitude": 46.921925,
+     "longitude": -110.454353,
+     "capitalCity": "Helena",
+     "dateEstablished": "Nov 8, 1889",
+     "Population": 1050493,
+     "stateFlower": "Bitterroot",
+     "totalAreaMi2": 147040,
+     "totalLandAreaMi2": 145546,
+     "totalWaterAreaMi2": 1494,
+     "nationalParks": ["Glacier", "Yellowstone"]
+  },
+  "Nebraska": {
+     "abbreviation": "NE",
+     "latitude": 41.12537,
+     "longitude": -98.268082,
+     "capitalCity": "Lincoln",
+     "dateEstablished": "Mar 1, 1867",
+     "Population": 1920076,
+     "stateFlower": "Goldenrod",
+     "totalAreaMi2": 77348,
+     "totalLandAreaMi2": 76824,
+     "totalWaterAreaMi2": 524,
+     "nationalParks": []
+  },
+  "Nevada": {
+     "abbreviation": "NV",
+     "latitude": 38.313515,
+     "longitude": -117.055374,
+     "capitalCity": "Carson City",
+     "dateEstablished": "Oct 31, 1864",
+     "Population": 2998039,
+     "stateFlower": "Sagebrush",
+     "totalAreaMi2": 110572,
+     "totalLandAreaMi2": 109781,
+     "totalWaterAreaMi2": 791,
+     "nationalParks": ["Death Valley", "Great Basin"]
+  },
+  "New Hampshire": {
+     "abbreviation": "NH",
+     "latitude": 43.452492,
+     "longitude": -71.563896,
+     "capitalCity": "Concord",
+     "dateEstablished": "Jun 21, 1788",
+     "Population": 1342795,
+     "stateFlower": "Purple lilac",
+     "totalAreaMi2": 9349,
+     "totalLandAreaMi2": 8953,
+     "totalWaterAreaMi2": 397,
+     "nationalParks": []
+  },
+  "New Jersey": {
+     "abbreviation": "NJ",
+     "latitude": 40.298904,
+     "longitude": -74.521011,
+     "capitalCity": "Trenton",
+     "dateEstablished": "Dec 18, 1787",
+     "Population": 9005644,
+     "stateFlower": "Violet",
+     "totalAreaMi2": 8723,
+     "totalLandAreaMi2": 7354,
+     "totalWaterAreaMi2": 1368,
+     "nationalParks": []
+  },
+  "New Mexico": {
+     "abbreviation": "NM",
+     "latitude": 34.840515,
+     "longitude": -106.248482,
+     "capitalCity": "Santa Fe",
+     "dateEstablished": "Jan 6, 1912",
+     "Population": 2088070,
+     "stateFlower": "Yucca flower",
+     "totalAreaMi2": 121590,
+     "totalLandAreaMi2": 121298,
+     "totalWaterAreaMi2": 292,
+     "nationalParks": ["Carlsbad Caverns"]
+  },
+  "New York": {
+     "abbreviation": "NY",
+     "latitude": 42.165726,
+     "longitude": -74.948051,
+     "capitalCity": "Albany",
+     "dateEstablished": "Jul 26, 1788",
+     "Population": 19849399,
+     "stateFlower": "Rose",
+     "totalAreaMi2": 54555,
+     "totalLandAreaMi2": 47126,
+     "totalWaterAreaMi2": 7429,
+     "nationalParks": []
+  },
+  "North Carolina": {
+     "abbreviation": "NC",
+     "latitude": 35.630066,
+     "longitude": -79.806419,
+     "capitalCity": "Raleigh",
+     "dateEstablished": "Nov 21, 1789",
+     "Population": 10273419,
+     "stateFlower": "American Dogwood",
+     "totalAreaMi2": 53819,
+     "totalLandAreaMi2": 48618,
+     "totalWaterAreaMi2": 5201,
+     "nationalParks": ["Great Smoky Mountains"]
+  },
+  "North Dakota": {
+     "abbreviation": "ND",
+     "latitude": 47.528912,
+     "longitude": -99.784012,
+     "capitalCity": "Bismarck",
+     "dateEstablished": "Nov 2, 1889",
+     "Population": 755393,
+     "stateFlower": "Wild Prairie Rose",
+     "totalAreaMi2": 70698,
+     "totalLandAreaMi2": 69001,
+     "totalWaterAreaMi2": 1698,
+     "nationalParks": ["Theodore Roosevelt"]
+  },
+  "Ohio": {
+     "abbreviation": "OH",
+     "latitude": 40.388783,
+     "longitude": -82.764915,
+     "capitalCity": "Columbus",
+     "dateEstablished": "Mar 1, 1803",
+     "Population": 11658609,
+     "stateFlower": "Scarlet Carnation",
+     "totalAreaMi2": 44826,
+     "totalLandAreaMi2": 40861,
+     "totalWaterAreaMi2": 3965,
+     "nationalParks": ["Cuyahoga Valley"]
+  },
+  "Oklahoma": {
+     "abbreviation": "OK",
+     "latitude": 35.565342,
+     "longitude": -96.928917,
+     "capitalCity": "Oklahoma City",
+     "dateEstablished": "Nov 16, 1907",
+     "Population": 3930864,
+     "stateFlower": "Mistletoe",
+     "totalAreaMi2": 69899,
+     "totalLandAreaMi2": 68595,
+     "totalWaterAreaMi2": 1304,
+     "nationalParks": []
+  },
+  "Oregon": {
+     "abbreviation": "OR",
+     "latitude": 44.572021,
+     "longitude": -122.070938,
+     "capitalCity": "Salem",
+     "dateEstablished": "Feb 14, 1859",
+     "Population": 4142776,
+     "stateFlower": "Oregon Grape",
+     "totalAreaMi2": 98379,
+     "totalLandAreaMi2": 95988,
+     "totalWaterAreaMi2": 2391,
+     "nationalParks": ["Crater Lake"]
+  },
+  "Pennsylvania": {
+     "abbreviation": "PA",
+     "latitude": 40.590752,
+     "longitude": -77.209755,
+     "capitalCity": "Harrisburg",
+     "dateEstablished": "Dec 12, 1787",
+     "Population": 12805537,
+     "stateFlower": "Mountain Laurel",
+     "totalAreaMi2": 46054,
+     "totalLandAreaMi2": 44743,
+     "totalWaterAreaMi2": 1312,
+     "nationalParks": []
+  },
+  "Rhode Island": {
+     "abbreviation": "RI",
+     "latitude": 41.680893,
+     "longitude": -71.51178,
+     "capitalCity": "Providence",
+     "dateEstablished": "May 29, 1790",
+     "Population": 1059639,
+     "stateFlower": "Violet",
+     "totalAreaMi2": 1545,
+     "totalLandAreaMi2": 1034,
+     "totalWaterAreaMi2": 511,
+     "nationalParks": []
+  },
+  "South Carolina": {
+     "abbreviation": "SC",
+     "latitude": 33.856892,
+     "longitude": -80.945007,
+     "capitalCity": "Columbia",
+     "dateEstablished": "May 23, 1788",
+     "Population": 5024369,
+     "stateFlower": "Yellow Jessamine",
+     "totalAreaMi2": 32020,
+     "totalLandAreaMi2": 30061,
+     "totalWaterAreaMi2": 1960,
+     "nationalParks": ["Conagree"]
+  },
+  "South Dakota": {
+     "abbreviation": "SD",
+     "latitude": 44.299782,
+     "longitude": -99.438828,
+     "capitalCity": "Pierre",
+     "dateEstablished": "Nov 2, 1889",
+     "Population": 869666,
+     "stateFlower": "Pasque Flower",
+     "totalAreaMi2": 77116,
+     "totalLandAreaMi2": 75811,
+     "totalWaterAreaMi2": 1305,
+     "nationalParks": ["Badlands", "Wind Cave"]
+  },
+  "Tennessee": {
+     "abbreviation": "TN",
+     "latitude": 35.747845,
+     "longitude": -86.692345,
+     "capitalCity": "Nashville",
+     "dateEstablished": "Jun 1, 1796",
+     "Population": 6715984,
+     "stateFlower": "Iris",
+     "totalAreaMi2": 42144,
+     "totalLandAreaMi2": 41235,
+     "totalWaterAreaMi2": 909,
+     "nationalParks": ["Great Smoky Mountains"]
+  },
+  "Texas": {
+     "abbreviation": "TX",
+     "latitude": 31.054487,
+     "longitude": -97.563461,
+     "capitalCity": "Austin",
+     "dateEstablished": "Dec 29, 1845",
+     "Population": 28304596,
+     "stateFlower": "Bluebonnet",
+     "totalAreaMi2": 268596,
+     "totalLandAreaMi2": 261232,
+     "totalWaterAreaMi2": 7365,
+     "nationalParks": ["Big Bend", "Guadalupe Mountains"]
+  },
+  "Utah": {
+     "abbreviation": "UT",
+     "latitude": 40.150032,
+     "longitude": -111.862434,
+     "capitalCity": "Salt Lake City",
+     "dateEstablished": "Jan 4, 1896",
+     "Population": 3101833,
+     "stateFlower": "Sego lily",
+     "totalAreaMi2": 84897,
+     "totalLandAreaMi2": 82170,
+     "totalWaterAreaMi2": 2727,
+     "nationalParks": ["Arches", "Bryce Canyon", "Canyonlands", "Capitol Reef", "Zion"]
+  },
+  "Vermont": {
+     "abbreviation": "VT",
+     "latitude": 44.045876,
+     "longitude": -72.710686,
+     "capitalCity": "Montpelier",
+     "dateEstablished": "Mar 4, 1791",
+     "Population": 623657,
+     "stateFlower": "Red Clover",
+     "totalAreaMi2": 9616,
+     "totalLandAreaMi2": 9217,
+     "totalWaterAreaMi2": 400,
+     "nationalParks": []
+  },
+  "Virginia": {
+     "abbreviation": "VA",
+     "latitude": 37.769337,
+     "longitude": -78.169968,
+     "capitalCity": "Richmond",
+     "dateEstablished": "Jun 25, 1788",
+     "Population": 8470020,
+     "stateFlower": "American Dogwood",
+     "totalAreaMi2": 42775,
+     "totalLandAreaMi2": 39490,
+     "totalWaterAreaMi2": 3285,
+     "nationalParks": ["Shenandoah"]
+  },
+  "Washington": {
+     "abbreviation": "WA",
+     "latitude": 47.400902,
+     "longitude": -121.490494,
+     "capitalCity": "Olympia",
+     "dateEstablished": "Nov 11, 1889",
+     "Population": 7405743,
+     "stateFlower": "Coast Rhododendron",
+     "totalAreaMi2": 71298,
+     "totalLandAreaMi2": 66456,
+     "totalWaterAreaMi2": 4842,
+     "nationalParks": ["Mount Rainier", "North Cascades", "Olympic"]
+  },
+  "West Virginia": {
+     "abbreviation": "WV",
+     "latitude": 38.491226,
+     "longitude": -80.954453,
+     "capitalCity": "Charleston",
+     "dateEstablished": "Jun 20, 1863",
+     "Population": 1815857,
+     "stateFlower": "Rhododendron",
+     "totalAreaMi2": 24230,
+     "totalLandAreaMi2": 24038,
+     "totalWaterAreaMi2": 192,
+     "nationalParks": []
+  },
+  "Wisconsin": {
+     "abbreviation": "WI",
+     "latitude": 44.268543,
+     "longitude": -89.616508,
+     "capitalCity": "Madison",
+     "dateEstablished": "May 29, 1848",
+     "Population": 5795483,
+     "stateFlower": "Wood Violet",
+     "totalAreaMi2": 65496,
+     "totalLandAreaMi2": 54158,
+     "totalWaterAreaMi2": 11339,
+     "nationalParks": []
+  },
+  "Wyoming": {
+     "abbreviation": "WY",
+     "latitude": 42.755966,
+     "longitude": -107.30249,
+     "capitalCity": "Cheyenne",
+     "dateEstablished": "Jul 10, 1890",
+     "Population": 579315,
+     "stateFlower": "Indian Paintbrush",
+     "totalAreaMi2": 97813,
+     "totalLandAreaMi2": 97093,
+     "totalWaterAreaMi2": 720,
+     "nationalParks": ["Grand Teton", "Yellowstone"]
+  },
+  "American Samoa": {
+     "abbreviation": "AS",
+     "latitude": -14.271,
+     "longitude": -170.1322,
+     "capitalCity": "Pago Pago",
+     "dateEstablished": 1900,
+     "Population": 57400,
+     "stateFlower": "Paogo",
+     "totalAreaMi2": 581,
+     "totalLandAreaMi2": 76,
+     "totalWaterAreaMi2": 505,
+     "nationalParks": ["American Samoa"]
+  },
+  "U.S. Virgin Islands": {
+     "abbreviation": "VI",
+     "latitude": 18.3358,
+     "longitude": -64.8963,
+     "capitalCity": "Charlotte Amalie",
+     "dateEstablished": 1917,
+     "Population": 103700,
+     "stateFlower": "Yellow Trumpetbush",
+     "totalAreaMi2": 733,
+     "totalLandAreaMi2": 134,
+     "totalWaterAreaMi2": 599,
+     "nationalParks": ["Virgin Islands"]
+  },
+  "District of Columbia": {
+     "abbreviation": "DC",
+     "latitude": 38.897438,
+     "longitude": -77.026817,
+     "capitalCity": "Washington, DC",
+     "dateEstablished": "Jul 16, 1790",
+     "Population": 693972,
+     "stateFlower": "American Beauty Rose",
+     "totalAreaMi2": 68,
+     "totalLandAreaMi2": 61,
+     "totalWaterAreaMi2": 7,
+     "nationalParks": []
+  },
+  "Guam": {
+     "abbreviation": "GU",
+     "latitude": 13.4443,
+     "longitude": 144.7937,
+     "capitalCity": "Hagatna",
+     "dateEstablished": 1899,
+     "Population": 161700,
+     "stateFlower": "Paper Flower",
+     "totalAreaMi2": 571,
+     "totalLandAreaMi2": 210,
+     "totalWaterAreaMi2": 361,
+     "nationalParks": []
+  },
+  "Northern Mariana Islands": {
+     "abbreviation": "MP",
+     "latitude": 15.0979,
+     "longitude": 145.6739,
+     "capitalCity": "Saipan",
+     "dateEstablished": 1986,
+     "Population": 52300,
+     "stateFlower": "Plumeria",
+     "totalAreaMi2": 1976,
+     "totalLandAreaMi2": 182,
+     "totalWaterAreaMi2": 1793,
+     "nationalParks": []
+  },
+  "Puerto Rico": {
+     "abbreviation": "PR",
+     "latitude": 18.2208,
+     "longitude": -66.5901,
+     "capitalCity": "San Juan",
+     "dateEstablished": 1899,
+     "Population": 3337177,
+     "stateFlower": "Hibiscus",
+     "totalAreaMi2": 5325,
+     "totalLandAreaMi2": 3424,
+     "totalWaterAreaMi2": 1901,
+     "nationalParks": []
+  }
 };
 
 module.exports = {
