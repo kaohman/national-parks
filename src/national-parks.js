@@ -27,7 +27,7 @@ const nationalParks = [
    "image": "assets/great-smoky-mtns.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Blinutne\" title=\"User:Blinutne\">Blinutne</a>, <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=2518140\">Link</a>",
    "sizeAcres": 52242688,
-   "description": "The Great Smoky Mountains, part of the Appalachian Mountains, span a wide range of elevations, making them home to over 400 vertebrate species, 100 tree species, and 5000 plant species. Hiking is the park\'s main attraction, with over 800 miles (1,300 km) of trails, including 70 miles (110 km) of the Appalachian Trail. Other activities include fishing, horseback riding, and touring nearly 80 historic structures."
+   "description": "The Great Smoky Mountains, part of the Appalachian Mountains, span a wide range of elevations, making them home to over 400 vertebrate species, 100 tree species, and 5000 plant species. Hiking is the park\\'s main attraction, with over 800 miles (1,300 km) of trails, including 70 miles (110 km) of the Appalachian Trail. Other activities include fishing, horseback riding, and touring nearly 80 historic structures."
  },
  {
    "parkName": "Yellowstone",
@@ -72,7 +72,7 @@ const nationalParks = [
    "image": "assets/gates-of-arctic.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/File:USFWS_alt_graphic_A.svg\" class=\"image\"></a>This image originates from the <a rel=\"nofollow\" class=\"external text\" href=\"http://digitalmedia.fws.gov/cdm/\">National Digital Library</a> of the <a href=\"https://en.wikipedia.org/wiki/United_States_Fish_and_Wildlife_Service\" class=\"extiw\" title=\"w:United States Fish and Wildlife Service\">United States Fish and Wildlife Service</a>at <a rel=\"nofollow\" class=\"external text\" href=\"http://digitalmedia.fws.gov/cdm/singleitem/collection/natdiglib/id/3957/rec/1\">this page</a>This tag does not indicate the copyright status of the attached work. A normal <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Copyright_tags\" title=\"Special:MyLanguage/Commons:Copyright tags\">copyright tag</a> is still required. See <a href=\"//commons.wikimedia.org/wiki/Special:MyLanguage/Commons:Licensing\" title=\"Special:MyLanguage/Commons:Licensing\">Commons:Licensing</a> for more information.See <a href=\"//commons.wikimedia.org/wiki/Category:Images_from_the_United_States_Fish_and_Wildlife_Service\" title=\"Category:Images from the United States Fish and Wildlife Service\">Category:Images from the United States Fish and Wildlife Service</a>.Transferred from <span class=\"plainlinks\"><a class=\"external text\" href=\"//en.wikipedia.org\">en.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Aconcagua\" title=\"User:Aconcagua\">Aconcagua</a> using <a href=\"https://tools.wmflabs.org/commonshelper/\" class=\"extiw\" title=\"toollabs:commonshelper/\">CommonsHelper</a>.Source: SL-02192URL: <a rel=\"nofollow\" class=\"external free\" href=\"https://digitalmedia.fws.gov/digital/collection/natdiglib/id/3957/rec/1\">https://digitalmedia.fws.gov/digital/collection/natdiglib/id/3957/rec/1</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=4495169\">Link</a>",
    "sizeAcres": 752389745,
-   "description": "The country\'s northernmost park protects an expanse of pure wilderness in Alaska\'s Brooks Range and has no park facilities. The land is home to Alaska Natives who have relied on the land and caribou for 11,000 years."
+   "description": "The country\\'s northernmost park protects an expanse of pure wilderness in Alaska\\'s Brooks Range and has no park facilities. The land is home to Alaska Natives who have relied on the land and caribou for 11,000 years."
  },
  {
    "parkName": "Glacier Bay",
@@ -162,7 +162,7 @@ const nationalParks = [
    "image": "assets/wrangell.jpg",
    "imageRef": "<a rel=\"nofollow\" class=\"external free\" href=\"http://pubs.usgs.gov/dds/dds-39/\">http://pubs.usgs.gov/dds/dds-39/</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=1982495\">Link</a>",
    "sizeAcres": 832314648,
-   "description": "An over 8 million acres (32,375 km2) plot of mountainous country—the largest national park in the system—protects the convergence of the Alaska, Chugach, and Wrangell-Saint Elias Ranges, which include many of the continent\'s tallest mountains and volcanoes, including the 18,008-foot Mount Saint Elias. More than a quarter of the park is covered with glaciers, including the tidewater Hubbard Glacier, piedmont Malaspina Glacier, and valley Nabesna Glacier."
+   "description": "An over 8 million acres (32,375 km2) plot of mountainous country—the largest national park in the system—protects the convergence of the Alaska, Chugach, and Wrangell-Saint Elias Ranges, which include many of the continent\\'s tallest mountains and volcanoes, including the 18,008-foot Mount Saint Elias. More than a quarter of the park is covered with glaciers, including the tidewater Hubbard Glacier, piedmont Malaspina Glacier, and valley Nabesna Glacier."
  },
  {
    "parkName": "American Samoa",
@@ -252,7 +252,7 @@ const nationalParks = [
    "image": "assets/channel-islands.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Rmhermen\" class=\"extiw\" title=\"wikipedia:User:Rmhermen\">Rmhermen</a> at <a href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia</a>. - Transferred from <span class=\"plainlinks\"><a class=\"external text\" href=\"//en.wikipedia.org\">en.wikipedia</a></span> to Commons., Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=3451089\">Link</a>",
    "sizeAcres": 24956100,
-   "description": "Five of the eight Channel Islands are protected, and half of the park\'s area is underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, and 145 are unique to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
+   "description": "Five of the eight Channel Islands are protected, and half of the park\\'s area is underwater. The islands have a unique Mediterranean ecosystem originally settled by the Chumash people. They are home to over 2,000 species of land plants and animals, and 145 are unique to them, including the island fox. Ferry services offer transportation to the islands from the mainland."
  },
  {
    "parkName": "Joshua Tree",
@@ -282,7 +282,7 @@ const nationalParks = [
    "image": "assets/kings-canyon.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Crd637&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Crd637 (page does not exist)\">Crd637</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=20032656\">Link</a>",
    "sizeAcres": 46190120,
-   "description": "Home to several giant sequoia groves and the General Grant Tree, the world\'s second largest measured tree, this park also features part of the Kings River, sculptor of the dramatic granite canyon that is its namesake, and the San Joaquin River, as well as Boyden Cave. Although Kings Canyon National Park was designated as such in 1940, it subsumed General Grant National Park, which had been established on October 1, 1890 as the United States\' fourth national park."
+   "description": "Home to several giant sequoia groves and the General Grant Tree, the world\\'s second largest measured tree, this park also features part of the Kings River, sculptor of the dramatic granite canyon that is its namesake, and the San Joaquin River, as well as Boyden Cave. Although Kings Canyon National Park was designated as such in 1940, it subsumed General Grant National Park, which had been established on October 1, 1890 as the United States\\' fourth national park."
  },
  {
    "parkName": "Lassen Volcanic",
@@ -312,7 +312,7 @@ const nationalParks = [
    "image": "assets/pinnacles.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Samartur&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Samartur (page does not exist)\">Samartur</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=32162401\">Link</a>",
    "sizeAcres": 2668573,
-   "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park\'s massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is home to the endangered California condor (Gymnogyps californianus) and one of the few locations in the world where these extremely rare birds can be seen in the wild. Pinnacles also supports a dense population of prairie falcons, and more than 13 species of bat which populate its talus caves."
+   "description": "Named for the eroded leftovers of a portion of an extinct volcano, the park\\'s massive black and gold monoliths of andesite and rhyolite are a popular destination for rock climbers. Hikers have access to trails crossing the Coast Range wilderness. The park is home to the endangered California condor (Gymnogyps californianus) and one of the few locations in the world where these extremely rare birds can be seen in the wild. Pinnacles also supports a dense population of prairie falcons, and more than 13 species of bat which populate its talus caves."
  },
  {
    "parkName": "Redwood",
@@ -342,7 +342,7 @@ const nationalParks = [
    "image": "assets/sequoia.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Davigoli\" class=\"extiw\" title=\"en:User:Davigoli\">Davigoli</a> at <a class=\"external text\" href=\"http://en.wikipedia.org\">en.wikipedia</a> - <a class=\"external text\" href=\"http://en.wikipedia.org\">en.wikipedia</a> (photo by Carey Goldstein); transferred to Commons by <a href=\"//commons.wikimedia.org/wiki/User:ThomasPusch\" title=\"User:ThomasPusch\">User:ThomasPusch</a> using <a rel=\"nofollow\" class=\"external text\" href=\"http://tools.wikimedia.de/~magnus/commonshelper.php\">CommonsHelper</a>., Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=5754700\">Link</a>",
    "sizeAcres": 40406263,
-   "description": "This park protects the Giant Forest, which boasts some of the world\'s largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
+   "description": "This park protects the Giant Forest, which boasts some of the world\\'s largest trees, the General Sherman being the largest measured tree in the park. Other features include over 240 caves, a long segment of the Sierra Nevada including the tallest mountain in the contiguous United States, and Moro Rock, a large granite dome."
  },
  {
    "parkName": "Yosemite",
@@ -357,7 +357,7 @@ const nationalParks = [
    "image": "assets/yosemite.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:AngMoKio\" title=\"User:AngMoKio\">user:AngMoKio</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span> (<span lang=\"en\">Original text: selfmade photo</span>), <a href=\"https://creativecommons.org/licenses/by-sa/2.5\" title=\"Creative Commons Attribution-Share Alike 2.5\">CC BY-SA 2.5</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=2827221\">Link</a>",
    "sizeAcres": 76174750,
-   "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park\'s centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America\'s tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
+   "description": "Yosemite features sheer granite cliffs, exceptionally tall waterfalls, and old-growth forests at a unique intersection of geology and hydrology. Half Dome and El Capitan rise from the park\\'s centerpiece, the glacier-carved Yosemite Valley, and from its vertical walls drop Yosemite Falls, one of North America\\'s tallest waterfalls at 2,425 feet (739 m) high. Three giant sequoia groves, along with a pristine wilderness in the heart of the Sierra Nevada, are home to a wide variety of rare plant and animal species."
  },
  {
    "parkName": "Black Canyon of the Gunnison",
@@ -477,7 +477,7 @@ const nationalParks = [
    "image": "assets/haleakala.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Matttrain&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Matttrain (page does not exist)\">Matttrain</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=7101246\">Link</a>",
    "sizeAcres": 3326462,
-   "description": "The Haleakalā volcano on Maui features a very large crater with numerous cinder cones, Hosmer\'s Grove of alien trees, the Kipahulusection\'s scenic pools of freshwater fish, and the native Hawaiian goose. The park protects the greatest number of endangered species within a U.S. National Park."
+   "description": "The Haleakalā volcano on Maui features a very large crater with numerous cinder cones, Hosmer\\'s Grove of alien trees, the Kipahulusection\\'s scenic pools of freshwater fish, and the native Hawaiian goose. The park protects the greatest number of endangered species within a U.S. National Park."
  },
  {
    "parkName": "Hawaii Volcanoes",
@@ -492,7 +492,7 @@ const nationalParks = [
    "image": "assets/hawaii-volcanoes.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Hike395\" class=\"extiw\" title=\"en:User:Hike395\">Hike395</a> (<a href=\"https://en.wikipedia.org/wiki/User_talk:Hike395\" class=\"extiw\" title=\"en:User talk:Hike395\">talk</a><span style=\"white-space:nowrap\">&nbsp;·</span> <a href=\"https://en.wikipedia.org/wiki/Special:Contributions/Hike395\" class=\"extiw\" title=\"en:Special:Contributions/Hike395\">contribs</a>) - <a rel=\"nofollow\" class=\"external text\" href=\"http://pubs.usgs.gov/dds/dds-80/images/JPG/large_screen/RIFT_007.jpg\">USGS</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=4412830\">Link</a>",
    "sizeAcres": 32343138,
-   "description": "This park on the Big Island protects the Kīlauea and Mauna Loavolcanoes, two of the world\'s most active geological features. Diverse ecosystems range from tropical forests at sea level to barren lava beds at more than 13,000 feet (4,000 m)."
+   "description": "This park on the Big Island protects the Kīlauea and Mauna Loavolcanoes, two of the world\\'s most active geological features. Diverse ecosystems range from tropical forests at sea level to barren lava beds at more than 13,000 feet (4,000 m)."
  },
  {
    "parkName": "Mammoth Cave",
@@ -507,7 +507,7 @@ const nationalParks = [
    "image": "assets/mammoth-cave.jpg",
    "imageRef": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.flickr.com/photos/navin75/162067155/\">https://www.flickr.com/photos/navin75/162067155/</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0\" title=\"Creative Commons Attribution-Share Alike 2.0\">CC BY-SA 2.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=3676754\">Link</a>",
    "sizeAcres": 5401191,
-   "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world\'s longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
+   "description": "With more than 400 miles (640 km) of passageways explored, Mammoth Cave is the world\\'s longest known cave system. Subterranean wildlife includes eight bat species, Kentucky cave shrimp, Northern cavefish, and cave salamanders. Above ground, the park provides recreation on the Green River, 70 miles of hiking trails, and plenty of sinkholes and springs."
  },
  {
    "parkName": "Acadia",
@@ -567,7 +567,7 @@ const nationalParks = [
    "image": "assets/gateway-arch.jpg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Dschwen\" title=\"User:Dschwen\">Daniel Schwen</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"https://creativecommons.org/licenses/by-sa/4.0\" title=\"Creative Commons Attribution-Share Alike 4.0\">CC BY-SA 4.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=3468880\">Link</a>",
    "sizeAcres": 19283,
-   "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the first site of the Dred Scottcase about slavery. A museum, located in the underground visitor center below the arch, describes the arch\'s construction and the country\'s westward expansion."
+   "description": "The Gateway Arch is a 630-foot (192 m) (both high and wide) catenary arch built to commemorate the Lewis and Clark Expedition, initiated by Thomas Jefferson, and the subsequent westward expansion of the country. The nearby Old Courthouse, across a greenway to the west of the arch, was the first site of the Dred Scottcase about slavery. A museum, located in the underground visitor center below the arch, describes the arch\\'s construction and the country\\'s westward expansion."
  },
  {
    "parkName": "Glacier",
@@ -597,7 +597,7 @@ const nationalParks = [
    "image": "assets/great-basin.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Jrbouldin\" class=\"extiw\" title=\"en:User:Jrbouldin\">James R Bouldin</a> (<a href=\"https://en.wikipedia.org/wiki/User_talk:Jrbouldin\" class=\"extiw\" title=\"en:User talk:Jrbouldin\">talk</a><span style=\"white-space:nowrap\">&nbsp;·</span> <a href=\"https://en.wikipedia.org/wiki/Special:Contributions/Jrbouldin\" class=\"extiw\" title=\"en:Special:Contributions/Jrbouldin\">contribs</a>) - Transferred from <span class=\"plainlinks\"><a class=\"external text\" href=\"//en.wikipedia.org\">en.wikipedia</a></span> to Commons by <a href=\"//commons.wikimedia.org/wiki/User:Grook_Da_Oger\" title=\"User:Grook Da Oger\">Grook Da Oger</a>., Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=2615269\">Link</a>",
    "sizeAcres": 7718000,
-   "description": "Based around Nevada\'s second tallest mountain, Wheeler Peak, Great Basin National Park contains 5,000-year-old bristlecone pines, a rock glacier, and the limestone Lehman Caves. Due to its remote location, the park has some of the country\'s darkest night skies. Wildlife includes the Townsend\'s big-eared bat, pronghorn, and Bonneville cutthroat trout."
+   "description": "Based around Nevada\\'s second tallest mountain, Wheeler Peak, Great Basin National Park contains 5,000-year-old bristlecone pines, a rock glacier, and the limestone Lehman Caves. Due to its remote location, the park has some of the country\\'s darkest night skies. Wildlife includes the Townsend\\'s big-eared bat, pronghorn, and Bonneville cutthroat trout."
  },
  {
    "parkName": "Carlsbad Caverns",
@@ -627,7 +627,7 @@ const nationalParks = [
    "image": "assets/theodore-roosevelt.jpg",
    "imageRef": "<a href=\"https://commons.wikimedia.org/w/index.php?curid=114313\">Link</a>",
    "sizeAcres": 7044689,
-   "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt\'s historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
+   "description": "This region that enticed and influenced President Theodore Roosevelt consists of a park of three units in the northern badlands. Besides Roosevelt\\'s historic cabin, there are numerous scenic drives and backcountry hiking opportunities. Wildlife includes American bison, pronghorn, bighorn sheep, and wild horses."
  },
  {
    "parkName": "Cuyahoga Valley",
@@ -747,7 +747,7 @@ const nationalParks = [
    "image": "assets/virgin-islands.jpg",
    "imageRef": "<a href=\"https://en.wikipedia.org/wiki/User:Fred_Hsu\" class=\"extiw\" title=\"wikipedia:User:Fred Hsu\">Wikipedia:User:Fred Hsu</a> on <a class=\"external text\" href=\"http://en.wikipedia.org\">en.wikipedia</a>) - Photo taken and uploaded by user, <a href=\"https://creativecommons.org/licenses/by-sa/3.0\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=6882523\">Link</a>",
    "sizeAcres": 1494000,
-   "description": "This island park on Saint John preserves Taíno archaeological sites and the ruins of sugar plantations from Columbus\'s time, as well as all the natural environs. Surrounding the pristine beaches are mangrove forests, seagrass beds, and coral reefs."
+   "description": "This island park on Saint John preserves Taíno archaeological sites and the ruins of sugar plantations from Columbus\\'s time, as well as all the natural environs. Surrounding the pristine beaches are mangrove forests, seagrass beds, and coral reefs."
  },
  {
    "parkName": "Arches",
@@ -807,7 +807,7 @@ const nationalParks = [
    "image": "assets/capitol-reef.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Bigtimepeace\" title=\"User:Bigtimepeace\">Bigtimepeace</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=7342151\">Link</a>",
    "sizeAcres": 24190450,
-   "description": "The park\'s Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth\'s diverse geologic layers. Other natural features include monoliths, cliffs, and sandstone domes shaped like the United States Capitol."
+   "description": "The park\\'s Waterpocket Fold is a 100-mile (160 km) monocline that exhibits the earth\\'s diverse geologic layers. Other natural features include monoliths, cliffs, and sandstone domes shaped like the United States Capitol."
  },
  {
    "parkName": "Zion",
@@ -837,7 +837,7 @@ const nationalParks = [
    "image": "assets/shenandoah.jpg",
    "imageRef": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/67015038@N06\">Shenandoah National Park</a> from Virginia - <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/snpphotos/22028259442/\">Early Fall at Dark Hollow Falls</a>, Public Domain, <a href=\"https://commons.wikimedia.org/w/index.php?curid=45094938\">Link</a>",
    "sizeAcres": 19921777,
-   "description": "Shenandoah\'s Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
+   "description": "Shenandoah\\'s Blue Ridge Mountains are covered by hardwood forests that teem with a wide variety of wildlife. The Skyline Drive and Appalachian Trail run the entire length of this narrow park, along with more than 500 miles (800 km) of hiking trails passing scenic overlooks and cataracts of the Shenandoah River."
  },
  {
    "parkName": "Mount Rainier",
@@ -897,7 +897,7 @@ const nationalParks = [
    "image": "assets/grand-teton.jpeg",
    "imageRef": "<a href=\"//commons.wikimedia.org/wiki/User:Maveric149\" class=\"mw-redirect\" title=\"User:Maveric149\">Daniel Mayer</a> - <span class=\"int-own-work\" lang=\"en\">Own work</span>, <a href=\"http://creativecommons.org/licenses/by-sa/3.0/\" title=\"Creative Commons Attribution-Share Alike 3.0\">CC BY-SA 3.0</a>, <a href=\"https://commons.wikimedia.org/w/index.php?curid=1848111\">Link</a>",
    "sizeAcres": 31004422,
-   "description": "Grand Teton is the tallest mountain in the Teton Range. The park\'s historic Jackson Hole and reflective piedmont lakes teem with endemic wildlife, with a backdrop of craggy mountains that rise abruptly from the sage-covered valley."
+   "description": "Grand Teton is the tallest mountain in the Teton Range. The park\\'s historic Jackson Hole and reflective piedmont lakes teem with endemic wildlife, with a backdrop of craggy mountains that rise abruptly from the sage-covered valley."
  }
 ];
 
