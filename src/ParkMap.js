@@ -11,10 +11,6 @@ class ParkMap extends Component {
     };
   }
 
-  componentDidMount() {
-
-  }
-
   render() {
     const position = [37.0902, -95.7129];
     const zoom = 4;
