@@ -40,4 +40,4 @@ Tiffany Bachmann: https://github.com/trbachmann
 ![Homescreen](./public/readme-assets/initial-np-wireframe.png) 
 ![Preview of selected park](./public/readme-assets/selected-park-from-all-us-map.png) 
 ![Expanded view of selected park](./public/readme-assets/expanded-park-view.png) 
-![View of State](./public/readme-assets/expanded-park-view.png) 
+![View of State](./public/readme-assets/search-by-state.png) 
