@@ -4,13 +4,16 @@ import Park from './Park.js';
 import Button from './Button.js';
 
 class ParkMap extends Component {
- constructor() {
-   super();
-   this.state = {
+  constructor() {
+    super();
+    this.state = {
 
-   };
- }
+    };
+  }
 
+  componentDidMount() {
+
+  }
 
   render() {
     const position = [37.0902, -95.7129];
@@ -23,12 +26,9 @@ class ParkMap extends Component {
           maxZoom='8'
         />
         <TileLayer 
-          url='https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lines/{z}/{x}/{y}{r}.{ext}'
-	        attribution='Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          subdomains='abcd'
-          minZoom='0'
-	        maxZoom='20'
-	        ext='png'
+          url='https://korona.geog.uni-heidelberg.de/tiles/adminb/x={x}&y={y}&z={z}'
+          maxZoom='19'
+	        attribution='Imagery from <a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
       </Map>
     )
