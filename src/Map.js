@@ -19,4 +19,4 @@ class Map extends Component {
   }
 }
 
-export default App;
+export default Map;

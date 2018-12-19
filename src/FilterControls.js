@@ -17,4 +17,4 @@ class FilterControls extends Component {
   }
 }
 
-export default App;
+export default FilterControls;

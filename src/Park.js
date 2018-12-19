@@ -16,4 +16,4 @@ class Park extends Component {
   }
 }
 
-export default App;
+export default Park;

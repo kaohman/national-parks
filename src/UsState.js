@@ -12,4 +12,4 @@ class UsState extends Component {
   }
 }
 
-export default App;
+export default UsState;
