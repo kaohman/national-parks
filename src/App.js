@@ -18,7 +18,8 @@ class App extends Component {
         this.setState({
           parks: results.nationalParks1810
         });
-      });
+      })
+      .catch(error => console.log(error));
 
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/states1810")
       .then(data => data.json())
@@ -26,14 +27,15 @@ class App extends Component {
         this.setState({
           usStates: results.states1810
         });
-      });
+      })
+      .catch(error => console.log(error));
   }
 
   render() {
     return (
       <div>
         <h1>Mark My Parks</h1>
-        <ParkMap />
+        <ParkMap parks={this.state.parks}/>
       </div>
     )
   }
