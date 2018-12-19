@@ -7,8 +7,8 @@ class UsState extends Component {
 
   render() {
     return (
-      
-    );
+      <div></div>
+    )
   }
 }
 

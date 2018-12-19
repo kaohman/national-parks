@@ -11,8 +11,8 @@ class Park extends Component {
 
   render() {
     return (
-      
-    );
+      <div></div>
+    )
   }
 }
 
