@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import ParkMap from './ParkMap.js';
+import FilterControls from './FilterControls.js';
+import UsState from './UsState.js';
 
 class App extends Component {
   constructor() {
@@ -36,6 +38,7 @@ class App extends Component {
       <div>
         <h1>Mark My Parks</h1>
         <ParkMap parks={this.state.parks}/>
+        <FilterControls usStates={this.state.usStates}/>
       </div>
     )
   }
