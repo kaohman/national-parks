@@ -2,15 +2,33 @@ import React, { Component } from 'react';
 import './App.css';
 import ParkMap from './ParkMap.js';
 import FilterControls from './FilterControls.js';
-import UsState from './UsState.js';
+import Buttons from './Buttons.js'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
       parks: [],
-      usStates: {}
+      usStates: {},
+      currentParksToShow: [],
+      vistedParks: [],
+      bucketListParks: []
     };
+  }
+
+  showAllParks = (event) => {
+    event.preventDefault();
+    this.setState({
+      currentParksToShow: this.state.parks
+    })
+  }
+
+  showVisitedParks = (event) => {
+    event.preventDefault();
+  }
+
+  showBucketList = (event) => {
+    event.preventDefault();
   }
 
   componentDidMount() {
@@ -18,7 +36,8 @@ class App extends Component {
       .then(data => data.json())
       .then(results => {
         this.setState({
-          parks: results.nationalParks1810
+          parks: results.nationalParks1810,
+          currentParksToShow: results.nationalParks1810
         });
       })
       .catch(error => console.log(error));
@@ -38,6 +57,9 @@ class App extends Component {
       <div>
         <h1>Mark My Parks</h1>
         <ParkMap parks={this.state.parks}/>
+        <button onClick={this.showAllParks}>Show All Parks</button>
+        <button onClick={this.showVisitedParks}>Show Visited Parks</button>
+        <button onClick={this.showBucketList}>Show Bucket List Parks</button>
         <FilterControls usStates={this.state.usStates}/>
       </div>
     )

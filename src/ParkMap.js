@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Map, Marker, Tooltip, TileLayer } from 'react-leaflet';
 import Park from './Park.js';
-import Button from './Button.js';
 
 class ParkMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedPark: null
+      selectedPark: null,
+      zoom: 4,
+      position: [37.0902, -95.7129],
     };
   }
 
@@ -17,12 +18,14 @@ class ParkMap extends Component {
     }) 
   }
 
+  showParksByState = (state) => {
+    //this.setstate = currentParksToShow should now only include parks from parameter of state
+  }
+  
   render() {
-    const position = [37.0902, -95.7129];
-    const zoom = 4;
     return (
      <div>
-        <Map center={position} zoom={zoom}>
+        <Map center={this.state.position} zoom={this.state.zoom}>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'

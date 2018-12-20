@@ -76,7 +76,7 @@ describe('ParkMap', () => {
   });
 
   it('should have the proper default state', () => {
-    expect(wrapper.state()).toEqual( { selectedPark: null } );
+    expect(wrapper.state()).toEqual({ selectedPark: null, zoom: 4, position: [37.0902, - 95.7129] } );
   });
 
   it('should update state when getPark is called', () => {

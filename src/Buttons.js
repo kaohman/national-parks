@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 
-class Button extends Component {
- constructor() {
+class Buttons extends Component {
+  constructor() {
    super();
    this.state = {
 
    };
- }
-
+  }
 
   render() {
     return (
-      <div></div>
+      <div>
+      </div>
     )
   }
 }
 
-export default Button;
+export default Buttons;
