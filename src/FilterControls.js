@@ -20,7 +20,7 @@ class FilterControls extends Component {
   render() {
     return (
       <div>
-        <select value={this.state.stateName} onChange={this.getState}>
+        <select id="select-menu" value={this.state.stateName} onChange={this.getState}>
           <option value="default">Please pick a state</option>
         {
           Object.keys(this.props.usStates).map(usState => {
