@@ -25,7 +25,10 @@ describe('App', () => {
   it('should have the proper default state', () => {
     expect(wrapper.state()).toEqual({
       parks: [],
-      usStates: {}
+      usStates: {},
+      vistedParks: [],
+      currentParksToShow: [],
+      bucketListParks: []
     })
   });
   
