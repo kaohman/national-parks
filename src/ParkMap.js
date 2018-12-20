@@ -10,12 +10,13 @@ class ParkMap extends Component {
       selectedPark: null
     };
   }
-  getPark=(event) =>{
+
+  getPark = (event) => {
     this.setState({
       selectedPark: this.props.parks.find( park => park.urlCode === event.target.options.id)
     }) 
-    console.log(event.target.options.id)
   }
+
   render() {
     const position = [37.0902, -95.7129];
     const zoom = 4;
@@ -37,7 +38,7 @@ class ParkMap extends Component {
               let lat = (park.latitude.includes('N')) ? park.latitude.replace(/.N$/, '') : park.latitude.replace(/.S$/, '').replace(/^/, '-');
               let lon = (park.longitude.includes('E')) ? park.longitude.replace(/.E$/, '') : park.longitude.replace(/.W$/, '').replace(/^/, '-');
               return(
-                <Marker position={[lat, lon]} onClick={this.getPark} id={park.urlCode}>
+                <Marker position={[lat, lon]} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
                   <Tooltip>{park.parkName}</Tooltip>
                 </Marker>
               )

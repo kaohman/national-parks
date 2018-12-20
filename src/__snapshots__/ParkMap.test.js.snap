@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParkMap should match the snapshot with all data passed in 1`] = `
+<div>
+  <Map
+    center={
+      Array [
+        37.0902,
+        -95.7129,
+      ]
+    }
+    zoom={4}
+  >
+    <ForwardRef(Leaflet(TileLayer))
+      attribution="Tiles © Esri — Source: US National Park Service"
+      maxZoom="8"
+      url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}"
+    />
+    <ForwardRef(Leaflet(TileLayer))
+      attribution="Imagery from <a href=\\"http://giscience.uni-hd.de/\\">GIScience Research Group @ University of Heidelberg</a> — Map data © <a href=\\"http://www.openstreetmap.org/copyright\\">OpenStreetMap</a>"
+      maxZoom="8"
+      url="https://korona.geog.uni-heidelberg.de/tiles/adminb/x={x}&y={y}&z={z}"
+    />
+    <ForwardRef(Leaflet(Marker))
+      id="deva"
+      key="deva"
+      onClick={[Function]}
+      position={
+        Array [
+          "36.24",
+          "-116.82",
+        ]
+      }
+    >
+      <ForwardRef(Leaflet(Tooltip))>
+        Death Valley
+      </ForwardRef(Leaflet(Tooltip))>
+    </ForwardRef(Leaflet(Marker))>
+    <ForwardRef(Leaflet(Marker))
+      id="grsm"
+      key="grsm"
+      onClick={[Function]}
+      position={
+        Array [
+          "35.68",
+          "-83.53",
+        ]
+      }
+    >
+      <ForwardRef(Leaflet(Tooltip))>
+        Great Smoky Mountains
+      </ForwardRef(Leaflet(Tooltip))>
+    </ForwardRef(Leaflet(Marker))>
+    <ForwardRef(Leaflet(Marker))
+      id="yell"
+      key="yell"
+      onClick={[Function]}
+      position={
+        Array [
+          "44.60",
+          "-110.50",
+        ]
+      }
+    >
+      <ForwardRef(Leaflet(Tooltip))>
+        Yellowstone
+      </ForwardRef(Leaflet(Tooltip))>
+    </ForwardRef(Leaflet(Marker))>
+  </Map>
+</div>
+`;
