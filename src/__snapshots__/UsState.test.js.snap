@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsState should match the snapshot with all data passed in 1`] = `
+<div>
+  <h1>
+    North Carolina
+  </h1>
+  <h3>
+    Capital: 
+    <span>
+      Raleigh
+    </span>
+  </h3>
+  <h3>
+    Population: 
+    <span>
+      10273419
+    </span>
+  </h3>
+  <h3>
+    Date Established: 
+    <span>
+      Nov 21, 1789
+    </span>
+  </h3>
+  <h3>
+    Number of Parks in State: 
+    <span>
+      1
+    </span>
+  </h3>
+  <h3>
+    State Flower: 
+    <span>
+      American Dogwood
+    </span>
+  </h3>
+</div>
+`;

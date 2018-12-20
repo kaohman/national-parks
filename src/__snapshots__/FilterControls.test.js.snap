@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FilterControls should match the snapshot with all data passed in 1`] = `
+<div>
+  <select
+    id="select-menu"
+    onChange={[Function]}
+    value="default"
+  >
+    <option
+      value="default"
+    >
+      Please pick a state
+    </option>
+    <option
+      key="AL"
+      value={
+        Array [
+          "Alabama",
+        ]
+      }
+    >
+      Alabama
+    </option>
+    <option
+      key="AK"
+      value={
+        Array [
+          "Alaska",
+        ]
+      }
+    >
+      Alaska
+    </option>
+    <option
+      key="AZ"
+      value={
+        Array [
+          "Arizona",
+        ]
+      }
+    >
+      Arizona
+    </option>
+    <option
+      key="AR"
+      value={
+        Array [
+          "Arkansas",
+        ]
+      }
+    >
+      Arkansas
+    </option>
+    <option
+      key="CA"
+      value={
+        Array [
+          "California",
+        ]
+      }
+    >
+      California
+    </option>
+  </select>
+</div>
+`;

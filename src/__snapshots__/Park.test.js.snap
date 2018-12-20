@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Park should match the snapshot with all data passed in 1`] = `
+<div>
+  <img />
+  <h1>
+    Death Valley
+     National Park
+  </h1>
+  <img
+    src="./assets/death-valley.jpg"
+  />
+  <h3>
+    The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prai
+    ...
+  </h3>
+  <button
+    onClick={[Function]}
+  >
+    View More
+  </button>
+  <img />
+  <img />
+</div>
+`;
