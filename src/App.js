@@ -29,7 +29,24 @@ class App extends Component {
 
   showBucketList = (event) => {
     event.preventDefault();
+    const cachedBucketListKeys = localStorage.getItem('bucketList')
+    let bucketListParks;
+    if (cachedBucketListKeys) {
+      let bucketListKeys = JSON.parse(cachedBucketListKeys);
+      bucketListParks = this.state.parks.reduce((arr, park) => {
+        bucketListKeys.forEach(key => {
+          if (park.urlCode === key) {
+            arr.push(park);
+          }
+        })
+        return arr
+      }, []);
+      this.setState({
+        currentParksToShow: bucketListParks
+      })
+    } 
   }
+
 
   componentDidMount() {
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/nationalParks1810")
@@ -56,7 +73,7 @@ class App extends Component {
     return (
       <div>
         <h1>Mark My Parks</h1>
-        <ParkMap parks={this.state.parks}/>
+        <ParkMap parks={this.state.currentParksToShow}/>
         <button onClick={this.showAllParks}>Show All Parks</button>
         <button onClick={this.showVisitedParks}>Show Visited Parks</button>
         <button onClick={this.showBucketList}>Show Bucket List Parks</button>

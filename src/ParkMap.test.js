@@ -81,7 +81,7 @@ describe('ParkMap', () => {
 
   it('should update state when getPark is called', () => {
     expect(wrapper.state('selectedPark')).toEqual(null);
-    wrapper.find('#deva').simulate('click', { target: { options: {id: "deva"} }});
+    wrapper.find('#deva').simulate('click', { target: { options: {id: "Death Valley"} }});
     expect(wrapper.state('selectedPark')).toEqual(parks[0]);
   });
 });

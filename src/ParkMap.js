@@ -14,7 +14,7 @@ class ParkMap extends Component {
 
   getPark = (event) => {
     this.setState({
-      selectedPark: this.props.parks.find( park => park.urlCode === event.target.options.id)
+      selectedPark: this.props.parks.find( park => park.parkName === event.target.options.id)
     }) 
   }
 
@@ -41,7 +41,7 @@ class ParkMap extends Component {
               let lat = (park.latitude.includes('N')) ? park.latitude.replace(/.N$/, '') : park.latitude.replace(/.S$/, '').replace(/^/, '-');
               let lon = (park.longitude.includes('E')) ? park.longitude.replace(/.E$/, '') : park.longitude.replace(/.W$/, '').replace(/^/, '-');
               return(
-                <Marker position={[lat, lon]} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
+                <Marker position={[lat, lon]} onClick={this.getPark} key={park.parkName} id={park.urlCode}>
                   <Tooltip>{park.parkName}</Tooltip>
                 </Marker>
               )

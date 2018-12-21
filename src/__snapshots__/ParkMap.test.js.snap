@@ -23,7 +23,7 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
     />
     <ForwardRef(Leaflet(Marker))
       id="deva"
-      key="deva"
+      key="Death Valley"
       onClick={[Function]}
       position={
         Array [
@@ -38,7 +38,7 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
     </ForwardRef(Leaflet(Marker))>
     <ForwardRef(Leaflet(Marker))
       id="grsm"
-      key="grsm"
+      key="Great Smoky Mountains"
       onClick={[Function]}
       position={
         Array [
@@ -53,7 +53,7 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
     </ForwardRef(Leaflet(Marker))>
     <ForwardRef(Leaflet(Marker))
       id="yell"
-      key="yell"
+      key="Yellowstone"
       onClick={[Function]}
       position={
         Array [
