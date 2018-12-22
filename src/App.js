@@ -29,24 +29,21 @@ class App extends Component {
 
   showBucketList = (event) => {
     event.preventDefault();
-    const cachedBucketListKeys = localStorage.getItem('bucketList')
     let bucketListParks;
-    if (cachedBucketListKeys) {
+
+    if (localStorage.hasOwnProperty('bucketList')) {
+      let cachedBucketListKeys = localStorage.getItem('bucketList');
       let bucketListKeys = JSON.parse(cachedBucketListKeys);
-      bucketListParks = this.state.parks.reduce((arr, park) => {
-        bucketListKeys.forEach(key => {
-          if (park.urlCode === key) {
-            arr.push(park);
-          }
-        })
-        return arr
-      }, []);
+      
+      bucketListParks = this.state.parks.filter( park => {
+        return bucketListKeys.includes(park.urlCode)
+      });
+  
       this.setState({
         currentParksToShow: bucketListParks
-      })
+      });
     } 
   }
-
 
   componentDidMount() {
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/nationalParks1810")
