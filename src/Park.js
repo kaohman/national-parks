@@ -2,18 +2,23 @@ import React, { Component } from 'react';
 
 class Park extends Component {
  constructor(props) {
-   super(props);
-   this.state = {
-
+    super(props);
+    this.state = {
+      displayFull: false  
    };
  }
   showFullCard= () => {
-
+    this.setState({
+      displayFull: true
+    });
   }
 
   removeCard = (event) => {
     event.preventDefault();
     this.props.removeCard();
+    this.setState({
+      displayFull: false
+    });
   }
 
   render() {
