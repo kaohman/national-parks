@@ -2,29 +2,8 @@
 
 exports[`App should match the snapshot with all data passed in 1`] = `
 <div>
-  <h1>
-    Mark My Parks
-  </h1>
-  <ParkMap
-    parks={Array []}
-  />
-  <button
-    onClick={[Function]}
-  >
-    Show All Parks
-  </button>
-  <button
-    onClick={[Function]}
-  >
-    Show Visited Parks
-  </button>
-  <button
-    onClick={[Function]}
-  >
-    Show Bucket List Parks
-  </button>
-  <FilterControls
-    usStates={Object {}}
+  <LandingPage
+    openHomePage={[Function]}
   />
 </div>
 `;
