@@ -8,6 +8,12 @@
   z-index: 12;
 }
 
+.park-title {
+  margin: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+
 .park-card-small {
   height: $map-height;
   width: 300px;
@@ -16,21 +22,43 @@
   background-color: white;
 }
 
-.park-title {
-  margin: 10px;
-  text-align: center;
-  font-size: 24px;
-}
-
-.park-text {
+.park-text-small {
   margin: 10px 10px;
   text-align: justify;
   font-size: 14px;
 }
 
-.park-img {
+.park-img-small {
   height: 200px;
   width: 300px;
+  object-fit: cover;
+}
+
+.park-card-large {
+  height: $map-height;
+  width: 100%;
+  font-family: $body-font;
+  border: 1px solid black;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.park-text-large {
+  margin: 0 25px 15px 15px;
+  text-align: justify;
+  font-size: 14px;
+
+  h3 {
+    font-size: 14px;
+  }
+}
+
+.park-img-large {
+  grid-row: span 2;
+  margin: 15px;
+  height: 470px;
+  max-width: 600px;
   object-fit: cover;
 }
 
