@@ -1,0 +1,25 @@
+@mixin title-style() {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 130px;
+  margin: 15px;
+}
+
+@mixin button-style() {
+  background-color: white;
+  font-size: 16px;
+  font-family: $body-font;
+  padding: 8px 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px black;
+  outline: none;
+
+  &:hover {
+    background-color: lightgrey;
+  }
+}
+
+@mixin background-image($transparency, $url) {
+  background:linear-gradient(rgba(0,0,0,$transparency),rgba(0,0,0,$transparency)),url($url);
+}

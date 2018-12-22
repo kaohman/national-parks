@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ParkMap should match the snapshot with all data passed in 1`] = `
-<div>
+<div
+  className="map-container"
+>
   <Map
     center={
       Array [
@@ -9,6 +11,7 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
         -95.7129,
       ]
     }
+    id="map"
     zoom={4}
   >
     <ForwardRef(Leaflet(TileLayer))

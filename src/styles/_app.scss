@@ -1,0 +1,25 @@
+body {
+  @include background-image(0.6, "https://i.imgur.com/sGRQvG4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-title {
+  @include title-style();
+  font-size: 80px;
+  color: white;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+}
+
+button {
+  @include button-style();
+}

@@ -18,14 +18,20 @@ class ParkMap extends Component {
     }) 
   }
 
+  removeCard = () => {
+    this.setState({
+      selectedPark: null
+    });
+  }
+
   showParksByState = (state) => {
     //this.setstate = currentParksToShow should now only include parks from parameter of state
   }
   
   render() {
     return (
-     <div>
-        <Map center={this.state.position} zoom={this.state.zoom}>
+     <div className="map-container">
+        <Map id="map" center={this.state.position} zoom={this.state.zoom}>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'
@@ -49,7 +55,7 @@ class ParkMap extends Component {
           }
         </Map>
         {
-          this.state.selectedPark && <Park selectedPark={this.state.selectedPark}/>
+          this.state.selectedPark && <Park removeCard={this.removeCard} selectedPark={this.state.selectedPark}/>
         }
       </div>   
     )
