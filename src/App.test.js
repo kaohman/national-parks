@@ -28,7 +28,8 @@ describe('App', () => {
       usStates: {},
       vistedParks: [],
       currentParksToShow: [],
-      bucketListParks: []
+      bucketListParks: [],
+      pageStatus: 'landing'
     })
   });
   

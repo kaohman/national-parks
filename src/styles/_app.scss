@@ -1,0 +1,23 @@
+body {
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://i.imgur.com/0ihenJu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-title {
+  @include title-style();
+  color: white;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 40px;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto;
+}
+
+button {
+  @include button-style();
+}

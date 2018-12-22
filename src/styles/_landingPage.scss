@@ -1,0 +1,24 @@
+body {
+  background-image: url("https://i.imgur.com/0ihenJu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.splash-div {
+  width: 800px;
+  margin: auto;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+  margin-left: -400px;
+}
+
+.splash-title {
+  @include title-style();
+}
+
+button {
+  @include button-style();
+}

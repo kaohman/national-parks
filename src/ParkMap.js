@@ -25,7 +25,7 @@ class ParkMap extends Component {
   render() {
     return (
      <div>
-        <Map center={this.state.position} zoom={this.state.zoom}>
+        <Map id="map" center={this.state.position} zoom={this.state.zoom}>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'
