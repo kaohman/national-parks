@@ -1,8 +1,15 @@
 
-#map {
+.map-container {
   margin: 10px auto;
+  width: $map-width;
+  height: $map-height;
+}
+
+#map {
+  margin: 0;
   border: 1px solid black;
   box-shadow: 2px 2px 10px black;
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: $map-height;
+  z-index: 10;
 }

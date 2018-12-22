@@ -8,7 +8,7 @@
 @mixin button-style() {
   background-color: white;
   font-size: 16px;
-  font-family: "Quicksand", sans-serif;
+  font-family: $body-font;
   padding: 8px 10px;
   border: 1px solid black;
   border-radius: 20px;
