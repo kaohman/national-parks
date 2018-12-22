@@ -1,11 +1,13 @@
 body {
-  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://i.imgur.com/0ihenJu.jpg");
+  @include background-image(0.6, "https://i.imgur.com/sGRQvG4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
 }
 
 .home-title {
   @include title-style();
+  font-size: 80px;
   color: white;
 }
 

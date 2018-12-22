@@ -1,7 +1,10 @@
-body {
-  background-image: url("https://i.imgur.com/0ihenJu.jpg");
+.landing-background {
+  @include background-image(0, "https://i.imgur.com/0ihenJu.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
 }
 
 .splash-div {

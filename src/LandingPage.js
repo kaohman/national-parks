@@ -16,9 +16,11 @@ class LandingPage extends Component {
 
   render() {
     return(
-      <div className="splash-div">
-        <h1 className="splash-title">Mark My Parks</h1>
-        <button onClick={this.handleClick}>Enter Site</button>
+      <div className="landing-background">
+        <div className="splash-div">
+          <h1 className="splash-title">Mark My Parks</h1>
+          <button onClick={this.handleClick}>Enter Site</button>
+        </div>
       </div>
     );
   }
