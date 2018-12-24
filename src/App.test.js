@@ -29,7 +29,8 @@ describe('App', () => {
       vistedParks: [],
       currentParksToShow: [],
       bucketListParks: [],
-      pageStatus: 'landing'
+      pageStatus: 'landing',
+      // need to check for randomImageClass - not sure how to test a random number in state.
     })
   });
   

@@ -19,14 +19,14 @@ exports[`Park should match the snapshot with all data passed in 1`] = `
        National Park
     </h1>
     <img
-      className="park-img"
+      className="park-img-small"
       src="./assets/death-valley.jpg"
     />
     <h3
-      className="park-text"
+      className="park-text-small"
     >
-      The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prai
-      ...
+      Park Highlight: 
+      Badwater Basin Salt Flats
     </h3>
     <button
       className="button-small"
@@ -35,10 +35,12 @@ exports[`Park should match the snapshot with all data passed in 1`] = `
       View More
     </button>
     <p>
-      Visited
-    </p>
-    <p>
-      Bucket
+      <span>
+        Visited
+      </span>
+      <span>
+        Bucket
+      </span>
     </p>
   </div>
 </div>
