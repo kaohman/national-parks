@@ -19,7 +19,7 @@ class FilterControls extends Component {
 
   render() {
     return (
-      <div>
+      <div className="filter-controls">
         <select id="select-menu" value={this.state.stateName} onChange={this.getState}>
           <option value="default">Please pick a state</option>
         {

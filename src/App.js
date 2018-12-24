@@ -91,8 +91,8 @@ class App extends Component {
                 <button onClick={this.showAllParks}>Show All Parks</button>
                 <button onClick={this.showVisitedParks}>Show Visited Parks</button>
                 <button onClick={this.showBucketList}>Show Bucket List Parks</button>
-                <FilterControls usStates={this.state.usStates} />
               </div>
+              <FilterControls usStates={this.state.usStates} />
             </div>
           </div>
         );

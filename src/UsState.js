@@ -3,7 +3,7 @@ import React from 'react';
 
 function UsState(props) {
   return (
-    <div>
+    <div className="state-card">
       <h1>{props.name}</h1>
       <h3>Capital: <span>{props.selectedState.capitalCity}</span></h3>
       <h3>Population: <span>{props.selectedState.Population}</span></h3>
