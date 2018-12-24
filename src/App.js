@@ -30,6 +30,20 @@ class App extends Component {
 
   showBucketList = (event) => {
     event.preventDefault();
+    let bucketListParks;
+
+    if (localStorage.hasOwnProperty('bucketList')) {
+      let cachedBucketListKeys = localStorage.getItem('bucketList');
+      let bucketListKeys = JSON.parse(cachedBucketListKeys);
+      
+      bucketListParks = this.state.parks.filter( park => {
+        return bucketListKeys.includes(park.urlCode)
+      });
+  
+      this.setState({
+        currentParksToShow: bucketListParks
+      });
+    } 
   }
 
   componentDidMount() {
@@ -70,7 +84,7 @@ class App extends Component {
         return (
           <div>
             <h1 className="home-title">Mark My Parks</h1>
-            <ParkMap parks={this.state.parks}/>
+            <ParkMap parks={this.state.currentParksToShow}/>
             <div className="filters">
               <button onClick={this.showAllParks}>Show All Parks</button>
               <button onClick={this.showVisitedParks}>Show Visited Parks</button>
