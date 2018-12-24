@@ -1,0 +1,46 @@
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  margin-top: -501px;
+  margin-left: 1px;
+  height: $map-height;
+  width: $map-width;
+  z-index: 12;
+}
+
+.park-card-small {
+  height: $map-height;
+  width: 300px;
+  font-family: $body-font;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.park-title {
+  margin: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.park-text {
+  margin: 10px 10px;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.park-img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.button-small {
+  display: block;
+  font-size: 14px;
+  box-shadow: none;
+  margin: 5px auto;
+}
+
+p {
+  margin: 10px;
+}
