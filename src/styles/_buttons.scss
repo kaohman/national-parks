@@ -1,0 +1,27 @@
+.icons {
+  @include button-style();
+  font-family: $icon-font;
+  font-size: 20px;
+}
+
+.icons:hover {
+  color: green;
+}
+
+.tooltipleft {
+  @include tooltip();
+  left: 1%;
+}
+
+.tooltipright {
+  @include tooltip();
+  right: 57%;
+}
+
+.icon-btns:hover .tooltipright {
+  visibility: visible;
+}
+
+.icon-btns:hover .tooltipleft {
+  visibility: visible;
+}

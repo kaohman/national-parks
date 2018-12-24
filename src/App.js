@@ -26,6 +26,19 @@ class App extends Component {
 
   showVisitedParks = (event) => {
     event.preventDefault();
+    let visitedParks;
+
+    if (localStorage.hasOwnProperty('visitedParks')) {
+      let cachedVistedParkKeys = localStorage.getItem('visitedParks');
+      let vistedParksKeys = JSON.parse(cachedVistedParkKeys);
+      visitedParks = this.state.parks.filter(park => {
+        return vistedParksKeys.includes(park.urlCode)
+      });
+
+      this.setState({
+        currentParksToShow: visitedParks
+      });
+    }
   }
 
   showBucketList = (event) => {
