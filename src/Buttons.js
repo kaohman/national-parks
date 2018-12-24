@@ -24,9 +24,11 @@ class Buttons extends Component {
 
   saveToLocalStorage = () => {
     let parksKeys = JSON.parse(localStorage.getItem(this.state.storageKey));
-    parksKeys.push(this.state.parkUrl);
-    let newKeysToStore = JSON.stringify(parksKeys);
-    localStorage.setItem(this.state.storageKey, newKeysToStore);
+    if (!parksKeys.includes(this.state.parkUrl)) {
+      parksKeys.push(this.state.parkUrl);
+      let newKeysToStore = JSON.stringify(parksKeys);
+      localStorage.setItem(this.state.storageKey, newKeysToStore);
+    }
   }
 
   render() {
