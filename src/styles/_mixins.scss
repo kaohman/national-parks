@@ -20,6 +20,11 @@
   }
 }
 
-@mixin background-image($transparency, $url) {
-  background:linear-gradient(rgba(0,0,0,$transparency),rgba(0,0,0,$transparency)),url($url);
+@mixin background-image($url) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
 }

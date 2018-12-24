@@ -13,7 +13,8 @@ class App extends Component {
       currentParksToShow: [],
       vistedParks: [],
       bucketListParks: [],
-      pageStatus: 'landing'
+      pageStatus: 'landing',
+      randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`
     };
   }
 
@@ -82,20 +83,22 @@ class App extends Component {
     switch(this.state.pageStatus) {
       case('home'):
         return (
-          <div>
-            <h1 className="home-title">Mark My Parks</h1>
-            <ParkMap parks={this.state.currentParksToShow}/>
-            <div className="filters">
-              <button onClick={this.showAllParks}>Show All Parks</button>
-              <button onClick={this.showVisitedParks}>Show Visited Parks</button>
-              <button onClick={this.showBucketList}>Show Bucket List Parks</button>
-              <FilterControls usStates={this.state.usStates} />
+          <div className={this.state.randomImageClass}>
+            <div className="overlay">
+              <h1 className="home-title">Mark My Parks</h1>
+              <ParkMap parks={this.state.currentParksToShow}/>
+              <div className="filters">
+                <button onClick={this.showAllParks}>Show All Parks</button>
+                <button onClick={this.showVisitedParks}>Show Visited Parks</button>
+                <button onClick={this.showBucketList}>Show Bucket List Parks</button>
+                <FilterControls usStates={this.state.usStates} />
+              </div>
             </div>
           </div>
         );
       default:
         return (
-          <div>
+          <div className={this.state.randomImageClass}>
             <LandingPage openHomePage={this.openHomePage} />
           </div>
         );

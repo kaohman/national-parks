@@ -1,10 +1,25 @@
-.landing-background {
-  @include background-image(0, "https://i.imgur.com/0ihenJu.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 10;
-  width: 100%;
-  height: 100vh;
+.landing-background0 {
+  @include background-image("https://i.imgur.com/iVKglLi.jpg");
+}
+
+.landing-background1 {
+  @include background-image("https://i.imgur.com/CFczeGe.jpg");
+}
+
+.landing-background2 {
+  @include background-image("https://i.imgur.com/Fiy0aLl.jpg");
+}
+
+.landing-background3 {
+  @include background-image("https://i.imgur.com/hiy2MOw.jpg");
+}
+
+.landing-background4 {
+  @include background-image("https://i.imgur.com/cP2RlpJ.jpg");
+}
+
+.landing-background5 {
+  @include background-image("https://i.imgur.com/1s10GPV.jpg");
 }
 
 .splash-div {
