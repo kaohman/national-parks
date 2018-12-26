@@ -30,10 +30,6 @@
   margin: 0;
 }
 
-@mixin background-image($transparency, $url) {
-  background:linear-gradient(rgba(0,0,0,$transparency),rgba(0,0,0,$transparency)),url($url);
-}
-
 @mixin tooltip() {
   color: green;
   font-size: 11px;

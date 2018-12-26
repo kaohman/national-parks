@@ -96,7 +96,7 @@ class App extends Component {
     switch(this.state.pageStatus) {
       case('home'):
         return (
-          <div>
+          <div className={this.state.randomImageClass}>
             <div className="overlay">
               <h1 className="home-title">Mark My Parks</h1>
               <ParkMap parks={this.state.currentParksToShow}/>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Map, Marker, Tooltip, TileLayer, L } from 'react-leaflet';
+import { Map, Marker, Tooltip, TileLayer } from 'react-leaflet';
 import Park from './Park.js';
 
 class ParkMap extends Component {
