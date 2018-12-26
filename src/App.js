@@ -20,8 +20,7 @@ class App extends Component {
     };
   }
 
-  showAllParks = (event) => {
-    event.preventDefault();
+  showAllParks = () => {
     this.setState({
       currentUsStateName: 'default',
       currentUsStateCoord: [],
@@ -75,15 +74,19 @@ class App extends Component {
   }
 
   setMapToState = (stateName, stateObj) => {
-    let parksToShow = this.state.parks.filter(park => {
-      return park.state.includes(stateName)
-    });
+    if (stateName !== 'default') {
+      let parksToShow = this.state.parks.filter(park => {
+        return park.state.includes(stateName)
+      });
     
-    this.setState({
-      currentUsStateName: stateName,
-      currentUsStateCoord: [stateObj.latitude, stateObj.longitude],
-      currentParksToShow: parksToShow
-    });
+      this.setState({
+        currentUsStateName: stateName,
+        currentUsStateCoord: [stateObj.latitude, stateObj.longitude],
+        currentParksToShow: parksToShow
+      });
+    } else {
+      this.showAllParks();
+    }
   }
 
   componentDidMount() {
@@ -125,7 +128,7 @@ class App extends Component {
                 <button onClick={this.showVisitedParks}>Show Visited Parks</button>
                 <button onClick={this.showBucketList}>Show Bucket List Parks</button>
               </div>
-              <FilterControls usStates={this.state.usStates} setMapToState={this.setMapToState} />
+              <FilterControls usStates={this.state.usStates} stateName={this.state.currentUsStateName} setMapToState={this.setMapToState} />
             </div>
           </div>
         );
