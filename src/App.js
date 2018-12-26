@@ -27,6 +27,19 @@ class App extends Component {
 
   showVisitedParks = (event) => {
     event.preventDefault();
+    let visitedParks;
+
+    if (localStorage.hasOwnProperty('visitedParks')) {
+      let cachedVistedParkKeys = localStorage.getItem('visitedParks');
+      let vistedParksKeys = JSON.parse(cachedVistedParkKeys);
+      visitedParks = this.state.parks.filter(park => {
+        return vistedParksKeys.includes(park.urlCode)
+      });
+
+      this.setState({
+        currentParksToShow: visitedParks
+      });
+    }
   }
 
   showBucketList = (event) => {
@@ -83,7 +96,7 @@ class App extends Component {
     switch(this.state.pageStatus) {
       case('home'):
         return (
-          <div className={this.state.randomImageClass}>
+          <div>
             <div className="overlay">
               <h1 className="home-title">Mark My Parks</h1>
               <ParkMap parks={this.state.currentParksToShow}/>
@@ -91,8 +104,8 @@ class App extends Component {
                 <button onClick={this.showAllParks}>Show All Parks</button>
                 <button onClick={this.showVisitedParks}>Show Visited Parks</button>
                 <button onClick={this.showBucketList}>Show Bucket List Parks</button>
+                <FilterControls usStates={this.state.usStates} />
               </div>
-              <FilterControls usStates={this.state.usStates} />
             </div>
           </div>
         );

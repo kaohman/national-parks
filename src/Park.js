@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Buttons from './Buttons.js';
 
 class Park extends Component {
  constructor(props) {
@@ -28,7 +29,7 @@ class Park extends Component {
         return (
           <div className="card-overlay">
             <div className="park-card-large">
-              <p onClick={this.removeCard}>X</p>
+              <i className="far fa-times-circle" onClick={this.removeCard}></i>
               <img className="park-img-large" src={imagePath} />
               {/* {imageSource} */}
               <div className="park-text-large">
@@ -40,7 +41,10 @@ class Park extends Component {
                 <a href={this.props.selectedPark.websiteUrl}>Link to NPS Page</a>
                 <h3>{this.props.selectedPark.description}</h3>
                 <button className="button-small" onClick={this.toggleFullCard}>View Less</button>
-                <p><span>Visited</span><span>Bucket</span></p>
+                <div className="user-list-btns">
+                  <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks" />
+                  <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList" />
+                </div>
               </div>
             </div>
           </div>
@@ -49,13 +53,16 @@ class Park extends Component {
         return (
           <div className="card-overlay">
             <div className="park-card-small">
-              <p onClick={this.removeCard}>X</p>
+              <i className="far fa-times-circle" onClick={this.removeCard}></i>
               <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
               <img className="park-img-small" src={imagePath} />
               {/* {imageSource} */}
               <h3 className="park-text-small">Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
               <button className="button-small" onClick={this.toggleFullCard}>View More</button>
-              <p><span>Visited</span><span>Bucket</span></p>
+              <div className="user-list-btns">
+                <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks" />
+                <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList" />
+              </div>
             </div>
           </div>
         );
