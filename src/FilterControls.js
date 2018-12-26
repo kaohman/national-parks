@@ -23,9 +23,6 @@ class FilterControls extends Component {
   }
 
   render() {
-    // if (this.props.stateName === 'default') {
-
-    // }
     return (
       <div className="filter-controls">
         <select id="select-menu" value={this.props.stateName} onChange={this.getState}>

@@ -22,6 +22,10 @@ class Park extends Component {
     });
   }
 
+  updateParkCodes = (storageKey, newArray) => {
+    this.props.updateParkCodes(storageKey, newArray);
+  }
+
   render() {
     let imagePath = `./${this.props.selectedPark.image}`;
     switch(this.state.displayFull) {
@@ -42,8 +46,26 @@ class Park extends Component {
                 <h3>{this.props.selectedPark.description}</h3>
                 <button className="button-small" onClick={this.toggleFullCard}>View Less</button>
                 <div className="user-list-btns">
-                  <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks" />
-                  <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList" />
+                  <Buttons
+                    iconType="fas fa-hiking"
+                    toolTipText="Add to Visited Parks"
+                    toolTipSide="left"
+                    storageKey="visitedParks"
+                    parkUrl={this.props.selectedPark.urlCode}
+                    visitedParks={this.props.visitedParks}
+                    bucketListParks={this.props.bucketListParks}
+                    updateParkCodes={this.updateParkCodes}
+                  />
+                  <Buttons
+                    iconType="fas fa-clipboard-list"
+                    toolTipText="Add to Bucket List"
+                    toolTipSide="right"
+                    storageKey="bucketList"
+                    parkUrl={this.props.selectedPark.urlCode}
+                    visitedParks={this.props.visitedParks}
+                    bucketListParks={this.props.bucketListParks}
+                    updateParkCodes={this.updateParkCodes}
+                  />
                 </div>
               </div>
             </div>
@@ -60,8 +82,26 @@ class Park extends Component {
               <h3 className="park-text-small">Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
               <button className="button-small" onClick={this.toggleFullCard}>View More</button>
               <div className="user-list-btns">
-                <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks" />
-                <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList" />
+                <Buttons 
+                  iconType="fas fa-hiking"
+                  toolTipText="Add to Visited Parks"
+                  toolTipSide="left"
+                  storageKey="visitedParks"
+                  parkUrl={this.props.selectedPark.urlCode}
+                  visitedParks={this.props.visitedParks}
+                  bucketListParks={this.props.bucketListParks}
+                  updateParkCodes={this.updateParkCodes}
+                />
+                <Buttons 
+                  iconType="fas fa-clipboard-list" 
+                  toolTipText="Add to Bucket List" 
+                  toolTipSide="right" 
+                  storageKey="bucketList" 
+                  parkUrl={this.props.selectedPark.urlCode} 
+                  visitedParks={this.props.visitedParks}
+                  bucketListParks={this.props.bucketListParks}
+                  updateParkCodes={this.updateParkCodes}
+                />
               </div>
             </div>
           </div>

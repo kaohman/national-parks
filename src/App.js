@@ -13,8 +13,8 @@ class App extends Component {
       currentUsStateName: 'default',
       currentUsStateCoord: [],
       currentParksToShow: [],
-      vistedParks: [],
-      bucketListParks: [],
+      visitedParkCodes: [],
+      bucketListParkCodes: [],
       pageStatus: 'landing',
       randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`
     };
@@ -30,41 +30,58 @@ class App extends Component {
 
   showVisitedParks = (event) => {
     event.preventDefault();
-    let visitedParks;
+    let visitedParks = this.state.parks.filter(park => {
+      return this.state.visitedParkCodes.includes(park.urlCode)
+    });
 
-    if (localStorage.hasOwnProperty('visitedParks')) {
-      let cachedVistedParkKeys = localStorage.getItem('visitedParks');
-      let vistedParksKeys = JSON.parse(cachedVistedParkKeys);
-      visitedParks = this.state.parks.filter(park => {
-        return vistedParksKeys.includes(park.urlCode)
-      });
-
-      this.setState({
-        currentUsStateName: 'default',
-        currentUsStateCoord: [],
-        currentParksToShow: visitedParks
-      });
-    }
+    this.setState({
+      currentUsStateName: 'default',
+      currentUsStateCoord: [],
+      currentParksToShow: visitedParks
+    });
   }
 
   showBucketList = (event) => {
     event.preventDefault();
-    let bucketListParks;
+    let bucketListParks = this.state.parks.filter( park => {
+      return this.state.bucketListParkCodes.includes(park.urlCode)
+    });
 
+    this.setState({
+      currentUsStateName: 'default',
+      currentUsStateCoord: [],
+      currentParksToShow: bucketListParks
+    });
+  }
+
+  updateParkCodes = (storageKey, newArray) => {
+    if (storageKey === 'visitedParks') {
+      this.setState({
+        visitedParkCodes: newArray
+      });
+    } else {
+      this.setState({
+        bucketListParkCodes: newArray
+      });
+    }
+  }
+
+  pullFromLocalStorage = () => {
     if (localStorage.hasOwnProperty('bucketList')) {
       let cachedBucketListKeys = localStorage.getItem('bucketList');
-      let bucketListKeys = JSON.parse(cachedBucketListKeys);
-      
-      bucketListParks = this.state.parks.filter( park => {
-        return bucketListKeys.includes(park.urlCode)
-      });
-  
+      let bucketListParkCodes = JSON.parse(cachedBucketListKeys);
       this.setState({
-        currentUsStateName: 'default',
-        currentUsStateCoord: [],
-        currentParksToShow: bucketListParks
+        bucketListParkCodes: bucketListParkCodes
       });
-    } 
+    }
+
+    if (localStorage.hasOwnProperty('visitedParks')) {
+      let cachedVistedParkKeys = localStorage.getItem('visitedParks');
+      let visitedParkCodes = JSON.parse(cachedVistedParkKeys);
+      this.setState({
+        visitedParkCodes: visitedParkCodes
+      });
+    }
   }
 
   openHomePage = () => {
@@ -113,6 +130,8 @@ class App extends Component {
         });
       })
       .catch(error => console.log(error));
+
+    this.pullFromLocalStorage();
   }
 
   render() {
@@ -122,11 +141,18 @@ class App extends Component {
           <div className={this.state.randomImageClass}>
             <div className="overlay">
               <h1 className="home-title">Mark My Parks</h1>
-              <ParkMap parks={this.state.currentParksToShow} stateName={this.state.currentUsStateName} stateCoord={this.state.currentUsStateCoord}/>
+              <ParkMap 
+                parks={this.state.currentParksToShow} 
+                stateName={this.state.currentUsStateName} 
+                stateCoord={this.state.currentUsStateCoord}
+                visitedParks={this.state.visitedParkCodes}
+                bucketListParks={this.state.bucketListParkCodes}
+                updateParkCodes={this.updateParkCodes}
+              />
               <div className="filters">
                 <button onClick={this.showAllParks}>Show All Parks</button>
-                <button onClick={this.showVisitedParks}>Show Visited Parks</button>
-                <button onClick={this.showBucketList}>Show Bucket List Parks</button>
+                <button onClick={this.showVisitedParks}>Show {this.state.visitedParkCodes.length} Visited Parks</button>
+                <button onClick={this.showBucketList}>Show  {this.state.bucketListParkCodes.length} Bucket List Parks</button>
               </div>
               <FilterControls usStates={this.state.usStates} stateName={this.state.currentUsStateName} setMapToState={this.setMapToState} />
             </div>

@@ -5,9 +5,7 @@ import './styles/main.scss';
 class LandingPage extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      backgroundImg: null
-    }
+    this.state = {}
   }
 
   handleClick = (event) => {

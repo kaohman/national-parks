@@ -9,33 +9,38 @@ class Buttons extends Component {
    };
   }
 
-  checkLocalStorage = () => {
-    if (localStorage.hasOwnProperty(this.state.storageKey)) {
-      this.saveToLocalStorage();
+  saveNewParksArray = () => {
+    let newArray;
+    if (this.state.storageKey === 'visitedParks') {
+      newArray = this.props.visitedParks;
     } else {
-      this.createStorage();
+      newArray = this.props.bucketListParks;
     }
-  }
 
-  createStorage = () => {
-    let parkKeys = JSON.stringify([this.state.parkUrl]);
-    localStorage.setItem(this.state.storageKey, parkKeys);
-  }
-
-  saveToLocalStorage = () => {
-    let parksKeys = JSON.parse(localStorage.getItem(this.state.storageKey));
-    if (!parksKeys.includes(this.state.parkUrl)) {
-      parksKeys.push(this.state.parkUrl);
-      let newKeysToStore = JSON.stringify(parksKeys);
-      localStorage.setItem(this.state.storageKey, newKeysToStore);
+    if ((localStorage.hasOwnProperty(this.state.storageKey)) && (newArray.includes(this.state.parkUrl))) {
+      let index = newArray.findIndex(parkCode => parkCode === this.state.parkUrl);
+      newArray.splice(index, 1);
+    } else {
+      newArray.push(this.state.parkUrl);
     }
+    this.saveToLocalStorage(newArray);
+    this.updateParkCodes(this.state.storageKey, newArray);
   }
-
+  
+  saveToLocalStorage = (newArray) => {
+    let newArrayToStore = JSON.stringify(newArray);
+    localStorage.setItem(this.state.storageKey, newArrayToStore);
+  }
+  
+  updateParkCodes = (storageKey, newArray) => {
+    this.props.updateParkCodes(storageKey, newArray);
+  }
+  
   render() {
     return (
       <div className="icon-btns">
         <span className={'tooltip' + this.props.toolTipSide}>{this.props.toolTipText}</span>
-        <button className="icons" onClick={this.checkLocalStorage}><span className={this.props.iconType}></span></button>
+        <button className="icons" onClick={this.saveNewParksArray}><span className={this.props.iconType}></span></button>
       </div>
     )
   }

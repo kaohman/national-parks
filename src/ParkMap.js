@@ -24,6 +24,10 @@ class ParkMap extends Component {
       selectedPark: null
     });
   }
+
+  updateParkCodes = (storageKey, newArray) => {
+    this.props.updateParkCodes(storageKey, newArray);
+  }
   
   render() {
     let stateZoom = this.state.uniqueStateZoom[this.props.stateName] ? this.state.uniqueStateZoom[this.props.stateName] : 6;
@@ -55,7 +59,14 @@ class ParkMap extends Component {
           }
         </Map>
         {
-          this.state.selectedPark && <Park removeCard={this.removeCard} selectedPark={this.state.selectedPark}/>
+          this.state.selectedPark && 
+          <Park 
+            removeCard={this.removeCard} 
+            selectedPark={this.state.selectedPark}
+            visitedParks={this.props.visitedParks}
+            bucketListParks={this.props.bucketListParks}
+            updateParkCodes={this.updateParkCodes}
+          />
         }
       </div>   
     )
