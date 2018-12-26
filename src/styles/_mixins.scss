@@ -23,3 +23,14 @@
 @mixin background-image($transparency, $url) {
   background:linear-gradient(rgba(0,0,0,$transparency),rgba(0,0,0,$transparency)),url($url);
 }
+
+@mixin tooltip() {
+  color: green;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 5px 5px;
+  position: absolute;
+  text-align: center;
+  visibility: hidden;
+  width: 90px;
+}

@@ -44,3 +44,14 @@
 p {
   margin: 10px;
 }
+
+.user-list-btns {
+  display: grid;
+  grid-template-columns: 38px 38px;
+  grid-gap: 20px;
+  margin: 10% 35%;
+}
+
+.fa-times-circle {
+  margin: 5px;
+}
