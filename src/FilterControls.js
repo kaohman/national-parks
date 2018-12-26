@@ -14,7 +14,12 @@ class FilterControls extends Component {
     this.setState({
       stateName: event.target.value,
       selectedState: this.props.usStates[event.target.value]
-    })
+    });
+    this.setMapToState(event.target.value, this.props.usStates[event.target.value]);
+  }
+
+  setMapToState = (stateName, stateObj) => {
+    this.props.setMapToState(stateName, stateObj);
   }
 
   render() {

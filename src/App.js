@@ -10,6 +10,8 @@ class App extends Component {
     this.state = {
       parks: [],
       usStates: {},
+      currentUsStateName: 'default',
+      currentUsStateCoord: [],
       currentParksToShow: [],
       vistedParks: [],
       bucketListParks: [],
@@ -21,6 +23,8 @@ class App extends Component {
   showAllParks = (event) => {
     event.preventDefault();
     this.setState({
+      currentUsStateName: 'default',
+      currentUsStateCoord: [],
       currentParksToShow: this.state.parks
     })
   }
@@ -37,6 +41,8 @@ class App extends Component {
       });
 
       this.setState({
+        currentUsStateName: 'default',
+        currentUsStateCoord: [],
         currentParksToShow: visitedParks
       });
     }
@@ -55,9 +61,29 @@ class App extends Component {
       });
   
       this.setState({
+        currentUsStateName: 'default',
+        currentUsStateCoord: [],
         currentParksToShow: bucketListParks
       });
     } 
+  }
+
+  openHomePage = () => {
+    this.setState({
+      pageStatus: 'home'
+    });
+  }
+
+  setMapToState = (stateName, stateObj) => {
+    let parksToShow = this.state.parks.filter(park => {
+      return park.state.includes(stateName)
+    });
+    
+    this.setState({
+      currentUsStateName: stateName,
+      currentUsStateCoord: [stateObj.latitude, stateObj.longitude],
+      currentParksToShow: parksToShow
+    });
   }
 
   componentDidMount() {
@@ -86,12 +112,6 @@ class App extends Component {
       .catch(error => console.log(error));
   }
 
-  openHomePage = () => {
-    this.setState({
-      pageStatus: 'home'
-    });
-  }
-
   render() {
     switch(this.state.pageStatus) {
       case('home'):
@@ -99,13 +119,13 @@ class App extends Component {
           <div className={this.state.randomImageClass}>
             <div className="overlay">
               <h1 className="home-title">Mark My Parks</h1>
-              <ParkMap parks={this.state.currentParksToShow}/>
+              <ParkMap parks={this.state.currentParksToShow} stateName={this.state.currentUsStateName} stateCoord={this.state.currentUsStateCoord}/>
               <div className="filters">
                 <button onClick={this.showAllParks}>Show All Parks</button>
                 <button onClick={this.showVisitedParks}>Show Visited Parks</button>
                 <button onClick={this.showBucketList}>Show Bucket List Parks</button>
               </div>
-              <FilterControls usStates={this.state.usStates} />
+              <FilterControls usStates={this.state.usStates} setMapToState={this.setMapToState} />
             </div>
           </div>
         );
