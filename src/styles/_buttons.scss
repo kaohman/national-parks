@@ -4,24 +4,17 @@
   font-size: 20px;
 }
 
-.icons:hover {
+.icons:hover,
+#partOfList {
   color: green;
 }
 
-.tooltipleft {
-  @include tooltip();
-  left: 1%;
-}
 
-.tooltipright {
-  @include tooltip();
-  right: 57%;
-}
-
-.icon-btns:hover .tooltipright {
+.icon-btns:hover {
   visibility: visible;
 }
 
-.icon-btns:hover .tooltipleft {
+.icon-btns:hover {
   visibility: visible;
 }
+

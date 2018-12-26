@@ -37,10 +37,23 @@ class Buttons extends Component {
   }
   
   render() {
+    let buttonType;
+    if (this.state.storageKey === 'visitedParks') {
+      buttonType = this.props.visitedParks;
+    } else {
+      buttonType = this.props.bucketListParks;
+    }
+
     return (
       <div className="icon-btns">
-        <span className={'tooltip' + this.props.toolTipSide}>{this.props.toolTipText}</span>
-        <button className="icons" onClick={this.saveNewParksArray}><span className={this.props.iconType}></span></button>
+        <button className="icons" onClick={this.saveNewParksArray}>
+          <span 
+            className={this.props.iconType} 
+            id={
+              buttonType.includes(this.state.parkUrl) ? 'partOfList' : ''
+            }>
+          </span>
+        </button>
       </div>
     )
   }

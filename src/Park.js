@@ -27,6 +27,7 @@ class Park extends Component {
   }
 
   render() {
+    // check if parkCode is in each array, if yes, tell specific buttons below to have a certain class
     let imagePath = `./${this.props.selectedPark.image}`;
     switch(this.state.displayFull) {
       case(true):
@@ -35,7 +36,6 @@ class Park extends Component {
             <div className="park-card-large">
               <i className="far fa-times-circle" onClick={this.removeCard}></i>
               <img className="park-img-large" src={imagePath} />
-              {/* {imageSource} */}
               <div className="park-text-large">
                 <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
                 <h3>State: {this.props.selectedPark.state}</h3>
@@ -48,8 +48,6 @@ class Park extends Component {
                 <div className="user-list-btns">
                   <Buttons
                     iconType="fas fa-hiking"
-                    toolTipText="Add to Visited Parks"
-                    toolTipSide="left"
                     storageKey="visitedParks"
                     parkUrl={this.props.selectedPark.urlCode}
                     visitedParks={this.props.visitedParks}
@@ -58,8 +56,6 @@ class Park extends Component {
                   />
                   <Buttons
                     iconType="fas fa-clipboard-list"
-                    toolTipText="Add to Bucket List"
-                    toolTipSide="right"
                     storageKey="bucketList"
                     parkUrl={this.props.selectedPark.urlCode}
                     visitedParks={this.props.visitedParks}
@@ -84,8 +80,6 @@ class Park extends Component {
               <div className="user-list-btns">
                 <Buttons 
                   iconType="fas fa-hiking"
-                  toolTipText="Add to Visited Parks"
-                  toolTipSide="left"
                   storageKey="visitedParks"
                   parkUrl={this.props.selectedPark.urlCode}
                   visitedParks={this.props.visitedParks}
@@ -94,8 +88,6 @@ class Park extends Component {
                 />
                 <Buttons 
                   iconType="fas fa-clipboard-list" 
-                  toolTipText="Add to Bucket List" 
-                  toolTipSide="right" 
                   storageKey="bucketList" 
                   parkUrl={this.props.selectedPark.urlCode} 
                   visitedParks={this.props.visitedParks}
