@@ -5,7 +5,7 @@ class FilterControls extends Component {
  constructor(props) {
   super(props);
   this.state = {
-    stateName: 'default',
+    stateName: this.props.stateName,
     selectedState: {}
   };
  }
@@ -14,13 +14,21 @@ class FilterControls extends Component {
     this.setState({
       stateName: event.target.value,
       selectedState: this.props.usStates[event.target.value]
-    })
+    });
+    this.setMapToState(event.target.value, this.props.usStates[event.target.value]);
+  }
+
+  setMapToState = (stateName, stateObj) => {
+    this.props.setMapToState(stateName, stateObj);
   }
 
   render() {
+    // if (this.props.stateName === 'default') {
+
+    // }
     return (
-      <div>
-        <select id="select-menu" value={this.state.stateName} onChange={this.getState}>
+      <div className="filter-controls">
+        <select id="select-menu" value={this.props.stateName} onChange={this.getState}>
           <option value="default">Please pick a state</option>
         {
           Object.keys(this.props.usStates).map(usState => {
@@ -29,7 +37,7 @@ class FilterControls extends Component {
         }
         </select>
         {
-          this.state.stateName !== 'default' && 
+          this.props.stateName !== 'default' && 
           <UsState name={this.state.stateName} selectedState={this.state.selectedState}/>
         }
       </div>

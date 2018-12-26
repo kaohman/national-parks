@@ -10,16 +10,20 @@ class App extends Component {
     this.state = {
       parks: [],
       usStates: {},
+      currentUsStateName: 'default',
+      currentUsStateCoord: [],
       currentParksToShow: [],
       vistedParks: [],
       bucketListParks: [],
-      pageStatus: 'landing'
+      pageStatus: 'landing',
+      randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`
     };
   }
 
-  showAllParks = (event) => {
-    event.preventDefault();
+  showAllParks = () => {
     this.setState({
+      currentUsStateName: 'default',
+      currentUsStateCoord: [],
       currentParksToShow: this.state.parks
     })
   }
@@ -36,6 +40,8 @@ class App extends Component {
       });
 
       this.setState({
+        currentUsStateName: 'default',
+        currentUsStateCoord: [],
         currentParksToShow: visitedParks
       });
     }
@@ -54,9 +60,33 @@ class App extends Component {
       });
   
       this.setState({
+        currentUsStateName: 'default',
+        currentUsStateCoord: [],
         currentParksToShow: bucketListParks
       });
     } 
+  }
+
+  openHomePage = () => {
+    this.setState({
+      pageStatus: 'home'
+    });
+  }
+
+  setMapToState = (stateName, stateObj) => {
+    if (stateName !== 'default') {
+      let parksToShow = this.state.parks.filter(park => {
+        return park.state.includes(stateName)
+      });
+    
+      this.setState({
+        currentUsStateName: stateName,
+        currentUsStateCoord: [stateObj.latitude, stateObj.longitude],
+        currentParksToShow: parksToShow
+      });
+    } else {
+      this.showAllParks();
+    }
   }
 
   componentDidMount() {
@@ -85,30 +115,26 @@ class App extends Component {
       .catch(error => console.log(error));
   }
 
-  openHomePage = () => {
-    this.setState({
-      pageStatus: 'home'
-    });
-  }
-
   render() {
     switch(this.state.pageStatus) {
       case('home'):
         return (
-          <div>
-            <h1 className="home-title">Mark My Parks</h1>
-            <ParkMap parks={this.state.currentParksToShow}/>
-            <div className="filters">
-              <button onClick={this.showAllParks}>Show All Parks</button>
-              <button onClick={this.showVisitedParks}>Show Visited Parks</button>
-              <button onClick={this.showBucketList}>Show Bucket List Parks</button>
-              <FilterControls usStates={this.state.usStates} />
+          <div className={this.state.randomImageClass}>
+            <div className="overlay">
+              <h1 className="home-title">Mark My Parks</h1>
+              <ParkMap parks={this.state.currentParksToShow} stateName={this.state.currentUsStateName} stateCoord={this.state.currentUsStateCoord}/>
+              <div className="filters">
+                <button onClick={this.showAllParks}>Show All Parks</button>
+                <button onClick={this.showVisitedParks}>Show Visited Parks</button>
+                <button onClick={this.showBucketList}>Show Bucket List Parks</button>
+              </div>
+              <FilterControls usStates={this.state.usStates} stateName={this.state.currentUsStateName} setMapToState={this.setMapToState} />
             </div>
           </div>
         );
       default:
         return (
-          <div>
+          <div className={this.state.randomImageClass}>
             <LandingPage openHomePage={this.openHomePage} />
           </div>
         );

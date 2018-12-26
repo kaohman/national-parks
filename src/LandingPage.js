@@ -6,6 +6,7 @@ class LandingPage extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      backgroundImg: null
     }
   }
 
@@ -16,12 +17,10 @@ class LandingPage extends Component {
 
   render() {
     return(
-      <div className="landing-background">
         <div className="splash-div">
           <h1 className="splash-title">Mark My Parks</h1>
           <button onClick={this.handleClick}>Enter Site</button>
         </div>
-      </div>
     );
   }
 }

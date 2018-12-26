@@ -20,8 +20,14 @@
   }
 }
 
-@mixin background-image($transparency, $url) {
-  background:linear-gradient(rgba(0,0,0,$transparency),rgba(0,0,0,$transparency)),url($url);
+@mixin background-image($url) {
+  background: url($url);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 @mixin tooltip() {

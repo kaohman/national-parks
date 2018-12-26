@@ -8,6 +8,7 @@ class ParkMap extends Component {
     this.state = {
       selectedPark: null,
       zoom: 4,
+      uniqueStateZoom: { Alaska: 4, California: 5, Michigan: 5 },
       position: [37.0902, -95.7129],
     };
   }
@@ -23,15 +24,14 @@ class ParkMap extends Component {
       selectedPark: null
     });
   }
-
-  showParksByState = (state) => {
-    //this.setstate = currentParksToShow should now only include parks from parameter of state
-  }
   
   render() {
+    let stateZoom = this.state.uniqueStateZoom[this.props.stateName] ? this.state.uniqueStateZoom[this.props.stateName] : 6;
     return (
      <div className="map-container">
-        <Map id="map" center={this.state.position} zoom={this.state.zoom}>
+        <Map id="map" center=
+          { this.props.stateCoord.length > 0 ? this.props.stateCoord : this.state.position }
+          zoom={this.props.stateCoord.length > 0 ? stateZoom : this.state.zoom }>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'

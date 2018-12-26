@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`UsState should match the snapshot with all data passed in 1`] = `
-<div>
+<div
+  className="state-card"
+>
   <h1>
     North Carolina
   </h1>

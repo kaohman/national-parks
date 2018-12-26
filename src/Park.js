@@ -8,9 +8,9 @@ class Park extends Component {
       displayFull: false  
    };
  }
-  showFullCard= () => {
+  toggleFullCard= () => {
     this.setState({
-      displayFull: true
+      displayFull: !this.state.displayFull
     });
   }
 
@@ -24,22 +24,49 @@ class Park extends Component {
 
   render() {
     let imagePath = `./${this.props.selectedPark.image}`;
-    return (
-      <div className="card-overlay">
-        <div className="park-card-small"> 
-          <i className="far fa-times-circle" onClick={this.removeCard}></i>
-          <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
-          <img className="park-img" src={imagePath} />
-          {/* {imageSource} */}
-          <h3 className="park-text">{this.props.selectedPark.description.substring(0, 80)}...</h3>
-          <button className="button-small" onClick={this.showFullCard}>View More</button>
-          <div className="user-list-btns">
-          <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks"/>
-          <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList"/>
+    switch(this.state.displayFull) {
+      case(true):
+        return (
+          <div className="card-overlay">
+            <div className="park-card-large">
+              <i className="far fa-times-circle" onClick={this.removeCard}></i>
+              <img className="park-img-large" src={imagePath} />
+              {/* {imageSource} */}
+              <div className="park-text-large">
+                <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
+                <h3>State: {this.props.selectedPark.state}</h3>
+                <h3>Date Established: {this.props.selectedPark.dateEstablished}</h3>
+                <h3>Annual Visitors: {this.props.selectedPark.annualVisitors}</h3>
+                <h3>Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
+                <a href={this.props.selectedPark.websiteUrl}>Link to NPS Page</a>
+                <h3>{this.props.selectedPark.description}</h3>
+                <button className="button-small" onClick={this.toggleFullCard}>View Less</button>
+                <div className="user-list-btns">
+                  <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks" />
+                  <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList" />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    )
+        );
+      default:
+        return (
+          <div className="card-overlay">
+            <div className="park-card-small">
+              <i className="far fa-times-circle" onClick={this.removeCard}></i>
+              <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
+              <img className="park-img-small" src={imagePath} />
+              {/* {imageSource} */}
+              <h3 className="park-text-small">Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
+              <button className="button-small" onClick={this.toggleFullCard}>View More</button>
+              <div className="user-list-btns">
+                <Buttons iconType="fas fa-hiking" toolTipText="Add to Visited Parks" toolTipSide="left" parkUrl={this.props.selectedPark.urlCode} storageKey="visitedParks" />
+                <Buttons iconType="fas fa-clipboard-list" toolTipText="Add to Bucket List" toolTipSide="right" parkUrl={this.props.selectedPark.urlCode} storageKey="bucketList" />
+              </div>
+            </div>
+          </div>
+        );
+    }
   }
 }
 
