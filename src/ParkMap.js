@@ -88,7 +88,6 @@ class ParkMap extends Component {
                   </Marker>
                 )
               } else {
-                console.log(park.urlCode)
                 return (
                   <Marker position={[lat, lon]} icon={blueIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
                     <Tooltip>{park.parkName}</Tooltip>
