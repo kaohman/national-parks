@@ -27,7 +27,6 @@ class Park extends Component {
   }
 
   render() {
-    // check if parkCode is in each array, if yes, tell specific buttons below to have a certain class
     let imagePath = `./${this.props.selectedPark.image}`;
     switch(this.state.displayFull) {
       case(true):
@@ -35,7 +34,7 @@ class Park extends Component {
           <div className="card-overlay">
             <div className="park-card-large">
               <i className="far fa-times-circle" onClick={this.removeCard}></i>
-              <img className="park-img-large" src={imagePath} />
+              <img className="park-img-large" alt="park" src={imagePath} />
               <div className="park-text-large">
                 <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
                 <h3>State: {this.props.selectedPark.state}</h3>
@@ -73,8 +72,7 @@ class Park extends Component {
             <div className="park-card-small">
               <i className="far fa-times-circle" onClick={this.removeCard}></i>
               <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
-              <img className="park-img-small" src={imagePath} />
-              {/* {imageSource} */}
+              <img className="park-img-small" alt="park" src={imagePath} />
               <h3 className="park-text-small">Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
               <button className="button-small" onClick={this.toggleFullCard}>View More</button>
               <div className="user-list-btns">

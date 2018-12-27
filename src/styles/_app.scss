@@ -1,7 +1,8 @@
 .overlay {
-  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+  background-size: 100% 100%;
+  min-height: 100vh;
   height: 100%;
-  width: 100%;
   z-index: 10;
 }
 
@@ -16,10 +17,17 @@
 .filters {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 40px;
+  grid-column-gap: 20px;
   justify-content: space-between;
-  width: 80%;
+  width: $map-width;
   margin: 10px auto;
+}
+
+.loc-icons {
+  height: 18px;
+  width: 12px;
+  position: relative;
+  top: 2.5px;
 }
 
 button {

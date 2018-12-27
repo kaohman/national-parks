@@ -25,14 +25,16 @@ class FilterControls extends Component {
   render() {
     return (
       <div className="filter-controls">
-        <select id="select-menu" value={this.props.stateName} onChange={this.getState}>
-          <option value="default">Please pick a state</option>
-        {
-          Object.keys(this.props.usStates).map(usState => {
-            return(<option value={[usState]} key={this.props.usStates[usState].abbreviation}>{[usState]}</option>)
-          })
-        }
-        </select>
+        <label className="filter-label">View Parks By State:
+          <select id="select-menu" value={this.props.stateName} onChange={this.getState}>
+            <option value="default">Please pick a state</option>
+          {
+            Object.keys(this.props.usStates).map(usState => {
+              return(<option value={[usState]} key={this.props.usStates[usState].abbreviation}>{[usState]}</option>)
+            })
+          }
+          </select>
+        </label>
         {
           this.props.stateName !== 'default' && 
           <UsState name={this.state.stateName} selectedState={this.state.selectedState}/>

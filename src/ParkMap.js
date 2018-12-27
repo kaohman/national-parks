@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Map, Marker, Tooltip, TileLayer } from 'react-leaflet';
+import L from 'leaflet';
 import Park from './Park.js';
 
 class ParkMap extends Component {
@@ -31,6 +32,30 @@ class ParkMap extends Component {
   
   render() {
     let stateZoom = this.state.uniqueStateZoom[this.props.stateName] ? this.state.uniqueStateZoom[this.props.stateName] : 6;
+    let greenIcon = new L.icon({
+      iconUrl: './assets/marker-icon-green.png',
+      shadowUrl: './assets/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+    let violetIcon = new L.icon({
+      iconUrl: './assets/marker-icon-violet.png',
+      shadowUrl: './assets/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
+    let blueIcon = new L.icon({
+      iconUrl: './assets/marker-icon-blue.png',
+      shadowUrl: './assets/marker-shadow.png',
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41]
+    });
     return (
      <div className="map-container">
         <Map id="map" center=
@@ -50,11 +75,25 @@ class ParkMap extends Component {
             this.props.parks.map(park => {
               let lat = (park.latitude.includes('N')) ? park.latitude.replace(/.N$/, '') : park.latitude.replace(/.S$/, '').replace(/^/, '-');
               let lon = (park.longitude.includes('E')) ? park.longitude.replace(/.E$/, '') : park.longitude.replace(/.W$/, '').replace(/^/, '-');
-              return(
-                <Marker position={[lat, lon]} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                  <Tooltip>{park.parkName}</Tooltip>
-                </Marker>
-              )
+              if (this.props.visitedParks.includes(park.urlCode)) {
+                return (
+                  <Marker position={[lat, lon]} icon={greenIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
+                    <Tooltip>{park.parkName}</Tooltip>
+                  </Marker>
+                )
+              } else if (this.props.bucketListParks.includes(park.urlCode)) {
+                return (
+                  <Marker position={[lat, lon]} icon={violetIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
+                    <Tooltip>{park.parkName}</Tooltip>
+                  </Marker>
+                )
+              } else {
+                return (
+                  <Marker position={[lat, lon]} icon={blueIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
+                    <Tooltip>{park.parkName}</Tooltip>
+                  </Marker>
+                )
+              }
             })
           }
         </Map>

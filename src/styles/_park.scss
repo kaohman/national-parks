@@ -1,7 +1,7 @@
 .card-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  margin-top: -501px;
+  margin-top: -451px;
   margin-left: 1px;
   height: $map-height;
   width: $map-width;
@@ -56,9 +56,9 @@
 
 .park-img-large {
   grid-row: span 2;
-  margin: 15px;
-  height: 470px;
-  max-width: 600px;
+  margin: 15px auto;
+  height: 420px;
+  max-width: 500px;
   object-fit: cover;
 }
 
