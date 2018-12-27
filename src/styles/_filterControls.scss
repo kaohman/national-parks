@@ -1,13 +1,19 @@
 .filter-controls {
   display: block;
   width: 80%;
-  margin: 10px auto;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.filter-label {
+  color: white;
+  font-family: $body-font;
+  font-size: 24px;
 }
 
 #select-menu {
   width: 350px;
-  display: block;
-  margin: 20px auto;
+  margin: 0 5px;
   background-color: white;
   font-family: $body-font;
   font-size: 18px;
