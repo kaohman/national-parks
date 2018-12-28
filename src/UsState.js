@@ -1,4 +1,5 @@
 import React from 'react';
+import Chart from './Chart.js'
 
 
 function UsState(props) {
@@ -10,6 +11,9 @@ function UsState(props) {
       <h3>Date Established: <span>{props.selectedState.dateEstablished}</span></h3>
       <h3>Number of Parks in State: <span>{props.selectedState.nationalParks.length}</span></h3>
       <h3>State Flower: <span>{props.selectedState.stateFlower}</span></h3>
+        <div>
+          <Chart />
+        </div>
     </div>
   )
 }
