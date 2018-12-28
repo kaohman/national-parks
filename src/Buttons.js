@@ -46,14 +46,13 @@ class Buttons extends Component {
 
     return (
       <div className="icon-btns">
-        <button className="icons" onClick={this.saveNewParksArray}>
-          <span 
-            className={this.props.iconType} 
-            id={
-              buttonType.includes(this.state.parkUrl) ? 'partOfList' : ''
-            }>
-          </span>
-        </button>
+        <span 
+          onClick={this.saveNewParksArray}
+          className={this.props.iconType} 
+          id={
+            buttonType.includes(this.state.parkUrl) ? this.state.storageKey : ''
+          }>
+        </span>
       </div>
     )
   }

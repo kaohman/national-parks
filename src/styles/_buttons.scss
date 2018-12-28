@@ -1,20 +1,25 @@
-.icons {
-  @include button-style();
+.icon-btns {
+  justify-self: center;
+}
+.fa-clipboard-list,
+.fa-hiking {
   font-family: $icon-font;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.icons:hover,
-#partOfList {
-  color: green;
+.fa-clipboard-list:hover {
+  color: $violet;
+  font-size: 29px;
 }
 
-
-.icon-btns:hover {
-  visibility: visible;
+.fa-hiking:hover {
+  color: $green;
+  font-size: 29px;
 }
 
-.icon-btns:hover {
-  visibility: visible;
+#bucketList {
+  color: $violet;
 }
-
+#visitedParks {
+  color: $green;
+}
