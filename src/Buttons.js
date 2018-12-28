@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import ReactTooltip from 'react-tooltip';
 
 class Buttons extends Component {
   constructor(props) {
    super(props);
    this.state = {
      parkUrl: this.props.parkUrl,
-     storageKey: this.props.storageKey
+     storageKey: this.props.storageKey,
    };
   }
 
@@ -35,13 +36,16 @@ class Buttons extends Component {
   updateParkCodes = (storageKey, newArray) => {
     this.props.updateParkCodes(storageKey, newArray);
   }
-  
+
   render() {
     let buttonType;
+    let toolTipText;
     if (this.state.storageKey === 'visitedParks') {
       buttonType = this.props.visitedParks;
+      toolTipText = buttonType.includes(this.state.parkUrl) ? 'Remove from Visited Parks' : 'Add to Visited Parks';
     } else {
       buttonType = this.props.bucketListParks;
+      toolTipText = buttonType.includes(this.state.parkUrl) ? 'Remove from Bucket List Parks' : 'Add to Bucket List Parks';
     }
 
     return (
@@ -51,8 +55,12 @@ class Buttons extends Component {
           className={this.props.iconType} 
           id={
             buttonType.includes(this.state.parkUrl) ? this.state.storageKey : ''
-          }>
+          }
+          data-tip 
+          data-for={"tooltip/" + this.state.storageKey}
+          >
         </span>
+        <ReactTooltip id={"tooltip/" + this.state.storageKey} type='dark' effect='solid'>{toolTipText}</ReactTooltip>
       </div>
     )
   }
