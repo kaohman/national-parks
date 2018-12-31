@@ -154,7 +154,12 @@ class App extends Component {
                 <button onClick={this.showVisitedParks}><i class="fas fa-hiking" id="partOfList"></i> Show {this.state.visitedParkCodes.length} Visited Parks</button>
                 <button onClick={this.showBucketList}><i class="fas fa-clipboard-list" id="partOfList"></i> Show {this.state.bucketListParkCodes.length} Bucket List Parks</button>
               </div>
-              <FilterControls usStates={this.state.usStates} stateName={this.state.currentUsStateName} setMapToState={this.setMapToState} />
+              <FilterControls 
+                usStates={this.state.usStates} 
+                stateName={this.state.currentUsStateName}
+                setMapToState={this.setMapToState}
+                
+                />
             </div>
           </div>
         );
