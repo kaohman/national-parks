@@ -16,9 +16,15 @@ class App extends Component {
       visitedParkCodes: [],
       bucketListParkCodes: [],
       pageStatus: 'landing',
-      randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`
+      randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`,
+      parksInCurrentState:[]
     };
   }
+
+  parksInState = () => {
+    
+  }
+
 
   showAllParks = () => {
     this.setState({
@@ -158,7 +164,7 @@ class App extends Component {
                 usStates={this.state.usStates} 
                 stateName={this.state.currentUsStateName}
                 setMapToState={this.setMapToState}
-                
+
                 />
             </div>
           </div>
