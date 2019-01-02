@@ -2,7 +2,7 @@ import React from 'react';
 import ParkMap from './ParkMap';
 import { shallow } from 'enzyme';
 
-let parks = [
+const parks = [
   {
     parkName: "Death Valley",
     state: [
@@ -59,6 +59,12 @@ let parks = [
     description: "Situated on the Yellowstone Caldera, the park has an expansive network of geothermal areas including boiling mud pots, vividly colored hot springs such as Grand Prismatic Spring, and regularly erupting geysers, the best-known being Old Faithful. The yellow-hued Grand Canyon of the Yellowstone River contains several high waterfalls, and four mountain ranges traverse the park. More than 60 mammal species including gray wolves, grizzly bears, black bears, lynxes, bison, and elk, make this park one of the best wildlife viewing spots in the country."
   }
 ]
+const visitedParks = ['deva', 'grsm'];
+const bucketListParks = ['yell'];
+const updateParkCodesMock = jest.fn();
+const stateName = 'default';
+const stateCoord = [];
+
 
 describe('ParkMap', () => {
   let wrapper;
@@ -67,6 +73,11 @@ describe('ParkMap', () => {
     wrapper = shallow(
       <ParkMap
         parks={parks}
+        stateName={stateName}
+        stateCoord={stateCoord}
+        visitedParks={visitedParks}
+        bucketListParks={bucketListParks}
+        updateParkCodes={updateParkCodesMock}
       />
     );
   });
@@ -76,7 +87,7 @@ describe('ParkMap', () => {
   });
 
   it('should have the proper default state', () => {
-    expect(wrapper.state()).toEqual({ selectedPark: null, zoom: 4, position: [37.0902, - 95.7129] } );
+    expect(wrapper.state()).toEqual({ selectedPark: null, zoom: 4, uniqueStateZoom: { Alaska: 4, California: 5, Michigan: 5 }, position: [37.0902, - 95.7129] } );
   });
 
   it('should update state when getPark is called', () => {

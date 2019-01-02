@@ -2,7 +2,7 @@ import React from 'react';
 import Park from './Park';
 import { shallow } from 'enzyme';
 
-let selectedPark = {
+const selectedPark = {
   parkName: "Death Valley",
   state: ["California", "Nevada"],
   dateEstablished: "October 31, 1994",
@@ -18,6 +18,10 @@ let selectedPark = {
   sizeAcres: 337306314,
   description: "The Badlands are a collection of buttes, pinnacles, spires, and mixed-grass prairies. The White River Badlands contain the largest assemblage of known late Eocene and Oligocene mammal fossils. The wildlife includes bison, bighorn sheep, black-footed ferrets, and prairie dogs."
 };
+const visitedParks = ['deva', 'grsm'];
+const bucketListParks = ['yell'];
+const removeCardMock = jest.fn();
+const updateParkCodesMock = jest.fn();
 
 describe('Park', () => {
   let wrapper;
@@ -26,11 +30,31 @@ describe('Park', () => {
     wrapper = shallow(
       <Park
         selectedPark={selectedPark}
+        removeCard={removeCardMock}
+        visitedParks={visitedParks}
+        bucketListParks={bucketListParks}
+        updateParkCodes={updateParkCodesMock}
       />
     );
   });
   
   it('should match the snapshot with all data passed in', () => {
     expect(wrapper).toMatchSnapshot();
+  });
+
+  it('should have a default state', () => {
+    expect(wrapper.state()).toEqual({ displayFull: false });
+  });
+
+  it('should be able to toggle between small and large card', () => {
+    expect(wrapper.state('displayFull')).toEqual(false);
+    wrapper.find('.button-small').simulate('click');
+    expect(wrapper.state('displayFull')).toEqual(true);
+  });
+
+  it('should be able to remove a park card', () => {
+    wrapper.find('#remove-card').simulate('click', { preventDefault: () => { } });
+    expect(removeCardMock).toBeCalled();
+    expect(wrapper.state('displayFull')).toEqual(false);
   });
 });

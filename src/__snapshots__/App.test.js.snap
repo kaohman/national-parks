@@ -2,7 +2,7 @@
 
 exports[`App should match the snapshot with all data passed in 1`] = `
 <div
-  className="landing-background3"
+  className="landing-background4"
 >
   <LandingPage
     openHomePage={[Function]}

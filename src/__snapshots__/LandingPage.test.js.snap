@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons should match the snapshot with all data passed in 1`] = `
+<div
+  className="splash-div"
+>
+  <h1
+    className="splash-title"
+  >
+    Mark My Parks
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    Enter Site
+  </button>
+</div>
+`;
