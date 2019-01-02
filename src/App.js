@@ -17,15 +17,22 @@ class App extends Component {
       bucketListParkCodes: [],
       pageStatus: 'landing',
       randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`,
-      parksInCurrentState:[]
+      currentStateAnnualvisitors: 0 
     };
   }
 
-  parksInState = () => {
-    
+    getAnnualVisitors = () => {
+      let currentStateAnnualvisitors = this.state.parks.reduce((sum, park) => {
+        if(park.state.includes(this.state.currentUsStateName)) {
+          sum+=park.annualVistors 
+        return sum
+      }
+    }, 0)
+    this.setState({
+      currentStateAnnualvisitors: currentStateAnnualvisitors
+  })
   }
-
-
+  
   showAllParks = () => {
     this.setState({
       currentUsStateName: 'default',
@@ -164,7 +171,8 @@ class App extends Component {
                 usStates={this.state.usStates} 
                 stateName={this.state.currentUsStateName}
                 setMapToState={this.setMapToState}
-
+                getAnnualVisitors ={this.getAnnualVisitors}
+                currentStateAnnualvisitors={this.state.currentStateAnnualvisitors}
                 />
             </div>
           </div>

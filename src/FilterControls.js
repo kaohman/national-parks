@@ -22,6 +22,7 @@ class FilterControls extends Component {
     this.props.setMapToState(stateName, stateObj);
   }
 
+
   render() {
     return (
       <div className="filter-controls">
@@ -35,7 +36,12 @@ class FilterControls extends Component {
         </select>
         {
           this.props.stateName !== 'default' && 
-          <UsState name={this.state.stateName} selectedState={this.state.selectedState}/>
+          <UsState 
+            name={this.state.stateName} 
+            selectedState={this.state.selectedState}
+            getAnnualVisitors ={this.props.getAnnualVisitors}
+            currentStateAnnualvisitors={this.props.currentStateAnnualvisitors}
+          />
         }
       </div>
     )
