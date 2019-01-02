@@ -18,7 +18,8 @@ class Park extends Component {
     event.preventDefault();
     this.props.removeCard();
     this.setState({
-      displayFull: false
+      displayFull: false,
+      annualVisitors: 0
     });
   }
 
@@ -39,10 +40,10 @@ class Park extends Component {
                 <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
                 <h3>State: {this.props.selectedPark.state}</h3>
                 <h3>Date Established: {this.props.selectedPark.dateEstablished}</h3>
-                <h3>Annual Visitors: {this.props.selectedPark.annualVisitors}</h3>
+                <h3>Annual Visitors: {this.props.selectedPark.annualVisitors.toLocaleString()}</h3>
                 <h3>Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
                 <a href={this.props.selectedPark.websiteUrl}>Link to NPS Page</a>
-                <h3>{this.props.selectedPark.description}</h3>
+                <h3 className="park-descrip">{this.props.selectedPark.description}</h3>
                 <button className="button-small" onClick={this.toggleFullCard}>View Less</button>
                 <div className="user-list-btns">
                   <Buttons
