@@ -56,22 +56,40 @@
 
 .park-img-large {
   grid-row: span 2;
-  margin: 15px auto;
+  margin: 15px;
   height: 420px;
   max-width: 500px;
   object-fit: cover;
 }
 
 .park-descrip {
-  overflow: scroll;
-  height: 75px;
+  overflow-y: auto;
+  height: 66px;
 }
 
+.park-descrip::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.park-descrip::-webkit-scrollbar:vertical {
+  width: 11px;
+}
+
+.park-descrip::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
 .button-small {
+  box-shadow: none;
   display: block;
   font-size: 14px;
-  box-shadow: none;
   margin: 5px auto;
+  &:hover {
+    background-color: lightgray;
+  }
 }
 
 p {
@@ -90,9 +108,8 @@ p {
   margin: 5px;
   height: 22px;
   width: 22px;
-}
-
-.fa-times-circle:hover {
-  color: red;
-  font-size: 18px;
+  &:hover {
+    color: red;
+    font-size: 18px;
+  }
 }

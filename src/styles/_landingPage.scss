@@ -40,3 +40,28 @@
 button {
   @include button-style();
 }
+
+.info-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  font-family: $body-font;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 20px auto;
+  opacity: .75;  
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+}
+
+.enter-btn {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: .9;
+  width: 200px;
+}
+
+.hidden {
+  visibility: hidden;
+}
