@@ -58,8 +58,11 @@ class ParkMap extends Component {
     });
     return (
      <div className="map-container">
-        <Map id="map" center=
-          { this.props.stateCoord.length > 0 ? this.props.stateCoord : this.state.position }
+        <Map 
+          id="map" 
+          minZoom='3'
+          maxZoom='8'
+          center={ this.props.stateCoord.length > 0 ? this.props.stateCoord : this.state.position }
           zoom={this.props.stateCoord.length > 0 ? stateZoom : this.state.zoom }>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
