@@ -2,10 +2,167 @@
 
 exports[`App should match the snapshot with all data passed in 1`] = `
 <div
-  className="landing-background3"
+  className="landing-background2"
 >
-  <LandingPage
-    openHomePage={[Function]}
-  />
+  <div
+    className="overlay"
+  >
+    <h1
+      className="home-title"
+    >
+      Mark My Parks
+    </h1>
+    <ParkMap
+      bucketListParks={
+        Array [
+          "deva",
+        ]
+      }
+      parks={Array []}
+      stateCoord={Array []}
+      stateName="default"
+      updateParkCodes={[Function]}
+      visitedParks={
+        Array [
+          "deva",
+          "grsm",
+        ]
+      }
+    />
+    <div
+      className="filters"
+    >
+      <button
+        id="show-all-button"
+        onClick={[Function]}
+      >
+        Show All Parks
+      </button>
+      <button
+        id="show-visited-button"
+        onClick={[Function]}
+      >
+        <img
+          alt="green icon"
+          className="loc-icons"
+          src="./assets/marker-icon-green.png"
+        />
+         Show 
+        2
+         Visited Parks
+      </button>
+      <button
+        id="show-bucket-button"
+        onClick={[Function]}
+      >
+        <img
+          alt="purple icon"
+          className="loc-icons"
+          src="./assets/marker-icon-violet.png"
+        />
+         Show 
+        1
+         Bucket List Parks
+      </button>
+    </div>
+    <FilterControls
+      setMapToState={[Function]}
+      stateName="default"
+      usStates={
+        Object {
+          "Alabama": Object {
+            "Population": 4874747,
+            "abbreviation": "AL",
+            "capitalCity": "Montgomery",
+            "dateEstablished": "Dec 14, 1819",
+            "latitude": 32.806671,
+            "longitude": -86.79113,
+            "nationalParks": Array [],
+            "stateFlower": "Camellia",
+            "totalAreaMi2": 52420,
+            "totalLandAreaMi2": 50645,
+            "totalWaterAreaMi2": 1775,
+          },
+          "Alaska": Object {
+            "Population": 739795,
+            "abbreviation": "AK",
+            "capitalCity": "Juneau",
+            "dateEstablished": "Jan 3, 1959",
+            "latitude": 61.370716,
+            "longitude": -152.404419,
+            "nationalParks": Array [
+              "Denali",
+              "Gates of the Arctic",
+              "Glacier Bay",
+              "Katmai",
+              "Kenai Fjords",
+              "Kobuk Valley",
+              "Lake Clark",
+              "Wrangell - St. Elias",
+            ],
+            "stateFlower": "Forget Me Not",
+            "totalAreaMi2": 665384,
+            "totalLandAreaMi2": 570641,
+            "totalWaterAreaMi2": 94743,
+          },
+          "Arizona": Object {
+            "Population": 7016270,
+            "abbreviation": "AZ",
+            "capitalCity": "Phoenix",
+            "dateEstablished": "Feb 14, 1912",
+            "latitude": 33.729759,
+            "longitude": -111.431221,
+            "nationalParks": Array [
+              "Grand Canyon",
+              "Petrified Forest",
+              "Saguaro",
+            ],
+            "stateFlower": "Saguaro Cactus Blossom",
+            "totalAreaMi2": 113990,
+            "totalLandAreaMi2": 113594,
+            "totalWaterAreaMi2": 396,
+          },
+          "Arkansas": Object {
+            "Population": 3004279,
+            "abbreviation": "AR",
+            "capitalCity": "Little Rock",
+            "dateEstablished": "Jun 15, 1836",
+            "latitude": 34.969704,
+            "longitude": -92.373123,
+            "nationalParks": Array [
+              "Hot Springs",
+            ],
+            "stateFlower": "Apple Blossom",
+            "totalAreaMi2": 53179,
+            "totalLandAreaMi2": 52035,
+            "totalWaterAreaMi2": 1143,
+          },
+          "California": Object {
+            "Population": 39536653,
+            "abbreviation": "CA",
+            "capitalCity": "Sacramento",
+            "dateEstablished": "Sep 9, 1850",
+            "latitude": 36.116203,
+            "longitude": -119.681564,
+            "nationalParks": Array [
+              "Channel Islands",
+              "Death Valley",
+              "Joshua Tree",
+              "Kings Canyon",
+              "Lassen Volcanic",
+              "Pinnacles",
+              "Redwood",
+              "Sequoia",
+              "Yosemite",
+            ],
+            "stateFlower": "California Poppy",
+            "totalAreaMi2": 163695,
+            "totalLandAreaMi2": 155779,
+            "totalWaterAreaMi2": 7916,
+          },
+        }
+      }
+    />
+  </div>
 </div>
 `;

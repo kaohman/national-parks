@@ -156,9 +156,9 @@ class App extends Component {
                 updateParkCodes={this.updateParkCodes}
               />
               <div className="filters">
-                <button onClick={this.showAllParks}>Show All Parks</button>
-                <button onClick={this.showVisitedParks}><img className="loc-icons" src="./assets/marker-icon-green.png" alt="green icon" /> Show {this.state.visitedParkCodes.length} Visited Parks</button>
-                <button onClick={this.showBucketList}><img className="loc-icons" src="./assets/marker-icon-violet.png" alt="purple icon" /> Show {this.state.bucketListParkCodes.length} Bucket List Parks</button>
+                <button onClick={this.showAllParks} id="show-all-button">Show All Parks</button>
+                <button onClick={this.showVisitedParks} id="show-visited-button"><img className="loc-icons" src="./assets/marker-icon-green.png" alt="green icon" /> Show {this.state.visitedParkCodes.length} Visited Parks</button>
+                <button onClick={this.showBucketList} id="show-bucket-button"><img className="loc-icons" src="./assets/marker-icon-violet.png" alt="purple icon" /> Show {this.state.bucketListParkCodes.length} Bucket List Parks</button>
               </div>
               <FilterControls usStates={this.state.usStates} stateName={this.state.currentUsStateName} setMapToState={this.setMapToState} />
             </div>

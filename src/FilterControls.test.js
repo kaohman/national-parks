@@ -2,7 +2,9 @@ import React from 'react';
 import FilterControls from './FilterControls';
 import { shallow } from 'enzyme';
 
-let usStates = {
+const setMapToStateMock = jest.fn();
+const stateName = 'default';
+const usStates = {
   Alabama: {
     abbreviation: "AL",
     latitude: 32.806671,
@@ -102,6 +104,8 @@ describe('FilterControls', () => {
     wrapper = shallow(
       <FilterControls
         usStates={usStates}
+        stateName={stateName}
+        setMapToState={setMapToStateMock}
       />
     );
   });
@@ -114,7 +118,7 @@ describe('FilterControls', () => {
     expect(wrapper.state()).toEqual( { stateName: 'default', selectedState: {} } );
   });
 
-  it('should update state when getPark is called', () => {
+  it('should update state when getState is called', () => {
     expect(wrapper.state()).toEqual( { stateName: 'default', selectedState: {} } );
     wrapper.find('#select-menu').simulate('change', { target: { value: 'California' }});
     expect(wrapper.state()).toEqual({

@@ -12,6 +12,8 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
       ]
     }
     id="map"
+    maxZoom="8"
+    minZoom="3"
     zoom={4}
   >
     <ForwardRef(Leaflet(TileLayer))
@@ -20,11 +22,39 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
       url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}"
     />
     <ForwardRef(Leaflet(TileLayer))
-      attribution="Imagery from <a href=\\"http://giscience.uni-hd.de/\\">GIScience Research Group @ University of Heidelberg</a> — Map data © <a href=\\"http://www.openstreetmap.org/copyright\\">OpenStreetMap</a>"
-      maxZoom="8"
-      url="https://korona.geog.uni-heidelberg.de/tiles/adminb/x={x}&y={y}&z={z}"
+      attribution="Map tiles by <a href=\\"http://stamen.com\\">Stamen Design</a>, <a href=\\"http://creativecommons.org/licenses/by/3.0\\">CC BY 3.0</a> — Map data © <a href=\\"http://www.openstreetmap.org/copyright\\">OpenStreetMap</a>"
+      ext="png"
+      maxZoom="20"
+      minZoom="0"
+      subdomains="abcd"
+      url="https://stamen-tiles-{s}.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}{r}.{ext}"
     />
     <ForwardRef(Leaflet(Marker))
+      icon={
+        NewClass {
+          "_initHooksCalled": true,
+          "options": Object {
+            "iconAnchor": Array [
+              12,
+              41,
+            ],
+            "iconSize": Array [
+              25,
+              41,
+            ],
+            "iconUrl": "./assets/marker-icon-green.png",
+            "popupAnchor": Array [
+              1,
+              -34,
+            ],
+            "shadowSize": Array [
+              41,
+              41,
+            ],
+            "shadowUrl": "./assets/marker-shadow.png",
+          },
+        }
+      }
       id="deva"
       key="deva"
       onClick={[Function]}
@@ -40,6 +70,31 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
       </ForwardRef(Leaflet(Tooltip))>
     </ForwardRef(Leaflet(Marker))>
     <ForwardRef(Leaflet(Marker))
+      icon={
+        NewClass {
+          "_initHooksCalled": true,
+          "options": Object {
+            "iconAnchor": Array [
+              12,
+              41,
+            ],
+            "iconSize": Array [
+              25,
+              41,
+            ],
+            "iconUrl": "./assets/marker-icon-green.png",
+            "popupAnchor": Array [
+              1,
+              -34,
+            ],
+            "shadowSize": Array [
+              41,
+              41,
+            ],
+            "shadowUrl": "./assets/marker-shadow.png",
+          },
+        }
+      }
       id="grsm"
       key="grsm"
       onClick={[Function]}
@@ -55,6 +110,31 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
       </ForwardRef(Leaflet(Tooltip))>
     </ForwardRef(Leaflet(Marker))>
     <ForwardRef(Leaflet(Marker))
+      icon={
+        NewClass {
+          "_initHooksCalled": true,
+          "options": Object {
+            "iconAnchor": Array [
+              12,
+              41,
+            ],
+            "iconSize": Array [
+              25,
+              41,
+            ],
+            "iconUrl": "./assets/marker-icon-violet.png",
+            "popupAnchor": Array [
+              1,
+              -34,
+            ],
+            "shadowSize": Array [
+              41,
+              41,
+            ],
+            "shadowUrl": "./assets/marker-shadow.png",
+          },
+        }
+      }
       id="yell"
       key="yell"
       onClick={[Function]}

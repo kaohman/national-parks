@@ -19,7 +19,6 @@ class Park extends Component {
     this.props.removeCard();
     this.setState({
       displayFull: false,
-      annualVisitors: 0
     });
   }
 
@@ -71,7 +70,7 @@ class Park extends Component {
         return (
           <div className="card-overlay">
             <div className="park-card-small">
-              <i className="far fa-times-circle" onClick={this.removeCard}></i>
+              <i className="far fa-times-circle" id="remove-card" onClick={this.removeCard}></i>
               <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
               <img className="park-img-small" alt="park" src={imagePath} />
               <h3 className="park-text-small">Park Highlight: {this.props.selectedPark.editorsChoice}</h3>

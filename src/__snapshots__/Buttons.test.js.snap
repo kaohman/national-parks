@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Buttons should match the snapshot with all data passed in 1`] = `
+<div
+  className="icon-btns"
+>
+  <span
+    className="fas fa-hiking"
+    data-for="tooltip/visitedParks"
+    data-tip={true}
+    id="visitedParks"
+    onClick={[Function]}
+  />
+  <ReactTooltip
+    effect="solid"
+    id="tooltip/visitedParks"
+    insecure={true}
+    resizeHide={true}
+    type="dark"
+    wrapper="div"
+  >
+    Remove from Visited Parks
+  </ReactTooltip>
+</div>
+`;
