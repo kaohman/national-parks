@@ -17,20 +17,23 @@ class App extends Component {
       bucketListParkCodes: [],
       pageStatus: 'landing',
       randomImageClass: `landing-background${Math.floor(Math.random() * 6)}`,
-      currentStateAnnualvisitors: 0 
+      currentStateAnnualVisitors: 0 
     };
   }
 
     getAnnualVisitors = () => {
-      let currentStateAnnualvisitors = this.state.parks.reduce((sum, park) => {
-        if(park.state.includes(this.state.currentUsStateName)) {
+      let currentStateAnnualVisitors
+      if (this.state.currentUsStateName !== 'default') {
+         currentStateAnnualVisitors = this.state.currentParksToShow.reduce((sum, park) => {
           sum+=park.annualVistors 
-        return sum
+          return sum
+        }, 0)
+      } else {
+           currentStateAnnualVisitors = 0;
       }
-    }, 0)
-    this.setState({
-      currentStateAnnualvisitors: currentStateAnnualvisitors
-  })
+      this.setState({
+        currentStateAnnualVisitors: currentStateAnnualVisitors
+      })
   }
   
   showAllParks = () => {
@@ -108,7 +111,7 @@ class App extends Component {
       let parksToShow = this.state.parks.filter(park => {
         return park.state.includes(stateName)
       });
-    
+      
       this.setState({
         currentUsStateName: stateName,
         currentUsStateCoord: [stateObj.latitude, stateObj.longitude],
@@ -117,6 +120,7 @@ class App extends Component {
     } else {
       this.showAllParks();
     }
+    this.getAnnualVisitors();
   }
 
   componentDidMount() {
@@ -171,8 +175,7 @@ class App extends Component {
                 usStates={this.state.usStates} 
                 stateName={this.state.currentUsStateName}
                 setMapToState={this.setMapToState}
-                getAnnualVisitors ={this.getAnnualVisitors}
-                currentStateAnnualvisitors={this.state.currentStateAnnualvisitors}
+                currentStateAnnualVisitors={this.state.currentStateAnnualVisitors}
                 />
             </div>
           </div>

@@ -9,7 +9,6 @@ class FilterControls extends Component {
     selectedState: {}
   };
  }
-  
   getState = (event) => {
     this.setState({
       stateName: event.target.value,
@@ -39,8 +38,7 @@ class FilterControls extends Component {
           <UsState 
             name={this.state.stateName} 
             selectedState={this.state.selectedState}
-            getAnnualVisitors ={this.props.getAnnualVisitors}
-            currentStateAnnualvisitors={this.props.currentStateAnnualvisitors}
+            currentStateAnnualVisitors={this.props.currentStateAnnualVisitors}
           />
         }
       </div>
