@@ -33,3 +33,10 @@
 button {
   @include button-style();
 }
+
+.user-instructions {
+  color: white;
+  font-family: $body-font;
+  font-size: 17px;
+  text-align: center;
+}

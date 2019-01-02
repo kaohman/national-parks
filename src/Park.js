@@ -41,7 +41,7 @@ class Park extends Component {
                 <h3>Date Established: {this.props.selectedPark.dateEstablished}</h3>
                 <h3>Annual Visitors: {this.props.selectedPark.annualVisitors.toLocaleString()}</h3>
                 <h3>Park Highlight: {this.props.selectedPark.editorsChoice}</h3>
-                <a href={this.props.selectedPark.websiteUrl}>Link to National Park Service Page</a>
+                <a href={this.props.selectedPark.websiteUrl} target="_blank">Link to {this.props.selectedPark.parkName}'s National Park Service Page</a>
                 <h3 className="park-descrip">{this.props.selectedPark.description}</h3>
                 <button className="button-small" onClick={this.toggleFullCard}>View Less</button>
                 <div className="user-list-btns">
