@@ -6,9 +6,9 @@ const parkUrl = 'deva';
 const visitedParks = ['deva', 'grsm'];
 const bucketListParks = ['yell'];
 const updateParkCodesMock = jest.fn();
-const saveNewParksArrayMock = jest.fn();
 const iconType = 'fas fa-hiking';
 const storageKey = 'visitedParks';
+const newParkCodes = ['deva', 'grsm', 'yell'];
 
 describe('Buttons', () => {
   let wrapper;
@@ -34,9 +34,14 @@ describe('Buttons', () => {
     expect(wrapper.state()).toEqual({ parkUrl: 'deva', storageKey: 'visitedParks' });
   });
 
-  it('should save updated visited or bucket list to Apps state and local storage', () => {
+  it('should save updated visited or bucket list to Apps state', () => {
     wrapper.find('span').simulate('click');
     expect(updateParkCodesMock).toBeCalled();
+  });
+
+  it('should save updated visited or bucket list to local storage', () => {
+    wrapper.instance().saveToLocalStorage(newParkCodes);
+    expect(JSON.parse(localStorage.visitedParks).length).toEqual(3);
   });
 
   it('should update park codes when a park is added to the visited or bucket list', () => {

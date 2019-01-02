@@ -156,6 +156,7 @@ const visitedParkCodes = ['deva', 'grsm'];
 const bucketListParkCodes = ['deva'];
 const randomImageClass = 'landing-background2';
 const homePage = 'home';
+const newParkCodes = ['deva', 'grsm', 'yell'];
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -272,19 +273,38 @@ describe('App', () => {
     }]);
   });
 
-  it('should be able to update park codes', () => {
-    
+  it('should be able to update visited list park codes', () => {
+    wrapper.instance().updateParkCodes('visitedParks', newParkCodes);
+    expect(wrapper.state('visitedParkCodes')).toEqual(newParkCodes);
   });
 
-  it('should be able to pull from local storage', () => {
+  it('should be able to update bucket list park codes', () => {
+    wrapper.instance().updateParkCodes('bucketListParks', newParkCodes);
+    expect(wrapper.state('bucketListParkCodes')).toEqual(newParkCodes);
+  });
 
+  it('should be able to pull visited parks from local storage', () => {
+    localStorage.setItem('visitedParks',JSON.stringify(newParkCodes));
+    wrapper.instance().pullFromLocalStorage();
+    expect(wrapper.state('visitedParkCodes')).toEqual(newParkCodes);
+  });
+
+  it('should be able to pull bucket list parks from local storage', () => {
+    localStorage.setItem('bucketList', JSON.stringify(newParkCodes));
+    wrapper.instance().pullFromLocalStorage();
+    expect(wrapper.state('bucketListParkCodes')).toEqual(newParkCodes);
   });
 
   it('should be able to open home page', () => {
-    
+    wrapper.setState({ pageStatus: 'landing' });
+    wrapper.instance().openHomePage();
+    expect(wrapper.state('pageStatus')).toEqual(homePage);
   });
 
   it('should be able to set map to state', () => {
-
+    wrapper.instance().setMapToState('California', usStates.California);
+    expect(wrapper.state('currentUsStateName')).toEqual('California');
+    expect(wrapper.state('currentUsStateCoord')).toEqual([36.116203, -119.681564]);
+    expect(wrapper.state('currentParksToShow')).toEqual([parks[0]]);
   }); 
 });

@@ -12,6 +12,8 @@ exports[`ParkMap should match the snapshot with all data passed in 1`] = `
       ]
     }
     id="map"
+    maxZoom="8"
+    minZoom="3"
     zoom={4}
   >
     <ForwardRef(Leaflet(TileLayer))
