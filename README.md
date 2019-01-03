@@ -31,9 +31,9 @@ Additional enhancements we would like to include in the future
 * Include additional monuments and historic sites run by the National Park Service and parks in other countries  
 * Ability for users login to rate and comment on parks they have visited.
 * Ability for search by park name
-### Screenshots:
+### Preview:
 ![](./public/readme-assets/mark-my-parks-demo.gif)
-![Homepage](./public/readme-assets/home-page.png)
+
 ### Original Assignment:
 [Whateverly](http://frontend.turing.io/projects/whateverly.html) project from Turing School of Software and Design
 
