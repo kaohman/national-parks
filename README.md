@@ -2,7 +2,7 @@
 
 
 ### See it Live!
-
+[Mark My Parks](https://kaohman.github.io/national-parks/) on GitHub Pages
 ### Set-Up Front-End:
 Clone this repo  
 Run `npm install` from the root directory  
@@ -18,7 +18,7 @@ Mark My Parks provides an easy to use interface where users can explore national
  - React
  - Javascript
  - HTML
- - SASS
+ - CSS/SCSS
  - Leaflet
 
 ### Test Driven Development:
@@ -26,11 +26,14 @@ Jest and Enzyme for front-end testing.
 Run `npm test` from the root directory
 ### Enhancements:
 Additional enhancements we would like to include in the future
-* Mobile responsive
-* Remove Park Card if one is already open when a user selects a state from the dropdown menu
+* Functionality to plan/save a trip export route between parks to Google Maps  
+* Add Geolocation API to find parks near your current location  
+* Include additional monuments and historic sites run by the National Park Service and parks in other countries  
+* Ability for users login to rate and comment on parks they have visited.
+* Ability for search by park name
 ### Screenshots:
-![](./public/readme-assets/mark-my-parks1.gif)
-
+![](./public/readme-assets/mark-my-parks-demo.gif)
+![Homepage](./public/readme-assets/home-page.png)
 ### Original Assignment:
 [Whateverly](http://frontend.turing.io/projects/whateverly.html) project from Turing School of Software and Design
 
