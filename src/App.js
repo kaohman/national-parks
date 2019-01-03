@@ -141,10 +141,7 @@ class App extends Component {
           <div className={this.state.randomImageClass}>
             <div className="overlay">
               <h1 className="home-title">Mark My Parks</h1>
-              {
-                (!this.state.bucketListParkCodes.length && !this.state.visitedParkCodes.length) &&
-                <p className="user-instructions">Click a map marker to learn more about that National Park</p>
-              }
+              <p className="user-instructions">Click a map marker to learn more about that National Park</p>
               <ParkMap 
                 parks={this.state.currentParksToShow} 
                 stateName={this.state.currentUsStateName} 
