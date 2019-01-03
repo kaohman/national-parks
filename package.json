@@ -35,5 +35,6 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
-  }
+  },
+  "homepage": "https://kaohman.github.io/national-parks/"
 }
