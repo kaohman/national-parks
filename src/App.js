@@ -143,8 +143,8 @@ class App extends Component {
               <h1 className="home-title">Mark My Parks</h1>
               {
                 (!this.state.bucketListParkCodes.length && !this.state.visitedParkCodes.length) &&
-                <p className="user-instructions">To get started, click a map marker to learn more about that National Park</p> ||
-                <p className="user-instructions hidden">To get started, click a map marker to learn more about that National Park</p>
+                <p className="user-instructions">Click a map marker to learn more about that National Park</p> ||
+                <p className="user-instructions hidden">Click a map marker to learn more about that National Park</p>
 
               }
               <ParkMap 

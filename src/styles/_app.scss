@@ -40,3 +40,43 @@ button {
   font-size: 17px;
   text-align: center;
 }
+
+@media (max-width: 725px) {
+  .filters {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    justify-content: space-between;
+    width: $map-width;
+    margin: 10px auto;
+  }
+
+  button{
+    margin-bottom: 10px;
+  }
+
+  .home-title {
+  font-size: 70px;
+  }
+
+  .user-instructions {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-title {
+  font-size: 60px;
+  }
+
+  .user-instructions {
+    width: 275px;
+    margin: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-title {
+  font-size: 45px;
+  }
+}

@@ -65,3 +65,49 @@ button {
 .hidden {
   visibility: hidden;
 }
+
+@media (max-width: 750px) {
+  .splash-title {
+    font-size: 90px;
+  }
+  .info-card {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  .enter-btn {
+    font-size: 15px;
+    width: 150px;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .splash-title {
+    font-size: 75px;
+  }
+  .info-card {
+    width: 270px;
+    font-size: 13px;
+  }
+
+  .enter-btn {
+    font-size: 13px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 420px) {
+  .splash-title {
+    font-size: 50px;
+  }
+  .info-card {
+    width: 175px;
+    font-size: 12px;
+  }
+
+  .enter-btn {
+    font-size: 13px;
+    width: 85px;
+  }
+}

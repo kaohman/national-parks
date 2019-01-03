@@ -33,9 +33,8 @@ class Park extends Component {
         return (
           <div className="card-overlay">
             <div className="park-card-large">
-              <i className="far fa-times-circle" onClick={this.removeCard}></i>
-              <img className="park-img-large" alt="park" src={imagePath} />
               <div className="park-text-large">
+              <i className="far fa-times-circle" onClick={this.removeCard}></i>
                 <h1 className="park-title">{this.props.selectedPark.parkName} National Park</h1>
                 <h3>State: {this.props.selectedPark.state}</h3>
                 <h3>Date Established: {this.props.selectedPark.dateEstablished}</h3>
@@ -63,6 +62,7 @@ class Park extends Component {
                   />
                 </div>
               </div>
+              <img className="park-img-large" alt="park" src={imagePath} />
             </div>
           </div>
         );
