@@ -5,7 +5,7 @@ class Buttons extends Component {
   constructor(props) {
    super(props);
    this.state = {
-     parkUrl: this.props.parkUrl,
+     parkCode: this.props.parkCode,
      storageKey: this.props.storageKey,
    };
   }
@@ -18,11 +18,11 @@ class Buttons extends Component {
       newArray = this.props.bucketListParks;
     }
 
-    if ((localStorage.hasOwnProperty(this.state.storageKey)) && (newArray.includes(this.state.parkUrl))) {
-      let index = newArray.findIndex(parkCode => parkCode === this.state.parkUrl);
+    if ((localStorage.hasOwnProperty(this.state.storageKey)) && (newArray.includes(this.state.parkCode))) {
+      let index = newArray.findIndex(parkCode => parkCode === this.state.parkCode);
       newArray.splice(index, 1);
     } else {
-      newArray.push(this.state.parkUrl);
+      newArray.push(this.state.parkCode);
     }
     this.saveToLocalStorage(newArray);
     this.updateParkCodes(this.state.storageKey, newArray);
@@ -42,10 +42,10 @@ class Buttons extends Component {
     let toolTipText;
     if (this.state.storageKey === 'visitedParks') {
       buttonType = this.props.visitedParks;
-      toolTipText = buttonType.includes(this.state.parkUrl) ? 'Remove from Visited Parks' : 'Add to Visited Parks';
+      toolTipText = buttonType.includes(this.state.parkCode) ? 'Remove from Visited Parks' : 'Add to Visited Parks';
     } else {
       buttonType = this.props.bucketListParks;
-      toolTipText = buttonType.includes(this.state.parkUrl) ? 'Remove from Bucket List Parks' : 'Add to Bucket List Parks';
+      toolTipText = buttonType.includes(this.state.parkCode) ? 'Remove from Bucket List Parks' : 'Add to Bucket List Parks';
     }
 
     return (
@@ -54,7 +54,7 @@ class Buttons extends Component {
           onClick={this.saveNewParksArray}
           className={this.props.iconType} 
           id={
-            buttonType.includes(this.state.parkUrl) ? this.state.storageKey : ''
+            buttonType.includes(this.state.parkCode) ? this.state.storageKey : ''
           }
           data-tip 
           data-for={"tooltip/" + this.state.storageKey}

@@ -1,9 +1,9 @@
 const setParks = (results) => {
   return results.data.reduce((acc, park) => {
-    const { designation, latLong, name, images, states, url, weatherInfo, description} = park;
+    const { designation, latLong, name, images, states, url, weatherInfo, description, parkCode } = park;
     if (designation.includes('National Park')) {
       const parkCoord = updateCoordinates(latLong);
-      const parkStates = updateStates(states);
+      const parkStates = updateParkStates(states);
       const newPark = {
         name,
         lat: parkCoord[0],
@@ -13,6 +13,7 @@ const setParks = (results) => {
         url,
         weatherInfo,
         description,
+        parkCode,
       }
       acc = [...acc, newPark]
     }
@@ -27,7 +28,7 @@ const updateCoordinates = (latLong) => {
   return [newLat, newLong]
 }
 
-const updateStates = (states) => {
+const updateParkStates = (states) => {
   return states.split(',')
 }
 

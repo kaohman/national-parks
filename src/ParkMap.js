@@ -16,7 +16,7 @@ class ParkMap extends Component {
 
   getPark = (event) => {
     this.setState({
-      selectedPark: this.props.parks.find( park => park.urlCode === event.target.options.id)
+      selectedPark: this.props.parks.find( park => park.parkCode === event.target.options.id)
     }) 
   }
 
@@ -29,41 +29,56 @@ class ParkMap extends Component {
   updateParkCodes = (storageKey, newArray) => {
     this.props.updateParkCodes(storageKey, newArray);
   }
+
+  showParks = () => {
+    const icon = {
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41],
+      shadowUrl: './assets/marker-shadow.png'
+    };
+    const greenIcon = new L.icon({ ...icon, iconUrl: './assets/marker-icon-green.png'});
+    const violetIcon = new L.icon({ ...icon, iconUrl: './assets/marker-icon-violet.png'});
+    const blueIcon = new L.icon({ ...icon, iconUrl: './assets/marker-icon-blue.png'});
+
+    const { parks, visitedParks, bucketListParks } = this.props;
+    return parks.map(park => {
+      const { parkCode, name, lat, lon } = park;
+      let currentIcon;
+      if (visitedParks.includes(parkCode)) {
+        currentIcon = greenIcon;
+      } else if (bucketListParks.includes(parkCode)) {
+        currentIcon = violetIcon;
+      } else {
+        currentIcon = blueIcon;
+      }
+      return (
+        <Marker 
+          position={[lat, lon]}
+          icon={currentIcon}
+          onClick={this.getPark}
+          key={parkCode}
+          id={parkCode}>
+          <Tooltip>{name}</Tooltip>
+        </Marker>
+      )
+    })
+  }
   
   render() {
-    let stateZoom = this.state.uniqueStateZoom[this.props.stateName] ? this.state.uniqueStateZoom[this.props.stateName] : 6;
-    let greenIcon = new L.icon({
-      iconUrl: './assets/marker-icon-green.png',
-      shadowUrl: './assets/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
-    let violetIcon = new L.icon({
-      iconUrl: './assets/marker-icon-violet.png',
-      shadowUrl: './assets/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
-    let blueIcon = new L.icon({
-      iconUrl: './assets/marker-icon-blue.png',
-      shadowUrl: './assets/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
+    const { stateName, visitedParks, bucketListParks, stateCoord } = this.props;
+    const { zoom, position, uniqueStateZoom, selectedPark } = this.state;
+    const parksToShow = this.showParks();
+    let stateZoom = uniqueStateZoom[stateName] ? uniqueStateZoom[stateName] : 6;
     return (
      <div className="map-container">
         <Map 
           id="map" 
           minZoom='3'
           maxZoom='8'
-          center={ this.props.stateCoord.length > 0 ? this.props.stateCoord : this.state.position }
-          zoom={this.props.stateCoord.length > 0 ? stateZoom : this.state.zoom }>
+          center={ stateCoord.length > 0 ? stateCoord : position }
+          zoom={stateCoord.length > 0 ? stateZoom : zoom }>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'
@@ -77,39 +92,15 @@ class ParkMap extends Component {
             maxZoom='20'
             ext='png'
           />
-          {
-            this.props.parks.map(park => {
-              let lat = (park.latitude.includes('N')) ? park.latitude.replace(/.N$/, '') : park.latitude.replace(/.S$/, '').replace(/^/, '-');
-              let lon = (park.longitude.includes('E')) ? park.longitude.replace(/.E$/, '') : park.longitude.replace(/.W$/, '').replace(/^/, '-');
-              if (this.props.visitedParks.includes(park.urlCode)) {
-                return (
-                  <Marker position={[lat, lon]} icon={greenIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                    <Tooltip>{park.parkName}</Tooltip>
-                  </Marker>
-                )
-              } else if (this.props.bucketListParks.includes(park.urlCode)) {
-                return (
-                  <Marker position={[lat, lon]} icon={violetIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                    <Tooltip>{park.parkName}</Tooltip>
-                  </Marker>
-                )
-              } else {
-                return (
-                  <Marker position={[lat, lon]} icon={blueIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                    <Tooltip>{park.parkName}</Tooltip>
-                  </Marker>
-                )
-              }
-            })
-          }
+          {parksToShow}
         </Map>
         {
-          this.state.selectedPark && 
+          selectedPark && 
           <Park 
             removeCard={this.removeCard} 
-            selectedPark={this.state.selectedPark}
-            visitedParks={this.props.visitedParks}
-            bucketListParks={this.props.bucketListParks}
+            selectedPark={selectedPark}
+            visitedParks={visitedParks}
+            bucketListParks={bucketListParks}
             updateParkCodes={this.updateParkCodes}
           />
         }

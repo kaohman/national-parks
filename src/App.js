@@ -34,7 +34,7 @@ class App extends Component {
   showVisitedParks = (event) => {
     event.preventDefault();
     let visitedParks = this.state.parks.filter(park => {
-      return this.state.visitedParkCodes.includes(park.urlCode)
+      return this.state.visitedParkCodes.includes(park.parkCode)
     });
 
     this.setState({
@@ -47,7 +47,7 @@ class App extends Component {
   showBucketList = (event) => {
     event.preventDefault();
     let bucketListParks = this.state.parks.filter( park => {
-      return this.state.bucketListParkCodes.includes(park.urlCode)
+      return this.state.bucketListParkCodes.includes(park.parkCode)
     });
 
     this.setState({
@@ -110,25 +110,25 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url = `https://api.nps.gov/api/v1/parks?limit=600&q=national%20park&fields=images&api_key=${apiKey}`;
     try {
-      const results = await API.getData(url);
+      const results = await API.getData(`https://api.nps.gov/api/v1/parks?limit=600&q=national%20park&fields=images&api_key=${apiKey}`);
       const parks = cleaners.setParks(results);
       this.setState({
         parks,
+        currentParksToShow: parks,
       })
     } catch (error) {
       console.log(error);
     }
 
-    fetch("https://whateverly-datasets.herokuapp.com/api/v1/states1810")
-      .then(data => data.json())
-      .then(results => {
-        this.setState({
-          usStates: results.states1810
-        });
+    try {
+      const results = await API.getData('https://whateverly-datasets.herokuapp.com/api/v1/states1810');
+      this.setState({
+        usStates: results.states1810
       })
-      .catch(error => console.log(error));
+    } catch (error) {
+      console.log(error);
+    }
 
     this.pullFromLocalStorage();
   }
