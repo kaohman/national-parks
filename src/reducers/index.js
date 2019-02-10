@@ -6,6 +6,7 @@ import { errorReducer } from './errorReducer';
 import { loadingReducer } from './loadingReducer';
 import { displayedParksReducer } from './displayedParksReducer';
 import { usStatesReducer } from './usStatesReducer';
+import { parkCardReducer } from './parkCardReducer';
 
 const rootReducer = combineReducers({
   parks: parksReducer,
@@ -15,6 +16,7 @@ const rootReducer = combineReducers({
   parksToDisplay: displayedParksReducer,
   error: errorReducer,
   loading: loadingReducer,
+  currentParkId: parkCardReducer,
 });
 
 export default rootReducer;

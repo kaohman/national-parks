@@ -10,12 +10,12 @@ const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedP
 
   const showVisitedParks = (event) => {
     event.preventDefault();
-    setParksToShow('visitedParks');
+    setParksToShow('visited');
   }
 
   const showBucketList = (event) => {
     event.preventDefault();
-    setParksToShow('bucketList');
+    setParksToShow('bucket');
   }
   
   const getState = (event) => {
@@ -49,7 +49,7 @@ const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedP
           <option value="default">Please pick a state</option>
         {
           Object.keys(usStates).map(usState => {
-            return(<option value={[usState]} key={usState.abbreviation}>{[usState]}</option>)
+            return (<option value={usState.abbreviation} key={usState.abbreviation}>{[usState]}</option>)
           })
         }
         </select>

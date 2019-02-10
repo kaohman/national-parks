@@ -33,6 +33,11 @@ export const setParksToShow = (name) => ({
   name,
 });
 
+export const setParkCardToShow = (parkId) => ({
+  type: 'SET_PARK_CARD_TO_SHOW',
+  parkId,
+});
+
 export const setErrorStatus = (error) => ({
   type: 'SET_ERROR_STATUS',
   error,
