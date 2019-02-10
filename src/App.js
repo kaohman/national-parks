@@ -3,6 +3,9 @@ import './App.css';
 import ParkMap from './ParkMap.js';
 import FilterControls from './FilterControls.js';
 import LandingPage from './LandingPage.js';
+import apiKey from './utils/api-key';
+import API from './utils/api';
+import cleaners from './utils/cleaners';
 
 class App extends Component {
   constructor() {
@@ -106,21 +109,17 @@ class App extends Component {
     }
   }
 
-  componentDidMount() {
-    fetch("https://whateverly-datasets.herokuapp.com/api/v1/nationalParks1810")
-      .then(data => data.json())
-      .then(results => {
-        results.nationalParks1810.forEach(park => {
-          if (park.parkName === 'Sequoia') {
-            park.urlCode = 'seki2';
-          }
-        });
-        this.setState({
-          parks: results.nationalParks1810,
-          currentParksToShow: results.nationalParks1810
-        });
+  async componentDidMount() {
+    const url = `https://api.nps.gov/api/v1/parks?limit=600&q=national%20park&fields=images&api_key=${apiKey}`;
+    try {
+      const results = await API.getData(url);
+      const parks = cleaners.setParks(results);
+      this.setState({
+        parks,
       })
-      .catch(error => console.log(error));
+    } catch (error) {
+      console.log(error);
+    }
 
     fetch("https://whateverly-datasets.herokuapp.com/api/v1/states1810")
       .then(data => data.json())
