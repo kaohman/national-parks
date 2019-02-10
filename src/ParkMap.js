@@ -9,10 +9,7 @@ class ParkMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedState: {},
-      zoom: 4,
-      uniqueStateZoom: { Alaska: 4, California: 5, Michigan: 5 },
-      position: [37.0902, -95.7129],
+      uniqueStateZoom: { AK: 4, CA: 5, MI: 5 },
     };
   }
 
@@ -31,9 +28,6 @@ class ParkMap extends Component {
 
   findParksToShow = () => {
     const { parks, parksToDisplay, visitedParkCodes, bucketListParkCodes } = this.props;
-    // this.setState({
-    //   selectedState: '',
-    // });
     let parksToShow;
     switch (parksToDisplay) {
       case 'all':
@@ -52,12 +46,7 @@ class ParkMap extends Component {
   }
 
   showParksInState = (stateCode) => {
-    const { parks, usStates } = this.props;
-    const selectedState = Object.keys(usStates).filter(usState => usState.abbreviation === stateCode);
-    this.setState({
-      selectedState,
-    });
-    return parks.filter(park => park.states.includes(stateCode))
+    return this.props.parks.filter(park => park.states.includes(stateCode))
   }
 
   showParks = (parks) => {
@@ -95,22 +84,34 @@ class ParkMap extends Component {
       )
     })
   }
+
+  getMapInfo = () => {
+    let zoom;
+    let position;
+    if (this.props.showUsState) {
+      const { usStates, parksToDisplay } = this.props;
+      const { uniqueStateZoom } = this.state;
+      const state = Object.keys(usStates).find(state => state.abbreviation === parksToDisplay);
+      zoom = uniqueStateZoom[state.abbreviation] ? uniqueStateZoom[state.abbreviation] : 6;
+      position = [state.latitude, state.longitude];
+    } else {
+      zoom = 4;
+      position = [37.0902, -95.7129];
+    }
+    return [zoom, position]
+  }
   
   render() {
-    // const { stateName, stateCoord } = this.props.selectedState;
-    const { zoom, position } = this.state;
+    const mapInfo = this.getMapInfo();
     const parksToShow = this.findParksToShow();
-    // let stateZoom = uniqueStateZoom[stateName] ? uniqueStateZoom[stateName] : 6;
     return (
      <div className="map-container">
         <Map 
           id="map" 
           minZoom='3'
           maxZoom='8'
-          // center={stateCoord.length > 0 ? stateCoord : position }
-          center={position}
-          // zoom={stateZoom.length > 0 ? stateZoom : zoom}>
-          zoom={zoom}>
+          center={mapInfo[1]}
+          zoom={mapInfo[0]}>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'
@@ -139,6 +140,7 @@ const mapStateToProps = (state) => ({
   currentParkId: state.currentParkId,
   visitedParkCodes: state.visitedParkCodes,
   bucketListParkCodes: state.bucketListParkCodes,
+  showUsState: state.showUsState,
 });
 
 const mapDispatchToProps = (dispatch) => ({

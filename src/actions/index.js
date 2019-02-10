@@ -47,3 +47,8 @@ export const setLoadingStatus = (loading) => ({
   type: 'SET_LOADING_STATUS',
   loading,
 });
+
+export const showUsStateView = (showUsState) => ({
+  type: 'SHOW_US_STATE_VIEW',
+  showUsState,
+})

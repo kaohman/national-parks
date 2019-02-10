@@ -1,25 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { setParksToShow } from './actions';
+import { setParksToShow, showUsStateView } from './actions';
 
 const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedParkCodes, bucketListParkCodes }) => {
   const showAllParks = (event) => {
     event.preventDefault();
     setParksToShow('all');
+    showUsStateView(false);
   }
 
   const showVisitedParks = (event) => {
     event.preventDefault();
     setParksToShow('visited');
+    showUsStateView(false);
   }
 
   const showBucketList = (event) => {
     event.preventDefault();
     setParksToShow('bucket');
+    showUsStateView(false);
   }
   
   const getState = (event) => {
-    setParksToShow(event.target.value);
+    const abbreviation = usStates[event.target.value].abbreviation;
+    setParksToShow(abbreviation);
+    showUsStateView(true);
     // this.setMapToState(event.target.value, this.props.usStates[event.target.value]);
   }
 
@@ -68,6 +73,7 @@ const mapStateToProps = (state) => ({
 
 const mapDispatchToProps = (dispatch) => ({
   setParksToShow: (name) => dispatch(setParksToShow(name)),
+  showUsStateView: (showUsState) => dispatch(showUsStateView(showUsState)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ControlForm);
