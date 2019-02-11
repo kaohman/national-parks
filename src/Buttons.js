@@ -24,12 +24,11 @@ class Buttons extends Component {
     const newItems = items.includes(currentParkCode) ? items.filter(parkCode => parkCode !== currentParkCode) : [...items, currentParkCode];
     localStorage.setItem(this.state.storageKey, JSON.stringify(newItems));
   }
-  
-  render() {
+
+  setButtonDisplay = () => {
+    const { visitedParkCodes, bucketListParkCodes, currentParkCode } = this.props;
     let buttonType;
     let toolTipText;
-    const { currentParkCode, visitedParkCodes, bucketListParkCodes } = this.props;
-    const { storageKey } = this.state;
     if (this.state.storageKey === 'visited') {
       buttonType = visitedParkCodes;
       toolTipText = buttonType.includes(currentParkCode) ? 'Remove from Visited Parks' : 'Add to Visited Parks';
@@ -37,20 +36,27 @@ class Buttons extends Component {
       buttonType = bucketListParkCodes;
       toolTipText = buttonType.includes(currentParkCode) ? 'Remove from Bucket List Parks' : 'Add to Bucket List Parks';
     }
+    return [buttonType, toolTipText];
+  }
+
+  render() {
+    const { currentParkCode, iconType } = this.props;
+    const { storageKey } = this.state;
+    const buttonDisplay = this.setButtonDisplay();
 
     return (
       <div className="icon-btns">
         <span 
           onClick={this.toggleItem}
-          className={this.props.iconType} 
+          className={iconType} 
           id={
-            buttonType.includes(currentParkCode) ? storageKey : ''
+            buttonDisplay[0].includes(currentParkCode) ? storageKey : ''
           }
           data-tip 
           data-for={"tooltip/" + storageKey}
           >
         </span>
-        <ReactTooltip id={"tooltip/" + storageKey} type='dark' effect='solid'>{toolTipText}</ReactTooltip>
+        <ReactTooltip id={"tooltip/" + storageKey} type='dark' effect='solid'>{buttonDisplay[1]}</ReactTooltip>
       </div>
     )
   }

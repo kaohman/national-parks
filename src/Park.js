@@ -25,7 +25,7 @@ class Park extends Component {
   }
 
   render() {
-    const { name, images, state, url, description, parkCode } = this.props.park;
+    const { name, images, state, url, description } = this.props.park;
     const { displayFull } = this.state;
     const randomImage = Math.floor(Math.random() * images.length);
     const imagePath = images[randomImage].url;
@@ -33,7 +33,7 @@ class Park extends Component {
       <div className="card-overlay">
         <div className={displayFull ? "park-card-large" : "park-card-small"}>
           <div className="park-text-large">
-          <i className="far fa-times-circle" onClick={this.removeCard}></i>
+            <i className="far fa-times-circle" onClick={this.removeCard}></i>
             <h1 className="park-title">{name} National Park</h1>
             <h3>State: {state}</h3>
             <a href={url} target="_blank">Link to {name}'s National Park Service Page</a>

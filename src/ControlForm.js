@@ -33,16 +33,6 @@ const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedP
         <button onClick={showVisitedParks} id="show-visited-button"><img className="loc-icons" src="./assets/marker-icon-green.png" alt="green icon" /> Show {visitedParkCodes.length} Visited Parks</button>
         <button onClick={showBucketList} id="show-bucket-button"><img className="loc-icons" src="./assets/marker-icon-violet.png" alt="purple icon" /> Show {bucketListParkCodes.length} Bucket List Parks</button>
       </div>
-      {/* <label className="filter-label">View Specific Park:
-        <select id="select-menu" value={this.props.stateName} onChange={this.getState}>
-          <option value="default">Please pick a state</option>
-          {
-            Object.keys(this.props.usStates).map(usState => {
-              return (<option value={[usState]} key={this.props.usStates[usState].abbreviation}>{[usState]}</option>)
-            })
-          }
-        </select>
-      </label> */}
       <label className="filter-label">View Parks By State:
         <select id="select-menu" value={parksToDisplay} onChange={getState}>
           <option value="default">Please pick a state</option>

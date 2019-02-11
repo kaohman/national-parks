@@ -18,18 +18,6 @@ class App extends Component {
     };
   }
 
-  // updateParkCodes = (storageKey, newArray) => {
-  //   if (storageKey === 'visitedParks') {
-  //     this.setState({
-  //       visitedParkCodes: newArray
-  //     });
-  //   } else {
-  //     this.setState({
-  //       bucketListParkCodes: newArray
-  //     });
-  //   }
-  // }
-
   pullFromLocalStorage = () => {
     if (localStorage.hasOwnProperty('bucket')) {
       let cachedBucketListKeys = localStorage.getItem('bucket');
@@ -49,23 +37,7 @@ class App extends Component {
       pageStatus: 'home'
     });
   }
-
-  // setMapToState = (stateName, stateObj) => {
-  //   if (stateName !== 'default') {
-  //     let parksToShow = this.state.parks.filter(park => {
-  //       return park.state.includes(stateName)
-  //     });
-    
-  //     this.setState({
-  //       currentUsStateName: stateName,
-  //       currentUsStateCoord: [stateObj.latitude, stateObj.longitude],
-  //       currentParksToShow: parksToShow
-  //     });
-  //   } else {
-  //     this.showAllParks();
-  //   }
-  // }
-
+  
   async componentDidMount() {
     try {
       const results = await API.getData(`https://api.nps.gov/api/v1/parks?limit=600&q=national%20park&fields=images&api_key=${apiKey}`);
