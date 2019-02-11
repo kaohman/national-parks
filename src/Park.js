@@ -24,19 +24,33 @@ class Park extends Component {
     });
   }
 
+  setStateText = () => {
+    const { states } = this.props.park;
+    if (states.length === 1) {
+      return `State: ${states[0]}`
+    } else {
+      return states.reduce((acc, state, index) => {
+        acc = index === 0 ? `States: ${state}` : acc + `, ${state}`;
+        return acc;
+      }, '');
+    }
+  }
+
   render() {
-    const { name, images, state, url, description } = this.props.park;
+    const { name, images, url, description } = this.props.park;
     const { displayFull } = this.state;
-    const randomImage = Math.floor(Math.random() * images.length);
-    const imagePath = images[randomImage].url;
+    const stateText = this.setStateText();
     return (
       <div className="card-overlay">
         <div className={displayFull ? "park-card-large" : "park-card-small"}>
-          <div className="park-text-large">
+          <div className={displayFull ? "park-text-large" : ""}>
             <i className="far fa-times-circle" onClick={this.removeCard}></i>
             <h1 className="park-title">{name} National Park</h1>
-            <h3>State: {state}</h3>
-            <a href={url} target="_blank">Link to {name}'s National Park Service Page</a>
+            {
+              !displayFull && <img className="park-img-small" alt="park" src={images[0].url} />
+            }
+            <h3>{stateText}</h3>
+            <a className="nps-link" href={url} target="_blank">Link to {name}'s National Park Service Page</a>
             <h3 className="park-descrip">{description}</h3>
             <button className="button-small" onClick={this.toggleFullCard}>{displayFull ? "View Less" : "View More"}</button>
             <div className="user-list-btns">
@@ -50,7 +64,9 @@ class Park extends Component {
               />
             </div>
           </div>
-          <img className={displayFull ? "park-img-large" : "park-img-small"} alt="park" src={imagePath} />
+          {
+            displayFull && <img className="park-img-large" alt="park" src={images[1].url} />
+          }
         </div>
       </div>
     );

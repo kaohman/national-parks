@@ -37,7 +37,7 @@ class App extends Component {
       pageStatus: 'home'
     });
   }
-  
+
   async componentDidMount() {
     try {
       const results = await API.getData(`https://api.nps.gov/api/v1/parks?limit=600&q=national%20park&fields=images&api_key=${apiKey}`);

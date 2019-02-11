@@ -99,7 +99,7 @@ class ParkMap extends Component {
   render() {
     const mapInfo = this.getMapInfo();
     const parksToShow = this.findParksToShow();
-    const { currentParkCode, parks, parksToDisplay } = this.props;
+    const { currentParkCode, parks } = this.props;
     return (
      <div className="map-container">
         <Map 
