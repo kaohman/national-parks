@@ -21,6 +21,13 @@ const setParks = (results) => {
   }, []);
 }
 
+const setUsStates = (results) => {
+  return Object.keys(results.states1810).reduce((acc, state) => {
+    acc = [...acc, { ...results.states1810[state], name: state}];
+    return acc
+  }, []);
+}
+
 const updateCoordinates = (latLong) => {
   const coords = latLong.split(',');
   const newLat = coords[0].substring(4);
@@ -34,4 +41,5 @@ const updateParkStates = (states) => {
 
 export default {
   setParks,
+  setUsStates,
 }

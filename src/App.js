@@ -77,7 +77,8 @@ class App extends Component {
 
     try {
       const results = await API.getData('https://whateverly-datasets.herokuapp.com/api/v1/states1810');
-      this.props.setUsStates(results.states1810);
+      const usStates = cleaners.setUsStates(results);
+      this.props.setUsStates(usStates);
     } catch (error) {
       console.log(error);
     }

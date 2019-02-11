@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setParksToShow, showUsStateView } from './actions';
 
-const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedParkCodes, bucketListParkCodes }) => {
+const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedParkCodes, bucketListParkCodes, showUsStateView }) => {
   const showAllParks = (event) => {
     event.preventDefault();
     setParksToShow('all');
@@ -22,8 +22,7 @@ const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedP
   }
   
   const getState = (event) => {
-    const abbreviation = usStates[event.target.value].abbreviation;
-    setParksToShow(abbreviation);
+    setParksToShow(event.target.value);
     showUsStateView(true);
     // this.setMapToState(event.target.value, this.props.usStates[event.target.value]);
   }
@@ -53,8 +52,8 @@ const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedP
         <select id="select-menu" value={parksToDisplay} onChange={getState}>
           <option value="default">Please pick a state</option>
         {
-          Object.keys(usStates).map(usState => {
-            return (<option value={usState.abbreviation} key={usState.abbreviation}>{[usState]}</option>)
+          usStates.map(usState => {
+            return (<option value={usState.name} key={usState.name}>{usState.name}</option>)
           })
         }
         </select>

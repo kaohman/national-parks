@@ -9,7 +9,7 @@ class ParkMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      uniqueStateZoom: { AK: 4, CA: 5, MI: 5 },
+      uniqueStateZoom: { Alaska: 4, California: 5, Michigan: 5 },
     };
   }
 
@@ -27,7 +27,7 @@ class ParkMap extends Component {
   // }
 
   findParksToShow = () => {
-    const { parks, parksToDisplay, visitedParkCodes, bucketListParkCodes } = this.props;
+    const { parks, parksToDisplay, visitedParkCodes, bucketListParkCodes, usStates } = this.props;
     let parksToShow;
     switch (parksToDisplay) {
       case 'all':
@@ -40,7 +40,8 @@ class ParkMap extends Component {
         parksToShow = parks.filter(park => bucketListParkCodes.includes(park.parkCode));
         break;
       default: 
-        parksToShow = this.showParksInState(parksToDisplay);
+        const state = usStates.find(state => state.name === parksToDisplay);
+        parksToShow = this.showParksInState(state.abbreviation);
     }
     return this.showParks(parksToShow);
   }
@@ -91,8 +92,8 @@ class ParkMap extends Component {
     if (this.props.showUsState) {
       const { usStates, parksToDisplay } = this.props;
       const { uniqueStateZoom } = this.state;
-      const state = Object.keys(usStates).find(state => state.abbreviation === parksToDisplay);
-      zoom = uniqueStateZoom[state.abbreviation] ? uniqueStateZoom[state.abbreviation] : 6;
+      const state = usStates.find(state => state.name === parksToDisplay);
+      zoom = uniqueStateZoom[state.name] ? uniqueStateZoom[state.name] : 6;
       position = [state.latitude, state.longitude];
     } else {
       zoom = 4;
