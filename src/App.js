@@ -31,14 +31,14 @@ class App extends Component {
   // }
 
   pullFromLocalStorage = () => {
-    if (localStorage.hasOwnProperty('bucketList')) {
-      let cachedBucketListKeys = localStorage.getItem('bucketList');
+    if (localStorage.hasOwnProperty('bucket')) {
+      let cachedBucketListKeys = localStorage.getItem('bucket');
       let bucketListParkCodes = JSON.parse(cachedBucketListKeys);
       this.props.setBucketListParks(bucketListParkCodes);
     }
 
-    if (localStorage.hasOwnProperty('visitedParks')) {
-      let cachedVistedParkKeys = localStorage.getItem('visitedParks');
+    if (localStorage.hasOwnProperty('visited')) {
+      let cachedVistedParkKeys = localStorage.getItem('visited');
       let visitedParkCodes = JSON.parse(cachedVistedParkKeys);
       this.props.setVisitedParks(visitedParkCodes);
     }

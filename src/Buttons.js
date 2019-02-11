@@ -1,69 +1,70 @@
 import React, { Component } from 'react';
 import ReactTooltip from 'react-tooltip';
+import { connect } from 'react-redux';
+import { toggleVisitedPark, toggleBucketListPark } from './actions';
 
 class Buttons extends Component {
   constructor(props) {
    super(props);
    this.state = {
-     parkCode: this.props.parkCode,
      storageKey: this.props.storageKey,
    };
   }
 
-  saveNewParksArray = () => {
-    let newArray;
-    if (this.state.storageKey === 'visitedParks') {
-      newArray = this.props.visitedParks;
+  toggleItem = () => {
+    const { visitedParkCodes, bucketListParkCodes, currentParkCode, toggleVisitedPark, toggleBucketListPark } = this.props;
+    let items;
+    if (this.state.storageKey === 'visited') {
+      items = visitedParkCodes;
+      toggleVisitedPark(currentParkCode);
     } else {
-      newArray = this.props.bucketListParks;
+      items = bucketListParkCodes;
+      toggleBucketListPark(currentParkCode);
     }
-
-    if ((localStorage.hasOwnProperty(this.state.storageKey)) && (newArray.includes(this.state.parkCode))) {
-      let index = newArray.findIndex(parkCode => parkCode === this.state.parkCode);
-      newArray.splice(index, 1);
-    } else {
-      newArray.push(this.state.parkCode);
-    }
-    this.saveToLocalStorage(newArray);
-    this.updateParkCodes(this.state.storageKey, newArray);
+    const newItems = items.includes(currentParkCode) ? items.filter(parkCode => parkCode !== currentParkCode) : [...items, currentParkCode];
+    localStorage.setItem(this.state.storageKey, JSON.stringify(newItems));
   }
   
-  saveToLocalStorage = (newArray) => {
-    let newArrayToStore = JSON.stringify(newArray);
-    localStorage.setItem(this.state.storageKey, newArrayToStore);
-  }
-  
-  updateParkCodes = (storageKey, newArray) => {
-    this.props.updateParkCodes(storageKey, newArray);
-  }
-
   render() {
     let buttonType;
     let toolTipText;
-    if (this.state.storageKey === 'visitedParks') {
-      buttonType = this.props.visitedParks;
-      toolTipText = buttonType.includes(this.state.parkCode) ? 'Remove from Visited Parks' : 'Add to Visited Parks';
+    const { currentParkCode, visitedParkCodes, bucketListParkCodes } = this.props;
+    const { storageKey } = this.state;
+    if (this.state.storageKey === 'visited') {
+      buttonType = visitedParkCodes;
+      toolTipText = buttonType.includes(currentParkCode) ? 'Remove from Visited Parks' : 'Add to Visited Parks';
     } else {
-      buttonType = this.props.bucketListParks;
-      toolTipText = buttonType.includes(this.state.parkCode) ? 'Remove from Bucket List Parks' : 'Add to Bucket List Parks';
+      buttonType = bucketListParkCodes;
+      toolTipText = buttonType.includes(currentParkCode) ? 'Remove from Bucket List Parks' : 'Add to Bucket List Parks';
     }
 
     return (
       <div className="icon-btns">
         <span 
-          onClick={this.saveNewParksArray}
+          onClick={this.toggleItem}
           className={this.props.iconType} 
           id={
-            buttonType.includes(this.state.parkCode) ? this.state.storageKey : ''
+            buttonType.includes(currentParkCode) ? storageKey : ''
           }
           data-tip 
-          data-for={"tooltip/" + this.state.storageKey}
+          data-for={"tooltip/" + storageKey}
           >
         </span>
-        <ReactTooltip id={"tooltip/" + this.state.storageKey} type='dark' effect='solid'>{toolTipText}</ReactTooltip>
+        <ReactTooltip id={"tooltip/" + storageKey} type='dark' effect='solid'>{toolTipText}</ReactTooltip>
       </div>
     )
   }
 }
 
-export default Buttons;
+const mapStateToProps = (state) => ({
+  currentParkCode: state.currentParkCode,
+  visitedParkCodes: state.visitedParkCodes,
+  bucketListParkCodes: state.bucketListParkCodes,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  toggleBucketListPark: (parkCode) => dispatch(toggleBucketListPark(parkCode)),
+  toggleVisitedPark: (parkCode) => dispatch(toggleVisitedPark(parkCode)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Buttons);

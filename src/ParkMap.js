@@ -15,16 +15,10 @@ class ParkMap extends Component {
 
   getPark = (event) => {
     const { parks, setParkCardToShow } = this.props;
-    setParkCardToShow(parks.find(park => park.parkCode === event.target.options.id));
+    const park = parks.find(park => park.parkCode === event.target.options.id);
+    console.log(park)
+    setParkCardToShow(park.parkCode);
   }
-
-  // removeCard = () => {
-  //   setParkCardToShow('');
-  // }
-
-  // updateParkCodes = (storageKey, newArray) => {
-  //   this.props.updateParkCodes(storageKey, newArray);
-  // }
 
   findParksToShow = () => {
     const { parks, parksToDisplay, visitedParkCodes, bucketListParkCodes, usStates } = this.props;
@@ -105,6 +99,7 @@ class ParkMap extends Component {
   render() {
     const mapInfo = this.getMapInfo();
     const parksToShow = this.findParksToShow();
+    const { currentParkCode, parks, parksToDisplay } = this.props;
     return (
      <div className="map-container">
         <Map 
@@ -128,7 +123,14 @@ class ParkMap extends Component {
           />
           {parksToShow}
         </Map>
-        {this.props.currentParkId.length && <Park />}
+        {
+          currentParkCode.length && 
+          <Park 
+            park={
+              parks.find(park => park.parkCode === currentParkCode)
+            }
+          />
+        }
       </div>   
     )
   }
@@ -138,14 +140,14 @@ const mapStateToProps = (state) => ({
   usStates: state.usStates,
   parksToDisplay: state.parksToDisplay,
   parks: state.parks,
-  currentParkId: state.currentParkId,
+  currentParkCode: state.currentParkCode,
   visitedParkCodes: state.visitedParkCodes,
   bucketListParkCodes: state.bucketListParkCodes,
   showUsState: state.showUsState,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  setParkCardToShow: (name) => dispatch(setParkCardToShow(name)),
+  setParkCardToShow: (parkCode) => dispatch(setParkCardToShow(parkCode)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ParkMap);

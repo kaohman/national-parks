@@ -33,9 +33,9 @@ export const setParksToShow = (name) => ({
   name,
 });
 
-export const setParkCardToShow = (parkId) => ({
+export const setParkCardToShow = (parkCode) => ({
   type: 'SET_PARK_CARD_TO_SHOW',
-  parkId,
+  parkCode,
 });
 
 export const setErrorStatus = (error) => ({

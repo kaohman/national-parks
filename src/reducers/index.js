@@ -17,7 +17,7 @@ const rootReducer = combineReducers({
   parksToDisplay: displayedParksReducer,
   error: errorReducer,
   loading: loadingReducer,
-  currentParkId: parkCardReducer,
+  currentParkCode: parkCardReducer,
   showUsState: showUsStateReducer,
 });
 

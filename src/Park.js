@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Buttons from './Buttons.js';
+import { connect } from 'react-redux';
+import { toggleVisitedPark, toggleBucketListPark, setParkCardToShow } from './actions/index.js';
 
 class Park extends Component {
  constructor(props) {
@@ -16,87 +18,49 @@ class Park extends Component {
 
   removeCard = (event) => {
     event.preventDefault();
-    this.props.removeCard();
+    this.props.setParkCardToShow('');
     this.setState({
       displayFull: false,
     });
   }
 
-  updateParkCodes = (storageKey, newArray) => {
-    this.props.updateParkCodes(storageKey, newArray);
-  }
-
   render() {
-    const { visitedParks, bucketListParks } = this.props;
-    const { name, images, state, url, description, parkCode } = this.props.selectedPark;
+    const { name, images, state, url, description, parkCode } = this.props.park;
+    const { displayFull } = this.state;
     const randomImage = Math.floor(Math.random() * images.length);
     const imagePath = images[randomImage].url;
-    switch(this.state.displayFull) {
-      case(true):
-        return (
-          <div className="card-overlay">
-            <div className="park-card-large">
-              <div className="park-text-large">
-              <i className="far fa-times-circle" onClick={this.removeCard}></i>
-                <h1 className="park-title">{name} National Park</h1>
-                <h3>State: {state}</h3>
-                <a href={url} target="_blank">Link to {name}'s National Park Service Page</a>
-                <h3 className="park-descrip">{description}</h3>
-                <button className="button-small" onClick={this.toggleFullCard}>View Less</button>
-                <div className="user-list-btns">
-                  <Buttons
-                    iconType="fas fa-hiking"
-                    storageKey="visitedParks"
-                    parkCode={parkCode}
-                    visitedParks={visitedParks}
-                    bucketListParks={bucketListParks}
-                    updateParkCodes={this.updateParkCodes}
-                  />
-                  <Buttons
-                    iconType="fas fa-clipboard-list"
-                    storageKey="bucketList"
-                    parkCode={parkCode}
-                    visitedParks={visitedParks}
-                    bucketListParks={bucketListParks}
-                    updateParkCodes={this.updateParkCodes}
-                  />
-                </div>
-              </div>
-              <img className="park-img-large" alt="park" src={imagePath} />
+    return (
+      <div className="card-overlay">
+        <div className={displayFull ? "park-card-large" : "park-card-small"}>
+          <div className="park-text-large">
+          <i className="far fa-times-circle" onClick={this.removeCard}></i>
+            <h1 className="park-title">{name} National Park</h1>
+            <h3>State: {state}</h3>
+            <a href={url} target="_blank">Link to {name}'s National Park Service Page</a>
+            <h3 className="park-descrip">{description}</h3>
+            <button className="button-small" onClick={this.toggleFullCard}>{displayFull ? "View Less" : "View More"}</button>
+            <div className="user-list-btns">
+              <Buttons
+                iconType="fas fa-hiking"
+                storageKey="visited"
+              />
+              <Buttons
+                iconType="fas fa-clipboard-list"
+                storageKey="bucket"
+              />
             </div>
           </div>
-        );
-      default:
-        return (
-          <div className="card-overlay">
-            <div className="park-card-small">
-              <i className="far fa-times-circle" id="remove-card" onClick={this.removeCard}></i>
-              <h1 className="park-title">{name} National Park</h1>
-              <img className="park-img-small" alt="park" src={imagePath} />
-              <button className="button-small" onClick={this.toggleFullCard}>View More</button>
-              <div className="user-list-btns">
-                <Buttons 
-                  iconType="fas fa-hiking"
-                  storageKey="visitedParks"
-                  parkCode={parkCode}
-                  visitedParks={visitedParks}
-                  bucketListParks={bucketListParks}
-                  updateParkCodes={this.updateParkCodes}
-                />
-                <Buttons 
-                  iconType="fas fa-clipboard-list" 
-                  storageKey="bucketList" 
-                  parkCode={parkCode} 
-                  visitedParks={visitedParks}
-                  bucketListParks={bucketListParks}
-                  updateParkCodes={this.updateParkCodes}
-                />
-              </div>
-            </div>
-          </div>
-        );
-    }
+          <img className={displayFull ? "park-img-large" : "park-img-small"} alt="park" src={imagePath} />
+        </div>
+      </div>
+    );
   }
 }
 
-export default Park;
+const mapDispatchToProps = (dispatch) => ({
+  toggleVisitedPark: (parkCode) => dispatch(toggleVisitedPark(parkCode)),
+  toggleBucketListPark: (parkCode) => dispatch(toggleBucketListPark(parkCode)),
+  setParkCardToShow: (parkCode) => dispatch(setParkCardToShow(parkCode)),
+});
+
+export default connect(null, mapDispatchToProps)(Park);

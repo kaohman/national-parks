@@ -24,12 +24,7 @@ const ControlForm = ({ usStates, parks, parksToDisplay, setParksToShow, visitedP
   const getState = (event) => {
     setParksToShow(event.target.value);
     showUsStateView(true);
-    // this.setMapToState(event.target.value, this.props.usStates[event.target.value]);
   }
-
-  // setMapToState = (stateName, stateObj) => {
-  //   this.props.setMapToState(stateName, stateObj);
-  // }
 
   return (
     <div className="filter-controls">
