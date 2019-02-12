@@ -16,12 +16,14 @@ Mark My Parks provides an easy to use interface where users can explore national
  * View parks only in their Bucket List or Visited Parks list
 ### Primary Technologies Used:
  - React
+ - Redux
+ - Leaflet
  - Javascript
  - HTML
  - CSS/SCSS
- - Leaflet
+ - National Park Service API
 
-### Test Driven Development:
+### Testing:
 Jest and Enzyme for front-end testing.  
 Run `npm test` from the root directory
 ### Enhancements:
