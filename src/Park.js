@@ -65,7 +65,7 @@ class Park extends Component {
             </div>
           </div>
           {
-            displayFull && <img className="park-img-large" alt="park" src={images[1].url} />
+            displayFull && <img className="park-img-large" alt="park" src={images[images.length-1].url} />
           }
         </div>
       </div>
