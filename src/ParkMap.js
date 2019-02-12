@@ -2,68 +2,112 @@ import React, { Component } from 'react';
 import { Map, Marker, Tooltip, TileLayer } from 'react-leaflet';
 import L from 'leaflet';
 import Park from './Park.js';
+import { connect } from 'react-redux';
+import { setParkCardToShow } from './actions';
 
 class ParkMap extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedPark: null,
-      zoom: 4,
       uniqueStateZoom: { Alaska: 4, California: 5, Michigan: 5 },
-      position: [37.0902, -95.7129],
     };
   }
 
   getPark = (event) => {
-    this.setState({
-      selectedPark: this.props.parks.find( park => park.urlCode === event.target.options.id)
-    }) 
+    const { parks, setParkCardToShow } = this.props;
+    const park = parks.find(park => park.parkCode === event.target.options.id);
+    console.log(park)
+    setParkCardToShow(park.parkCode);
   }
 
-  removeCard = () => {
-    this.setState({
-      selectedPark: null
-    });
+  findParksToShow = () => {
+    const { parks, parksToDisplay, visitedParkCodes, bucketListParkCodes, usStates } = this.props;
+    let parksToShow;
+    switch (parksToDisplay) {
+      case 'all':
+        parksToShow = parks;
+        break;
+      case 'visited':
+        parksToShow = parks.filter(park => visitedParkCodes.includes(park.parkCode));
+        break;
+      case 'bucket':
+        parksToShow = parks.filter(park => bucketListParkCodes.includes(park.parkCode));
+        break;
+      default: 
+        const state = usStates.find(state => state.name === parksToDisplay);
+        parksToShow = this.showParksInState(state.abbreviation);
+    }
+    return this.showParks(parksToShow);
   }
 
-  updateParkCodes = (storageKey, newArray) => {
-    this.props.updateParkCodes(storageKey, newArray);
+  showParksInState = (stateCode) => {
+    return this.props.parks.filter(park => park.states.includes(stateCode))
+  }
+
+  showParks = (parks) => {
+    const icon = {
+      iconSize: [25, 41],
+      iconAnchor: [12, 41],
+      popupAnchor: [1, -34],
+      shadowSize: [41, 41],
+      shadowUrl: './assets/marker-shadow.png'
+    };
+    const greenIcon = new L.icon({ ...icon, iconUrl: './assets/marker-icon-green.png'});
+    const violetIcon = new L.icon({ ...icon, iconUrl: './assets/marker-icon-violet.png'});
+    const blueIcon = new L.icon({ ...icon, iconUrl: './assets/marker-icon-blue.png'});
+
+    const { visitedParkCodes, bucketListParkCodes } = this.props;
+    return parks.map(park => {
+      const { parkCode, name, lat, lon } = park;
+      let currentIcon;
+      if (visitedParkCodes.includes(parkCode)) {
+        currentIcon = greenIcon;
+      } else if (bucketListParkCodes.includes(parkCode)) {
+        currentIcon = violetIcon;
+      } else {
+        currentIcon = blueIcon;
+      }
+      return (
+        <Marker 
+          position={[lat, lon]}
+          icon={currentIcon}
+          onClick={this.getPark}
+          key={parkCode}
+          id={parkCode}>
+          <Tooltip>{name}</Tooltip>
+        </Marker>
+      )
+    })
+  }
+
+  getMapInfo = () => {
+    let zoom;
+    let position;
+    if (this.props.showUsState) {
+      const { usStates, parksToDisplay } = this.props;
+      const { uniqueStateZoom } = this.state;
+      const state = usStates.find(state => state.name === parksToDisplay);
+      zoom = uniqueStateZoom[state.name] ? uniqueStateZoom[state.name] : 6;
+      position = [state.latitude, state.longitude];
+    } else {
+      zoom = 4;
+      position = [37.0902, -95.7129];
+    }
+    return [zoom, position]
   }
   
   render() {
-    let stateZoom = this.state.uniqueStateZoom[this.props.stateName] ? this.state.uniqueStateZoom[this.props.stateName] : 6;
-    let greenIcon = new L.icon({
-      iconUrl: './assets/marker-icon-green.png',
-      shadowUrl: './assets/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
-    let violetIcon = new L.icon({
-      iconUrl: './assets/marker-icon-violet.png',
-      shadowUrl: './assets/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
-    let blueIcon = new L.icon({
-      iconUrl: './assets/marker-icon-blue.png',
-      shadowUrl: './assets/marker-shadow.png',
-      iconSize: [25, 41],
-      iconAnchor: [12, 41],
-      popupAnchor: [1, -34],
-      shadowSize: [41, 41]
-    });
+    const mapInfo = this.getMapInfo();
+    const parksToShow = this.findParksToShow();
+    const { currentParkCode, parks } = this.props;
     return (
      <div className="map-container">
         <Map 
           id="map" 
           minZoom='3'
           maxZoom='8'
-          center={ this.props.stateCoord.length > 0 ? this.props.stateCoord : this.state.position }
-          zoom={this.props.stateCoord.length > 0 ? stateZoom : this.state.zoom }>
+          center={mapInfo[1]}
+          zoom={mapInfo[0]}>
           <TileLayer 
             url='https://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}'
             attribution='Tiles &copy; Esri &mdash; Source: US National Park Service'
@@ -77,40 +121,14 @@ class ParkMap extends Component {
             maxZoom='20'
             ext='png'
           />
-          {
-            this.props.parks.map(park => {
-              let lat = (park.latitude.includes('N')) ? park.latitude.replace(/.N$/, '') : park.latitude.replace(/.S$/, '').replace(/^/, '-');
-              let lon = (park.longitude.includes('E')) ? park.longitude.replace(/.E$/, '') : park.longitude.replace(/.W$/, '').replace(/^/, '-');
-              if (this.props.visitedParks.includes(park.urlCode)) {
-                return (
-                  <Marker position={[lat, lon]} icon={greenIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                    <Tooltip>{park.parkName}</Tooltip>
-                  </Marker>
-                )
-              } else if (this.props.bucketListParks.includes(park.urlCode)) {
-                return (
-                  <Marker position={[lat, lon]} icon={violetIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                    <Tooltip>{park.parkName}</Tooltip>
-                  </Marker>
-                )
-              } else {
-                return (
-                  <Marker position={[lat, lon]} icon={blueIcon} onClick={this.getPark} key={park.urlCode} id={park.urlCode}>
-                    <Tooltip>{park.parkName}</Tooltip>
-                  </Marker>
-                )
-              }
-            })
-          }
+          {parksToShow}
         </Map>
         {
-          this.state.selectedPark && 
+          currentParkCode.length && 
           <Park 
-            removeCard={this.removeCard} 
-            selectedPark={this.state.selectedPark}
-            visitedParks={this.props.visitedParks}
-            bucketListParks={this.props.bucketListParks}
-            updateParkCodes={this.updateParkCodes}
+            park={
+              parks.find(park => park.parkCode === currentParkCode)
+            }
           />
         }
       </div>   
@@ -118,4 +136,18 @@ class ParkMap extends Component {
   }
 }
 
-export default ParkMap;
+const mapStateToProps = (state) => ({
+  usStates: state.usStates,
+  parksToDisplay: state.parksToDisplay,
+  parks: state.parks,
+  currentParkCode: state.currentParkCode,
+  visitedParkCodes: state.visitedParkCodes,
+  bucketListParkCodes: state.bucketListParkCodes,
+  showUsState: state.showUsState,
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  setParkCardToShow: (parkCode) => dispatch(setParkCardToShow(parkCode)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(ParkMap);

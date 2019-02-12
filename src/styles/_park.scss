@@ -1,3 +1,12 @@
+h3 {
+  font-size: 14px;
+}
+
+.nps-link {
+  font-size: 14px;
+  display: block;
+}
+
 .card-overlay {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -20,6 +29,14 @@
   font-family: $body-font;
   border: 1px solid black;
   background-color: white;
+
+  h3 {
+    display: none;
+  }
+
+  .nps-link {
+    padding: 10px;
+  }
 }
 
 .park-text-small {
@@ -56,6 +73,10 @@
   .fa-times-circle {
     margin: 15px 5px 5px 0;
   }
+
+  .park-descrip {
+    display: block;
+  }
 }
 
 .park-text-large {
@@ -63,9 +84,6 @@
   text-align: justify;
   font-size: 14px;
 
-  h3 {
-    font-size: 14px;
-  }
 }
 
 .park-img-large {

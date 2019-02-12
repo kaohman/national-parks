@@ -1,5 +1,5 @@
 import React from 'react';
-import FilterControls from './FilterControls';
+import ControlForm from './ControlForm';
 import { shallow } from 'enzyme';
 
 const setMapToStateMock = jest.fn();
